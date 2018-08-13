@@ -46,6 +46,9 @@ public class TestBigdecimal {
 		System.out.println("保留2位小数其他截断："+ num1.setScale(2, BigDecimal.ROUND_DOWN));
 		System.out.println("非0就进一位："+ num2.setScale(2, BigDecimal.ROUND_UP));
 		
+		 /**
+		  * 除数除不尽问题
+		  */
 	     num1 = new BigDecimal("10");  
 		//System.out.println(num1.divide(new BigDecimal("3")));  
 		//System.out.println(num1.divide(new BigDecimal("3")).setScale(2, BigDecimal.ROUND_HALF_UP)); 

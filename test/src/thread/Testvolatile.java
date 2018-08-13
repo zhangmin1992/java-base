@@ -30,6 +30,12 @@ package thread;
  *  
  * }
  * 2.主内存变量状态判断，看下面例子
+ * 
+ * volatile和sychnorized的比较
+ * 前置只能用于变量，后置用于方法，代码段
+ * 前置只要可见性，没有原子性，后者有原子性
+ * 多线程访问前置不会阻塞，性能较好，后者会被阻塞
+ * 
  * @author yp-tc-m-7129
  *
  */
@@ -45,11 +51,41 @@ public class Testvolatile extends Thread {
     }
     
     public static void main(String[] args) throws Exception {
-    	Testvolatile vt = new Testvolatile();
+    	/**
+    	 * 主内存变量状态判断
+    	 */
+    	/*Testvolatile vt = new Testvolatile();
         vt.start();
         Thread.sleep(2000);
         vt.flag = true;
-        System.out.println("stope" + vt.i);
+        System.out.println("stope" + vt.i);*/
+    	
+    	/**
+    	 * 原子性错误用法,一次性定义10个线程，并启动
+    	 */
+    	Testvolatile2[] array = new Testvolatile2[10];
+    	for(int i=0;i<10;i++) {
+    		array[i] = new Testvolatile2();
+    	}
+    	for(int i=0;i<10;i++) {
+    		array[i].start();
+    	}
     }
 
+}
+
+class Testvolatile2 extends Thread {
+	public static volatile int count;
+	
+	@Override
+	public void run() {
+		addCount();
+	}
+	
+	public /**synchronized*/ static void addCount() {
+		for(int i = 0;i < 10000;i++) {
+			count ++;
+		}
+		System.out.println(count);
+	}
 }
