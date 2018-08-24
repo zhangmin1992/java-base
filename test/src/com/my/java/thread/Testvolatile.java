@@ -1,4 +1,4 @@
-package thread;
+package com.my.java.thread;
 
 /**
  * volatile 关键字的作用:具有线程可见性和防止指令重排序，注意不具有原子性不可以计数

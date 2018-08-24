@@ -64,6 +64,12 @@ public class TestInteger {
 		System.out.println(c.equals(a+b));
 		System.out.println(c == result);
 		System.out.println(c.equals(result));
+		
+		/**
+		 * 空不能转Integer
+		 */
+		Integer aaaInteger = Integer.valueOf(null);
+		System.out.println(aaaInteger);
 	}
 
 }

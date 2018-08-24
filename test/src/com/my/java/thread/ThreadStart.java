@@ -1,4 +1,4 @@
-package thread;
+package com.my.java.thread;
 
 /**
  * 线程的调用顺序并非是线程的start声明顺序，我的方法二会在我的快捷写法

@@ -1,4 +1,4 @@
-package com.my.json;
+package com.my.java.util.json;
 
 import com.alibaba.fastjson.JSONObject;
 
