@@ -36,6 +36,7 @@ public class TestLong {
 		System.out.println(id3int == id3);
 		System.out.println(id3long == id3);
 		System.out.println(id3.equals(id3long));
+		System.out.println(id3.equals(id3int));
 		 System.out.println("--------------------------------------------------------------------");
 		
 		/**
@@ -51,6 +52,13 @@ public class TestLong {
 	       int bint = a.intValue();
 	       int result = aint + bint;然后equals会触发自动装箱操作，便调用Integer.valueOf(result)方法，这时候装箱的类型是Integer
 		 * 看下equals的源码就知道，只要传过去的参数类型不是Long的会直接返回false，因此不相等
+		 * long 的equals的源码是：
+		 * public boolean equals(Object obj) {
+        	 if (obj instanceof Long) {
+                return value == ((Long)obj).longValue();
+        	 }
+        	 return false;
+    		}
 		 * 
 		 * 对于g.equals(h+a)的解释：反编译后的结果是g.equals(Long.valueOf(h.longValue() + a.intValue()))
 		 * h+a会触发拆箱操作，就像是:

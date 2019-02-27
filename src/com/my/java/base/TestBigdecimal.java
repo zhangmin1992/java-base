@@ -6,22 +6,25 @@ public class TestBigdecimal {
 
 	public static void main(String[] args) {
 		/**
-		 * BigDecimal 初始化使用字符串，否则会有尾差
+		 * BigDecimal 小数点值 初始化使用字符串，否则会有尾差，整数类型倒不会有尾差，也建议用字符串
 		 * BigDecimal之间的值比较只能使用compareTo，否则可能会有尾差问题
 		 */
 		BigDecimal b1 = new BigDecimal("10.511");
 		BigDecimal b2 = new BigDecimal(10.511);
+		BigDecimal b33 = new BigDecimal(10);
 		System.out.println(b1);
 		System.out.println(b2);
+		System.out.println(b33);
 		System.out.println(b1 == b2);
 		System.out.println(b1.equals(b2));
 		System.out.println(b1.compareTo(b1) == 0);
+		
 		
 		/**
 		 * 你也看到了BigDecimal转integer因为integer的取值范围问题，算出来得数不准
 		 */
 		BigDecimal b3 = new BigDecimal("2147483647");
-		BigDecimal b4 = new BigDecimal("10");
+		BigDecimal b4 = new BigDecimal("999");
 		BigDecimal result = b3.multiply(b4);
 		System.out.println(result);
 		Integer resultInteger = result.intValue();
@@ -33,6 +36,8 @@ public class TestBigdecimal {
 		BigDecimal price = BigDecimal.ZERO;
 		price.add(new BigDecimal(6));
 		System.out.println(price);
+		
+		
 		
 		/**
 		 * BigDecimal 的取整数，四舍五入，截断小数点后几位，非0就进一位的写法
@@ -50,9 +55,14 @@ public class TestBigdecimal {
 		  * 除数除不尽问题
 		  */
 	     num1 = new BigDecimal("10");  
-		//System.out.println(num1.divide(new BigDecimal("3")));  
-		//System.out.println(num1.divide(new BigDecimal("3")).setScale(2, BigDecimal.ROUND_HALF_UP)); 
+		 //System.out.println(num1.divide(new BigDecimal("3")));  
+		 //System.out.println(num1.divide(new BigDecimal("3")).setScale(2, BigDecimal.ROUND_HALF_UP)); 
 	     System.out.println(num1.divide(new BigDecimal("3"), 2, BigDecimal.ROUND_HALF_UP));
+	     
+	     /**
+	      * 线上有人写的错误的写法实例
+	      */
+	     System.out.println(new BigDecimal(300151 /100.0));
 	}
 
 }

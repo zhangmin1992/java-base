@@ -7,6 +7,13 @@ public class TestInteger {
 		 * Integer，String 所有的equals比较的是值 都相等
 		 * Integer 也有常量池，值在-128到127是byte的取值范围之间的，==相等，否则false
 		 * new Integer(97) 创建的对象地址不相等
+		 * 源码可以看
+		 * public static Integer valueOf(int i) {
+		 * if (i >= IntegerCache.low && i <= IntegerCache.high)
+                 return IntegerCache.cache[i + (-IntegerCache.low)];
+            return new Integer(i);
+           }
+		 * 
 		 */
 		Integer i5 = 97;
 	    Integer i6 = 97;
@@ -29,11 +36,12 @@ public class TestInteger {
 	    System.out.println(i3.equals(i4));
 	    
 	    /**
-	     * == 可以，基本类型==包装类型，比较的是数值是否相等
+	     * int 和==Integer可以直接比较，不限制范围，==和equals都是相等的
+	     * 可以，基本类型==包装类型，比较的是数值是否相等
 	     */
-	    i3 = 100;
-	    int aint = 100;
-	    long along = 100;
+	    i3 = 200;
+	    int aint = 200;
+	    long along = 200;
 	    System.out.println(i3.equals(aint));
 	    System.out.println(i3 == aint);
 	    System.out.println(i3 == along);
@@ -41,8 +49,9 @@ public class TestInteger {
 	    
 	    /**
 	     * 这些解释都可以反编译一下，在线反编译地址是:http://www.javadecompilers.com/
-	     * 当 "=="运算符的两个操作数都是 包装器类型的引用，则是比较指向的是否是同一个对象，
-	     * 而如果其中有一个操作数是表达式（即包含算术运算）则比较的是数值（即会触发自动拆箱的过程）
+	     * 当 "=="运算符的两个操作数都是 包装器类型的引用，则是比较指向的是否是同一个对象的地址，
+	     * 当 "=="运算符的1个操作数是基本类型，比较的就是基本类型是否相等
+	     * 而如果()内包含算数运算的时候（即包含算术运算）则比较的是数值（即有算数运算的时候会触发自动拆箱的过程）
 	     * 
 	     * 对于c==(a+b)的解释：a+b包含了算术运算，因此触发了自动拆箱，调用各自的intValue，在做累加操作，相当于
 	     * int inta = a.intValue();
@@ -55,12 +64,27 @@ public class TestInteger {
 	     * int intb = b.intValue();
 	     * int result = inta + intb;
 	     * 然后对于equals，再触发自动装箱过程，便调用Integer.valueOf(result)方法，再进行equals比较
+	     * 
+	     * System.out.println(c==(a+b)); 反编译的源码是
+	     * Integer localInteger1 = Integer.valueOf(100);
+    	   Integer localInteger2 = Integer.valueOf(200);
+    	   Integer localInteger3 = Integer.valueOf(300);
+    	   System.out.println(localInteger3.intValue() == localInteger1.intValue() + localInteger2.intValue());
+	     * 
+	     * 
+	     * System.out.println(c.equals(a+b)); 反编译的源码为
+	     * Integer localInteger1 = Integer.valueOf(100);
+	     * Integer localInteger2 = Integer.valueOf(200);
+    	   Integer localInteger3 = Integer.valueOf(300);
+           System.out.println(localInteger3.equals(Integer.valueOf(localInteger1.intValue() + localInteger2.intValue())));
 	     */
 	    Integer a = 100;
         Integer b = 200;
         Integer c = 300;
+        Integer d = a + b;
         int result = a.intValue() + b.intValue();
 		System.out.println(c==(a+b));
+		System.out.println(c==d);
 		System.out.println(c.equals(a+b));
 		System.out.println(c == result);
 		System.out.println(c.equals(result));

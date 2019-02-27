@@ -1,0 +1,9 @@
+com.my.java.base.
+                deepclone 反射实现深拷贝
+                          TestIsWrapClass  是否是基础类型和包装类型
+                          TestGetMethod    获取类的属性和方法
+                          Test             测试是否实现了深拷贝
+                          Student          实体
+                          Addr
+                          DetailAddr
+                          ObjectCopy       深拷贝的工具类
