@@ -9,10 +9,10 @@ public class TestMain {
 //    	SupClass.test();
 		
 		//Class.forName(SupClass.class.getName());
-		TestMain.class.getClassLoader().loadClass(SupClass.class.getName());
+		//TestMain.class.getClassLoader().loadClass(SupClass.class.getName());
 		
 		
-		
+		System.out.println("11".length());
 		//System.out.println(SupClass.class);
 	}
 	

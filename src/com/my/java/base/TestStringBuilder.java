@@ -11,7 +11,6 @@ public class TestStringBuilder {
 		//TODO 大牛了你就解释下这里
 		String s2 = new StringBuilder().append("555").toString();
 		System.out.println(s2.intern() == s2); 
-		
 		String s1 = new StringBuilder().append("c11").append("bb11").toString(); 
 		System.out.println(s1.intern() == s1); 
 		

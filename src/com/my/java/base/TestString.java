@@ -46,6 +46,13 @@ public class TestString {
         change(sb);
 	    System.out.println(s);
 	    System.out.println(sb.toString());
+	    
+	    String a5 = "abc";
+	    StringBuffer s6 = new StringBuffer(a5);
+	    System.out.println(a5.equals(s6));
+	    
+	    System.out.println(reverse("1234567"));
+	    
 	}
 	
 	public static void change(String s) {
@@ -55,6 +62,24 @@ public class TestString {
 	public static void change(StringBuffer sb) {
         sb.append("itcast");
     }
+	
+	/**
+	 *  反转字符串
+		* @Description: TODO(这里用一句话描述这个方法的作用) 
+		* @param @param s
+		* @return void    返回类型 
+		* @throws
+	 */
+	public static String reverse(String s) {
+		int num = (s.length() + 1)/2;
+		char[] chars = s.toCharArray();
+		for (int i = 0; i < num; i++) {
+			char temp = chars[i];
+			chars[i] = chars[s.length()-1-i];
+			chars[s.length()-1-i] = temp;
+		}
+		return String.valueOf(chars);
+	}
 
 
 }
