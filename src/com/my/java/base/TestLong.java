@@ -87,6 +87,13 @@ public class TestLong {
         System.out.println(g.equals(temp));
         System.out.println(g == temp);
         
+        /**
+         * 不同类型比较，equals直接返回false
+         */
+        Long storeidLong = new Long("22222");
+        Integer stInteger = 22222;
+        System.out.println(storeidLong.equals(stInteger));
+        
 	}
 
 }

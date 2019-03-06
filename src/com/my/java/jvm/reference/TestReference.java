@@ -4,6 +4,12 @@ import java.lang.ref.PhantomReference;
 import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 
+/**
+ * 强引用 弱引用
+	* @Description: TODO(这里用一句话描述这个类的作用) 
+	* @author zhangmin 
+	* @date Mar 6, 2019 10:39:51 AM
+ */
 public class TestReference {
 
 	public static void main(String[] args) {
