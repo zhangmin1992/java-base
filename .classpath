@@ -7,5 +7,15 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="src/lib/fastjson-1.2.56.jar"/>
+	<classpathentry kind="lib" path="/Users/min.zhang/apache-maven-localRepository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.assertj"/>
+			<attribute name="maven.artifactId" value="assertj-core"/>
+			<attribute name="maven.version" value="3.9.1"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -6,7 +6,8 @@ public class Student {
 	
 	private String myChineseName;
 	
-	private int age;
+	public volatile int age; 
+//	private int age; 
 	
 	private Addr addr;
 
@@ -42,6 +43,10 @@ public class Student {
 		this.myChineseName = myChineseName;
 		this.age = age;
 		this.addr = addr;
+	}
+	
+	public int add() {
+		return age ++;
 	}
 	
 	
