@@ -199,6 +199,26 @@ public class DateUtil {
         return result;
     }
     
+    public static List<String> getBetweenDates(String start, String end) {
+    	SimpleDateFormat sdf = new SimpleDateFormat(DAY_STRING);
+        List<String> result = new ArrayList<String>();
+    	try {
+            Calendar tempStart = Calendar.getInstance();
+            tempStart.setTime(sdf.parse(start));
+            
+            Calendar tempEnd = Calendar.getInstance();
+            tempEnd.setTime(sdf.parse(end));
+            while (tempStart.before(tempEnd)) {
+                result.add(sdf.format(tempStart.getTime()));
+                tempStart.add(Calendar.DAY_OF_YEAR, 1);
+            }
+            result.add(end);
+            return result;
+		} catch (Exception e) {
+			return result;
+		}
+    }
+    
 	public static void main(String[] args) throws ParseException {
 		Date date = parseStringToDate("2018-01-08","yyyy-MM-dd");
 		System.out.println(date);
@@ -223,6 +243,23 @@ public class DateUtil {
 		
 		List<Date> list = getBetweenDates(date2,date);
 		System.out.println(list);
+		
+		List<String> list2 = getBetweenDates("2019-01-01","2019-01-01");
+		System.out.println(list2);
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		String startDate = "2019-01-01";
+		String endDate = "2019-01-10";
+		Calendar tempStart = Calendar.getInstance();
+        tempStart.setTime(sdf.parse(startDate));
+        Calendar tempEnd = Calendar.getInstance();
+        tempEnd.setTime(sdf.parse(endDate));
+        tempEnd.add(Calendar.DAY_OF_YEAR, 1);
+		while (tempStart.before(tempEnd)) {
+//			System.out.println("--" + sdf.format(tempStart.getTime()));
+			System.out.println("--" + tempStart.getTime());
+            tempStart.add(Calendar.DAY_OF_YEAR, 1);
+		}
 	}
 
 }

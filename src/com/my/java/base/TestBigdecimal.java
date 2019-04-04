@@ -63,6 +63,7 @@ public class TestBigdecimal {
 	      * 线上有人写的错误的写法实例
 	      */
 	     System.out.println(new BigDecimal(300151 /100.0));
+	     
 	}
 
 }

@@ -3,6 +3,10 @@ package com.my.java.base;
 /**
  * !!!!!!!!!!!不懂
  * @author yp-tc-m-7129
+ * 
+ * StringBuffer的坑
+ * 1.StringBuffer iStr = new StringBuffer(123); 错误写法，值并不是123，也不是null而是空字符串""
+ * 2.if(iStr2.equals("")) 错误写法，StringBuffer的equals比较的是地址，需要改为if(iStr2.toString().equals("")) 
  *
  */
 public class TestStringBuilder {
@@ -21,6 +25,19 @@ public class TestStringBuilder {
 		String s33 = new String("33") + new String("3");
 		System.out.println(s3.intern() == s3); 
 		System.out.println(s33.intern() == s3); 
+		
+		System.out.println("---------------基础坑---------");
+		StringBuffer iStr = new StringBuffer(123);
+		System.out.println("---"+iStr);
+		if(iStr.toString().equals("")) {
+			System.out.println("StringBuffer(int)的时候并没有初始化调用append方法");
+		}
+		
+		StringBuffer iStr2 = new StringBuffer("");
+		if(iStr2.equals("")) {
+			System.out.println("StringBuffer 不能直接和equals()比较");
+		}
+		
 
 	}
 
