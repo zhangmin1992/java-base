@@ -1,5 +1,9 @@
 package com.my.java.util.json;
 
+import java.util.List;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
 public class TestJson {
@@ -17,6 +21,27 @@ public class TestJson {
 		 */
 		String temp = com.alibaba.fastjson.JSONObject.toJSONString(objA);
 		System.out.println(temp);
+		
+		/**
+		 * fastjson  JSONArray转List
+		 */
+		JSONArray array = JSONArray.parseArray("[{'id':'0375','city':22}]");
+		List<A> list = JSONObject.parseArray(array.toJSONString(), A.class);
+		System.out.println(JSONObject.toJSONString(list));
+		
+		/**
+		 * fastjson  List转JSONArray
+		 */
+		JSONArray array2 = JSONArray.parseArray(JSON.toJSONString(list));
+		System.out.println(array2.toJSONString());
+		
+		/**
+		 * fastjson  字符串转List
+		 */
+		List<A> list2 = JSONObject.parseArray("[{'id':'0375','city':22}]", A.class);
+		System.out.println(JSONObject.toJSONString(list2));
+		
+		System.out.println(JSONObject.toJSONString(null));
 	}
 
 }

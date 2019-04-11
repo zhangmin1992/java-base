@@ -64,6 +64,21 @@ public class TestBigdecimal {
 	      */
 	     System.out.println(new BigDecimal(300151 /100.0));
 	     
+	     System.out.println(getAmount(0L));
+	     System.out.println(getAmount(98L));
+	     System.out.println(getAmount(99L));
+	     System.out.println(getAmount(100L));
+	     System.out.println(getAmount(101L));
+	}
+	
+	public static String getAmount(Long amount) {
+		if(amount == 0L || amount == null) {
+			return "0";
+		}
+		if(amount.compareTo(99L)<0) {
+			return "0." + amount;
+		}
+		return BigDecimal.valueOf(amount).divide(new BigDecimal("100")).toString();
 	}
 
 }

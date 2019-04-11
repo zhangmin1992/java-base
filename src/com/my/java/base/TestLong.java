@@ -94,6 +94,10 @@ public class TestLong {
         Integer stInteger = 22222;
         System.out.println(storeidLong.equals(stInteger));
         
+        String aaString = "7500.0000";
+        String[] aaStr  = aaString.split("\\.");
+        System.out.println(Long.valueOf(aaStr[0]));
+        
 	}
 
 }

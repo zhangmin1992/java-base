@@ -4,28 +4,27 @@ public class SaasOrderReportCommissionResponse2 {
 
 	private String payTime;
 	
-	private String violationCommission;
+	private Long vioCommissionFee = 0L;
 
 	public String getPayTime() {
 		return payTime;
+	}
+
+	public Long getVioCommissionFee() {
+		return vioCommissionFee;
+	}
+
+	public void setVioCommissionFee(Long vioCommissionFee) {
+		this.vioCommissionFee = vioCommissionFee;
 	}
 
 	public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
 
-	public String getViolationCommission() {
-		return violationCommission;
-	}
-
-	public void setViolationCommission(String violationCommission) {
-		this.violationCommission = violationCommission;
-	}
-
-	public SaasOrderReportCommissionResponse2(String payTime, String violationCommission) {
+	public SaasOrderReportCommissionResponse2(String payTime, Long vioCommissionFee) {
 		super();
 		this.payTime = payTime;
-		this.violationCommission = violationCommission;
+		this.vioCommissionFee = vioCommissionFee;
 	}
-	
 }
