@@ -219,6 +219,33 @@ public class DateUtil {
 		}
     }
     
+    public static String beforeAfterNDaysDate(String dt, int type, Integer day) {
+    	try {
+    		SimpleDateFormat sdf = new SimpleDateFormat(DAY_STRING);
+    		Calendar calendar = Calendar.getInstance();// 得到日历
+    		calendar.setTime(sdf.parse(dt));// 把当前时间赋给日历
+    		calendar.add(type, day); // 设置为前后N天
+    		return sdf.format(calendar.getTime());
+		} catch (Exception e) {
+			return null;
+		}
+	}
+    
+    public static int isDayEquals(Date d1,Date d2) {
+    	try {
+    		SimpleDateFormat sdf = new SimpleDateFormat(DAY_STRING);
+    		String day1 = sdf.format(d1);
+    		String day2 = sdf.format(d2);
+    		if(day1.equals(day2)) {
+    			return 1;
+    		}else {
+    			return 0;
+    		}
+		} catch (Exception e) {
+			return 0;
+		}
+	}
+    
 	public static void main(String[] args) throws ParseException {
 		Date date = parseStringToDate("2018-01-08","yyyy-MM-dd");
 		System.out.println(date);
@@ -260,6 +287,14 @@ public class DateUtil {
 			System.out.println("--" + tempStart.getTime());
             tempStart.add(Calendar.DAY_OF_YEAR, 1);
 		}
+		
+		String date3 =  beforeAfterNDaysDate("2019-01-05",Calendar.MONTH,3);
+		System.out.println(date3);
+		if(DateUtil.beforeAfterNDaysDate("2019-01-15", Calendar.MONTH, 3).compareTo("2019-08-01")<0) {
+			System.out.println("最多3个月");
+		}
+		
+		System.out.println(isDayEquals(new Date(),new Date()));
 	}
 
 }

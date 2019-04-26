@@ -89,11 +89,21 @@ public class TestInteger {
 		System.out.println(c == result);
 		System.out.println(c.equals(result));
 		
+		mytest mytest = new mytest();
+		System.out.println(mytest.aaa);
+		System.out.println(mytest.aaaInteger);
+		
 		/**
 		 * 空不能转Integer
 		 */
-		Integer aaaInteger = Integer.valueOf(null);
+
+        Integer aaaInteger = Integer.valueOf(null);
 		System.out.println(aaaInteger);
 	}
+	
+	 static class mytest {
+		 Integer aaaInteger;
+		 int aaa;
+	 }
 
 }
