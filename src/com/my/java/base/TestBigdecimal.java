@@ -65,15 +65,27 @@ public class TestBigdecimal {
 	     System.out.println(new BigDecimal(300151 /100.0));
 	     
 	     System.out.println(getAmount(0L));
+	     System.out.println(getAmount(1L));
+	     System.out.println(getAmount(10L));
 	     System.out.println(getAmount(98L));
 	     System.out.println(getAmount(99L));
 	     System.out.println(getAmount(100L));
 	     System.out.println(getAmount(101L));
+	     
+	     String str = "[{\"num\": 0, \"cash\": 0, \"amount\": 0, \"cardId\": 1, \"giftNum\": 0, \"cardType\": 2, \"goodsCash\": 0}]";
+	     if(str.length() >5) {
+	    	 System.out.println("ok");
+	     }else {
+	    	 System.out.println("no");
+	     }
 	}
 	
 	public static String getAmount(Long amount) {
 		if(amount == 0L || amount == null) {
 			return "0";
+		}
+		if(amount.compareTo(10L)<0) {
+			return "0.0" + amount;
 		}
 		if(amount.compareTo(99L)<0) {
 			return "0." + amount;

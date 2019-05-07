@@ -98,6 +98,12 @@ public class TestLong {
         String[] aaStr  = aaString.split("\\.");
         System.out.println(Long.valueOf(aaStr[0]));
         
+        /**
+         * Long 可以是null，long不能是null
+         */
+        Long id33 = null;
+        //long id332 = null;
+        
 	}
 
 }
