@@ -295,6 +295,13 @@ public class DateUtil {
 		}
 		
 		System.out.println(isDayEquals(new Date(),new Date()));
+		
+		Calendar tempStart2 = Calendar.getInstance();
+		tempStart2.setTime(new Date());
+		System.out.println(tempStart2.get(Calendar.YEAR));
+		System.out.println(tempStart2.get(Calendar.MONTH));
+		System.out.println(tempStart2.get(Calendar.DAY_OF_MONTH));
+		 
 	}
 
 }

@@ -1,5 +1,7 @@
 package com.my.java.base;
 
+import com.alibaba.fastjson.JSONObject;
+
 public class TestString {
 
 	public static void main(String[] args) {
@@ -52,6 +54,19 @@ public class TestString {
 	    System.out.println(a5.equals(s6));
 	    
 	    System.out.println(reverse("1234567"));
+	    
+	    //错误写法
+	    //String[] result = {};
+	    String[] result = new String[3];
+	    result[0]="22";
+	    result[1]="22";
+	    result[2]="22";
+	    System.out.println(JSONObject.toJSONString(result));
+	    
+	    String store = null;
+	    if(store == null || result[4] == null) {
+	    	System.out.println("999");
+	    }
 	    
 	}
 	
