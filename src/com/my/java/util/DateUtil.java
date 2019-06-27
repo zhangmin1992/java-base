@@ -8,6 +8,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
 public class DateUtil {
 
 	public static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -301,6 +303,8 @@ public class DateUtil {
 		System.out.println(tempStart2.get(Calendar.YEAR));
 		System.out.println(tempStart2.get(Calendar.MONTH));
 		System.out.println(tempStart2.get(Calendar.DAY_OF_MONTH));
+		
+	 
 		 
 	}
 
