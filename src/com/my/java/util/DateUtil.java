@@ -8,6 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import com.alibaba.fastjson.JSONObject;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 
 public class DateUtil {
@@ -23,6 +24,8 @@ public class DateUtil {
     public static final String TIME_STRING = "HH:mm:ss";
     
     public static final String DAY_STRING = "yyyy-MM-dd";
+    
+    public static final String DAY_STRING2 = "yyyy-MM";
     
     /**
      * 任意类型字符串转时间
@@ -221,6 +224,26 @@ public class DateUtil {
 		}
     }
     
+    public static List<String> getBetweenMonths(String start, String end) {
+    	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM");
+        List<String> result = new ArrayList<String>();
+    	try {
+            Calendar tempStart = Calendar.getInstance();
+            tempStart.setTime(sdf.parse(start));
+            
+            Calendar tempEnd = Calendar.getInstance();
+            tempEnd.setTime(sdf.parse(end));
+            while (tempStart.before(tempEnd)) {
+                result.add(sdf.format(tempStart.getTime()));
+                tempStart.add(Calendar.MONTH, 1);
+            }
+            result.add(end);
+            return result;
+		} catch (Exception e) {
+			return result;
+		}
+    }
+    
     public static String beforeAfterNDaysDate(String dt, int type, Integer day) {
     	try {
     		SimpleDateFormat sdf = new SimpleDateFormat(DAY_STRING);
@@ -304,6 +327,9 @@ public class DateUtil {
 		System.out.println(tempStart2.get(Calendar.MONTH));
 		System.out.println(tempStart2.get(Calendar.DAY_OF_MONTH));
 		
+		
+		List<String> list33 = getBetweenMonths("2018-11","2019-04");
+		System.out.println(JSONObject.toJSONString(list33));
 	 
 		 
 	}
