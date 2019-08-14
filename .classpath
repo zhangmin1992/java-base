@@ -15,6 +15,7 @@
 	<classpathentry kind="lib" path="src/lib/poi-3.9.jar"/>
 	<classpathentry kind="lib" path="src/lib/poi-ooxml-3.9.jar"/>
 	<classpathentry kind="lib" path="src/lib/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/javassist-3.18.1-GA.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

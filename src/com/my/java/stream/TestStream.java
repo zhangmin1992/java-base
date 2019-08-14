@@ -61,7 +61,7 @@ public class TestStream {
 		System.out.println("");
 		
 		list.stream().filter(i-> i.compareTo("3")>=0).forEach(user->System.out.print(user));
-		System.out.println("");
+		System.out.println("哈哈我打印了");
 		
 		/**
 		 * 找到最大最小平均和第一个值和任意一个元素

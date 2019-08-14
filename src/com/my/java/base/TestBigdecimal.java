@@ -64,20 +64,28 @@ public class TestBigdecimal {
 	      */
 	     System.out.println(new BigDecimal(300151 /100.0));
 	     
-	     System.out.println(getAmount(0L));
-	     System.out.println(getAmount(1L));
-	     System.out.println(getAmount(10L));
-	     System.out.println(getAmount(98L));
-	     System.out.println(getAmount(99L));
-	     System.out.println(getAmount(100L));
-	     System.out.println(getAmount(101L));
+//	     System.out.println(getAmount(0L));
+//	     System.out.println(getAmount(1L));
+//	     System.out.println(getAmount(10L));
+//	     System.out.println(getAmount(98L));
+//	     System.out.println(getAmount(99L));
+//	     System.out.println(getAmount(100L));
+//	     System.out.println(getAmount(101L));
 	     
-	     String str = "[{\"num\": 0, \"cash\": 0, \"amount\": 0, \"cardId\": 1, \"giftNum\": 0, \"cardType\": 2, \"goodsCash\": 0}]";
-	     if(str.length() >5) {
-	    	 System.out.println("ok");
-	     }else {
-	    	 System.out.println("no");
-	     }
+	     System.out.println(getAmount2("-0"));
+	     System.out.println(getAmount2("-1"));
+	     System.out.println(getAmount2("-10"));
+	     System.out.println(getAmount2("-98"));
+	     System.out.println(getAmount2("-99"));
+	     System.out.println(getAmount2("-100"));
+	     System.out.println(getAmount2("-101"));
+	     
+//	     String str = "[{\"num\": 0, \"cash\": 0, \"amount\": 0, \"cardId\": 1, \"giftNum\": 0, \"cardType\": 2, \"goodsCash\": 0}]";
+//	     if(str.length() >5) {
+//	    	 System.out.println("ok");
+//	     }else {
+//	    	 System.out.println("no");
+//	     }
 	}
 	
 	public static String getAmount(Long amount) {
@@ -91,6 +99,31 @@ public class TestBigdecimal {
 			return "0." + amount;
 		}
 		return BigDecimal.valueOf(amount).divide(new BigDecimal("100")).toString();
+	}
+	
+	public static String getAmount2(String amount) {
+		if(amount == null || amount.equals("0")) {
+			return "0";
+		}
+		
+		if(amount.contains("-")) {
+			Long amountLong = Long.valueOf(amount);
+			amountLong = Math.abs(amountLong);
+			if(amountLong.compareTo(10L)<0) {
+				return "-0.0" + amountLong;
+			}
+			if(amountLong.compareTo(99L)<0) {
+				return "-0." + amountLong;
+			}
+			return "-"+BigDecimal.valueOf(amountLong).divide(new BigDecimal("100")).toString();
+		}
+		if(Long.valueOf(amount).compareTo(10L)<0) {
+			return "0.0" + amount;
+		}
+		if(Long.valueOf(amount).compareTo(99L)<0) {
+			return "0." + amount;
+		}
+		return new BigDecimal(amount).divide(new BigDecimal("100")).toString();
 	}
 
 }

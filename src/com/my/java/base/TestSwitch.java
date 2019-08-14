@@ -58,13 +58,13 @@ public class TestSwitch {
 		case 1:
 			x = x+1;
 		case 2:
-			x = x+2;
+			x = x+2;//2
 		case 3:
-			x = x+3;
+			x = x+3;//5
 		case 4:
-			x = x+4;
+			x = x+4;//9
 		default:
-			x = x+5;
+			x = x+5;//14
 		}
 		System.out.println(x);
 		
@@ -73,12 +73,12 @@ public class TestSwitch {
 		case 1:
 			x = x+1;
 		case 2:
-			x = x+2;
+			x = x+2;//2
 		case 3:
 		case 4:
-			x = x+4;
+			x = x+4;//6
 		default:
-			x = x+5;
+			x = x+5;//11
 		}
 		System.out.println(x);
 		
