@@ -46,6 +46,16 @@ public class DateUtil {
 		return dd1;
 	}
 	
+	public static String parseDateToString(Date thedate, String format)
+			throws java.text.ParseException {
+		DateFormat sdf = new SimpleDateFormat(format);
+		String dd1 = "";
+		if (thedate != null && !thedate.equals("")) {
+			dd1 = sdf.format(thedate);
+		}
+		return dd1;
+	}
+	
 	/** 
      * 得到指定日期的前后几天日期字符串，前后几小时，前后几秒的日期字符串
      * @param format  格式 
