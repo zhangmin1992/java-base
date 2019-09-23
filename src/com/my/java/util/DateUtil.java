@@ -65,6 +65,10 @@ public class DateUtil {
 		Calendar calendar = Calendar.getInstance();// 得到日历
 		calendar.setTime(dt);// 把当前时间赋给日历
 		calendar.add(type, day); // 设置为前后N天
+		calendar.set(Calendar.HOUR_OF_DAY, 0);
+		calendar.set(Calendar.MINUTE, 0);
+		calendar.set(Calendar.SECOND, 0);
+		calendar.set(Calendar.MILLISECOND, 0);
 		return calendar.getTime();
 	}
 	
@@ -285,8 +289,8 @@ public class DateUtil {
 		Date date = parseStringToDate("2018-01-08","yyyy-MM-dd");
 		System.out.println(date);
 		
-		Date date2 =  beforeAfterNDaysDate(date,Calendar.DAY_OF_YEAR,-3);
-		System.out.println(date2);
+		Date date2 =  beforeAfterNDaysDate(new Date(),Calendar.DAY_OF_YEAR,-8);
+		System.out.println("---------"+date2);
 		
 		int days = daysBetween("2018-09-09","2018-09-01");
 		System.out.println(days);
