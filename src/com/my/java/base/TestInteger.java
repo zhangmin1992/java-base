@@ -79,14 +79,12 @@ public class TestInteger {
            System.out.println(localInteger3.equals(Integer.valueOf(localInteger1.intValue() + localInteger2.intValue())));
 	     */
 	    Integer a = 100;
-	    System.out.println("连这个都不会怎么好意111思问别人");
         Integer b = 200;
         Integer c = 300;
         Integer d = a + b;
         int result = a.intValue() + b.intValue();
 		System.out.println(c==(a+b));
 		System.out.println(c==d);
-		System.out.println("连这个都不会22怎么好意思问别人");
 		System.out.println(c.equals(a+b));
 		System.out.println(c == result);
 		System.out.println(c.equals(result));
@@ -101,7 +99,6 @@ public class TestInteger {
 
         Integer aaaInteger = Integer.valueOf(null);
 		System.out.println(aaaInteger);
-		System.out.println("连这个都不会怎么好意思问别人");
 	}
 	
 	 static class mytest {
