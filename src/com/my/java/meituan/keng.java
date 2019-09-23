@@ -10,11 +10,13 @@ import com.google.common.collect.Maps;
 public class keng {
 
 	public static void main(String[] args) {
-		Map<String, String> info = Maps.newHashMap();
+		//string。valueof参数为null，空指针
+		/**Map<String, String> info = Maps.newHashMap();
         info.put("REFUND_FEE", String.valueOf(null));
-        System.out.println(JSONObject.toJSONString(info));
+        System.out.println(JSONObject.toJSONString(info));**/
         
-        
+		int diffType = 1 == 1 ? 2 : 1;  
+        System.out.println(diffType);
         
 	}
 	

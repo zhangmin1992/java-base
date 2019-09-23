@@ -28,7 +28,7 @@ public class TestDate {
 //        	System.out.println(data.lowerEndpoint() + "--" + data.upperEndpoint());
 //        });
 //        for (Range<Date> data : rangeList) {
-//        	System.out.println(new DateTime(data.lowerEndpoint()).toString("yyyy-MM-dd HH:mm:ss:SSS"));
+//        	System.out.println(data.lowerEndpoint().toString());
 //        	//System.out.println(parseDateToString(data.lowerEndpoint(),"yyyy-MM-dd HH:mm:ss") + "--" + parseDateToString(data.upperEndpoint(),"yyyy-MM-dd HH:mm:ss"));
 //		}
 		//System.out.println(DateTime.now().toString());
@@ -39,18 +39,32 @@ public class TestDate {
 //				.withSecondOfMinute(0));
 		
 		//8月19号到8月31号的数据
-//		DateTime now = DateTime.now().withMonthOfYear(8).withDayOfMonth(18).withTimeAtStartOfDay();
-//		DateTime end = DateTime.now().withMonthOfYear(8).withDayOfMonth(31).withTimeAtStartOfDay();
-//		System.out.println(now);
-//		while(now.getDayOfMonth() < end.getDayOfMonth()) {
-//			now = now.withFieldAdded(DurationFieldType.days(), 1);
-//			System.out.println(com.google.common.collect.Range.closed(now.toDate(), now.plusDays(1).minusMillis(1).toDate()));
-//		}
+		/**DateTime now = DateTime.now().withMonthOfYear(8).withDayOfMonth(18).withTimeAtStartOfDay();
+		DateTime end = DateTime.now().withMonthOfYear(8).withDayOfMonth(31).withTimeAtStartOfDay();
+		System.out.println(now);
+		while(now.getDayOfMonth() < end.getDayOfMonth()) {
+			now = now.withFieldAdded(DurationFieldType.days(), 1);
+			System.out.println(com.google.common.collect.Range.closed(now.toDate(), now.plusDays(1).minusMillis(1).toDate()));
+		}**/
 		
+		//解析字符串转日期
+		/**DateTime startDate = DateTime.parse("2019-09-03");
+		System.out.println(startDate);**/
 		
-		DateTime startDate = DateTime.parse("2019-09-03");
-		System.out.println(startDate);
+//		//打印指定日期：2019-07-31T00:00:00  2019-07-31T23:59:59
+//		DateTime start = DateTime.now().withMonthOfYear(7).withDayOfMonth(31)
+//    			.withHourOfDay(0)
+//    			.withSecondOfMinute(0)
+//    			.withMillisOfDay(0)
+//    			.withSecondOfMinute(0);
+//        DateTime end = start.plusDays(1).minusMillis(1);
+//		System.out.println(start);
+//		System.out.println(end);
 		
+		DateTime now = DateTime.now().withDayOfMonth(1).withTimeAtStartOfDay();
+//		DateTime now = DateTime.now().withMonthOfYear(7).withDayOfMonth(31).withTimeAtStartOfDay().withSecondOfMinute(0).withMillisOfDay(0).withSecondOfMinute(0);
+		Range<Date> data = com.google.common.collect.Range.closed(now.toDate(), now.plusDays(1).minusMillis(1).toDate());
+		System.out.println(parseDateToString(data.lowerEndpoint(),"yyyy-MM-dd HH:mm:ss") + "--" + parseDateToString(data.upperEndpoint(),"yyyy-MM-dd HH:mm:ss"));
 	}
 	
 	public static String parseDateToString(Date thedate, String format)
