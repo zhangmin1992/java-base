@@ -81,7 +81,6 @@ public class TestInteger {
            System.out.println(localInteger3.equals(Integer.valueOf(localInteger1.intValue() + localInteger2.intValue())));
 	     */
 	    Integer a = 100;
-	    System.out.println("连这个都不会怎么好意111思问别人");
         Integer b = 200;
         Integer c = 300;
         Integer d = a + b;
