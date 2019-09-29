@@ -3,8 +3,6 @@ package com.my.java.base;
 public class TestInteger {
 
 	public static void main(String[] args) {
-		System.out.println("问谁呢好迷茫");
-		System.out.println("会被人当作傻子的");
 		/**
 		 * Integer，String 所有的equals比较的是值 都相等
 		 * Integer 也有常量池，值在-128到127是byte的取值范围之间的，==相等，否则false
@@ -87,7 +85,6 @@ public class TestInteger {
         int result = a.intValue() + b.intValue();
 		System.out.println(c==(a+b));
 		System.out.println(c==d);
-		System.out.println("连这个都不会22怎么好意思问别人");
 		System.out.println(c.equals(a+b));
 		System.out.println(c == result);
 		System.out.println(c.equals(result));
