@@ -1,5 +1,11 @@
 package com.my.java.base.deepclone;
 
+/**
+ *  深拷贝实现：实体：Addr
+	* @Description: TODO(这里用一句话描述这个类的作用) 
+	* @author zhangmin 
+	* @date Oct 10, 2019 3:53:28 PM
+ */
 public class Addr {
 
 	private String city;

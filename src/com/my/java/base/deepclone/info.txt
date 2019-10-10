@@ -1,0 +1,9 @@
+深拷贝实现：
+Student->包含实体addr ->包含实体DetailAddr
+实体1:Student 属性 name age addr
+实体2:addr 属性 city proviceName detailAddr
+实体3:DetailAddr 属性 name
+深拷贝实现工具类：ObjectCopy
+启动类：Test
+测试是否是基本数据类型和包装类型工具类：TestIsWrapClass
+测试反射中的getMethod setMethod方法的作用：TestGetMethod

@@ -81,9 +81,7 @@ public class TestSwitch {
 //			x = x+5;//11
 //		}
 //		System.out.println(x);
-		
-	   System.out.println(5/2);
-		
+				
 	}
 	
 	 

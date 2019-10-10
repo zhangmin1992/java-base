@@ -1,5 +1,10 @@
 package com.my.java.base.deepclone;
 
+/**
+ *  测试是否是基本数据类型和包装类型
+	* @author zhangmin 
+	* @date Oct 10, 2019 3:59:49 PM
+ */
 public class TestIsWrapClass {
 
 	public static boolean isWrapClass(Class className) {
@@ -23,7 +28,7 @@ public class TestIsWrapClass {
 	public static void main(String[] args) {
 		System.out.println(isWrapClass(int.class));
 		System.out.println(isWrapClass(Integer.class));
-		
+		System.out.println(isWrapClass(String.class));
 	}
 
 }

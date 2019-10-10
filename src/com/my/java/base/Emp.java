@@ -1,10 +1,9 @@
 package com.my.java.base;
 
-import java.io.PrintStream;
-
 public class Emp
 {
   private String ename;
+  
   private int eno;
   
   public String getEname()

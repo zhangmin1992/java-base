@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="src/lib/fastjson-1.2.56.jar"/>
+	<classpathentry kind="lib" path="src/lib/fastjson-1.2.56.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/com/alibaba/fastjson/1.2.56/fastjson-1.2.56-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/min.zhang/apache-maven-localRepository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1-sources.jar">
 		<attributes>
 			<attribute name="test" value="true"/>
@@ -12,10 +12,19 @@
 			<attribute name="maven.scope" value="test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="src/lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-3.9.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/org/apache/poi/poi/3.9/poi-3.9-sources.jar"/>
 	<classpathentry kind="lib" path="src/lib/poi-ooxml-3.9.jar"/>
 	<classpathentry kind="lib" path="src/lib/poi-ooxml-schemas-3.9.jar"/>
 	<classpathentry kind="lib" path="src/lib/javassist-3.18.1-GA.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar"/>
+	<classpathentry kind="lib" path="src/lib/joda-time-2.10.3.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/joda-time/joda-time/2.10.3/joda-time-2.10.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/lib/guava-28.1-jre.jar"/>
+	<classpathentry kind="lib" path="src/lib/dozer-5.5.1.jar" sourcepath="/Users/min.zhang/apache-maven-localRepository/net/sf/dozer/dozer/5.5.1/dozer-5.5.1-sources.jar"/>
+	<classpathentry kind="lib" path="src/lib/lombok-1.18.8.jar"/>
+	<classpathentry kind="lib" path="src/lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-lang3-3.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-beanutils-1.9.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="src/lib/druid-1.0.17.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
