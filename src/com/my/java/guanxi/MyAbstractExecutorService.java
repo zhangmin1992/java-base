@@ -6,8 +6,9 @@ public abstract class MyAbstractExecutorService implements IMyExecutorService {
 		System.out.println("MyAbstractExecutorService hello" + name);
 	}
 	
-	public void MyExecutorMethod(String name) {
+	public String MyExecutorMethod(String name) {
 		System.out.println("MyAbstractExecutorService MyExecutorMethod " + name);
+		return "MyAbstractExecutorService:"+name;
 	}
 	
 	public void IMyExecutorServiceMethod2(String name) {
