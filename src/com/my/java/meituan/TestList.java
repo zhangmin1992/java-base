@@ -1,8 +1,7 @@
 package com.my.java.meituan;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -11,7 +10,21 @@ public class TestList {
 	private int i = 0;
 	
 	public static void main(String[] args) {
-		List<student> users = student.getList();
+		List<student> users = new ArrayList<student>();
+		student tempStudent = new student(1, 1, "cc");
+		student tempStudent2 = new  student(2, 2, "hh");
+		users.add(tempStudent);
+		
+		tempStudent.setName("ww");
+		users.add(tempStudent);
+		
+		tempStudent2 = tempStudent;
+		tempStudent2.setName("88");
+		users.add(tempStudent2);
+		
+		System.out.println(JSONObject.toJSONString(users));
+		
+//		List<student> users = student.getList();
 		//获取id大于16的数据列表
 		/**List<student> list = users.parallelStream()
 				.filter(studentTemp -> studentTemp.getId() > 16) 
@@ -38,14 +51,22 @@ public class TestList {
 		
 		//串行执行会等待每一个方法执行完毕后在继续执行下一个
         //List<String> names = ids.stream().map(id -> getStudentName(id)).collect(Collectors.toList());
-		TestList testList = new TestList();
-        users.parallelStream().forEach((user)->{
-        	testList.showName(user);
-		});
-		users.parallelStream().forEach((user)->{
-			testList.showTaskId(user);
-		});
-		System.out.println("执行结束"+testList.i);
+//		TestList testList = new TestList();
+//        users.parallelStream().forEach((user)->{
+//        	testList.showName(user);
+//		});
+//		users.parallelStream().forEach((user)->{
+//			testList.showTaskId(user);
+//		});
+//		System.out.println("执行结束"+testList.i);
+		
+//		try {
+//			List<String> list = null;
+//			System.out.println(list.size());
+//		} catch (Exception e) {
+//			System.out.println(e);
+//			System.out.println(e.getMessage());
+//		}
 	}
 	
 	void showName(student student) {

@@ -285,66 +285,75 @@ public class DateUtil {
 		}
 	}
     
+    public static String stampToDate(long lt){
+        String res;
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = new Date(lt);
+        res = simpleDateFormat.format(date);
+        return res;
+    }
+    
 	public static void main(String[] args) throws ParseException {
-		Date date = parseStringToDate("2018-01-08","yyyy-MM-dd");
-		System.out.println(date);
-		
-		Date date2 =  beforeAfterNDaysDate(new Date(),Calendar.DAY_OF_YEAR,-8);
-		System.out.println("---------"+date2);
-		
-		int days = daysBetween("2018-09-09","2018-09-01");
-		System.out.println(days);
-		
-		int period = compareDate(date,date2, Calendar.DATE);
-		System.out.println(period);
-		
-		Date nowDate = parseStringToDate("2018-01-06","yyyy-MM-dd");
-		boolean result = isBetween(nowDate,date2,date);
-		System.out.println(result);
-		result = isBetween(nowDate,date,date2);
-		System.out.println(result);
-		
-		int jidu = getSeason(date);
-		System.out.println(jidu);
-		
-		List<Date> list = getBetweenDates(date2,date);
-		System.out.println(list);
-		
-		List<String> list2 = getBetweenDates("2019-01-01","2019-01-01");
-		System.out.println(list2);
-		
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		String startDate = "2019-01-01";
-		String endDate = "2019-01-10";
-		Calendar tempStart = Calendar.getInstance();
-        tempStart.setTime(sdf.parse(startDate));
-        Calendar tempEnd = Calendar.getInstance();
-        tempEnd.setTime(sdf.parse(endDate));
-        tempEnd.add(Calendar.DAY_OF_YEAR, 1);
-		while (tempStart.before(tempEnd)) {
-//			System.out.println("--" + sdf.format(tempStart.getTime()));
-			System.out.println("--" + tempStart.getTime());
-            tempStart.add(Calendar.DAY_OF_YEAR, 1);
-		}
-		
-		String date3 =  beforeAfterNDaysDate("2019-01-05",Calendar.MONTH,3);
-		System.out.println(date3);
-		if(DateUtil.beforeAfterNDaysDate("2019-01-15", Calendar.MONTH, 3).compareTo("2019-08-01")<0) {
-			System.out.println("最多3个月");
-		}
-		
-		System.out.println(isDayEquals(new Date(),new Date()));
-		
-		Calendar tempStart2 = Calendar.getInstance();
-		tempStart2.setTime(new Date());
-		System.out.println(tempStart2.get(Calendar.YEAR));
-		System.out.println(tempStart2.get(Calendar.MONTH));
-		System.out.println(tempStart2.get(Calendar.DAY_OF_MONTH));
-		
-		
-		List<String> list33 = getBetweenMonths("2018-11","2019-04");
-		System.out.println(JSONObject.toJSONString(list33));
+//		Date date = parseStringToDate("2018-01-08","yyyy-MM-dd");
+//		System.out.println(date);
+//		
+//		Date date2 =  beforeAfterNDaysDate(new Date(),Calendar.DAY_OF_YEAR,-8);
+//		System.out.println("---------"+date2);
+//		
+//		int days = daysBetween("2018-09-09","2018-09-01");
+//		System.out.println(days);
+//		
+//		int period = compareDate(date,date2, Calendar.DATE);
+//		System.out.println(period);
+//		
+//		Date nowDate = parseStringToDate("2018-01-06","yyyy-MM-dd");
+//		boolean result = isBetween(nowDate,date2,date);
+//		System.out.println(result);
+//		result = isBetween(nowDate,date,date2);
+//		System.out.println(result);
+//		
+//		int jidu = getSeason(date);
+//		System.out.println(jidu);
+//		
+//		List<Date> list = getBetweenDates(date2,date);
+//		System.out.println(list);
+//		
+//		List<String> list2 = getBetweenDates("2019-01-01","2019-01-01");
+//		System.out.println(list2);
+//		
+//		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//		String startDate = "2019-01-01";
+//		String endDate = "2019-01-10";
+//		Calendar tempStart = Calendar.getInstance();
+//        tempStart.setTime(sdf.parse(startDate));
+//        Calendar tempEnd = Calendar.getInstance();
+//        tempEnd.setTime(sdf.parse(endDate));
+//        tempEnd.add(Calendar.DAY_OF_YEAR, 1);
+//		while (tempStart.before(tempEnd)) {
+////			System.out.println("--" + sdf.format(tempStart.getTime()));
+//			System.out.println("--" + tempStart.getTime());
+//            tempStart.add(Calendar.DAY_OF_YEAR, 1);
+//		}
+//		
+//		String date3 =  beforeAfterNDaysDate("2019-01-05",Calendar.MONTH,3);
+//		System.out.println(date3);
+//		if(DateUtil.beforeAfterNDaysDate("2019-01-15", Calendar.MONTH, 3).compareTo("2019-08-01")<0) {
+//			System.out.println("最多3个月");
+//		}
+//		
+//		System.out.println(isDayEquals(new Date(),new Date()));
+//		
+//		Calendar tempStart2 = Calendar.getInstance();
+//		tempStart2.setTime(new Date());
+//		System.out.println(tempStart2.get(Calendar.YEAR));
+//		System.out.println(tempStart2.get(Calendar.MONTH));
+//		System.out.println(tempStart2.get(Calendar.DAY_OF_MONTH));
+//		
+//		
+//		List<String> list33 = getBetweenMonths("2018-11","2019-04");
+//		System.out.println(JSONObject.toJSONString(list33));
 	 
+		System.out.println(stampToDate(1575258746762L));
 		 
 	}
 

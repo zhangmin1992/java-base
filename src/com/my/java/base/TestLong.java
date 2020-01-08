@@ -7,6 +7,11 @@ public class TestLong {
 		/**
 		 * 和integer一样，Long也有一个缓冲区，值在-127到128之间的数==是相等的，超过不相等
 		 */
+//		long aa = 1575279600000;
+		long ee = -123;
+		long eee = -ee;
+		System.out.println(eee);
+		
 		Long id1 = 123L;
 		Long id2 = 123L;
 		System.out.println(id1 == id2);

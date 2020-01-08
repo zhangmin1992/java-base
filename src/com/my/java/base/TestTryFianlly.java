@@ -17,10 +17,11 @@ public class TestTryFianlly {
 	public static void main(String[] args) {
 //		System.out.println(TestTryFinally());
 //		System.out.println(TestTryFinally1());
-		System.out.println(TestTryFinally2());
-		System.out.println(TestTryFinally4());
+//		System.out.println(TestTryFinally2());
+//		System.out.println(TestTryFinally4());
 //		System.out.println(TestTryFinally3());
-		System.out.println(JSONObject.toJSONString(TestTryFinally5()));
+//		System.out.println(JSONObject.toJSONString(TestTryFinally5()));
+		System.out.println(JSONObject.toJSONString(TestTryFinally6()));
 	}
 	
 	public static int TestTryFinally() {
@@ -105,6 +106,17 @@ public class TestTryFianlly {
 			return a;
 		}finally {
 			a.setName("cp2");
+		}
+		System.out.println("----");
+		return a;
+	}
+	
+	public static A TestTryFinally6() {
+		A a = new A("cp");
+		try {
+		   return new A("cp2");
+		} catch (Exception e) {
+			a.setName("cp1");
 		}
 		System.out.println("----");
 		return a;

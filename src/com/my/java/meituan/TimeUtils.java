@@ -53,7 +53,7 @@ public class TimeUtils {
         DateTime globalEnd = new DateTime(timeRange.upperEndpoint());
         DateTime start = new DateTime(timeRange.lowerEndpoint());
         while (true) {
-            DateTime end = start.plus(internal).minusMillis(1);
+            DateTime end = start.plus(internal);
 
             if (end.isAfter(globalEnd)) {
                 end = globalEnd;
