@@ -1,5 +1,7 @@
 package com.my.java.base;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.alibaba.fastjson.JSONObject;
 
 public class TestString {
@@ -55,25 +57,52 @@ public class TestString {
 	    
 	    System.out.println(reverse("1234567"));
 	    
-	    //错误写法
+	    //错误写法,ArrayIndexOutOfBoundsException: 0
 	    //String[] result = {};
 	    String[] result = new String[3];
 	    result[0]="22";
 	    result[1]="22";
 	    result[2]="22";
 	    System.out.println(JSONObject.toJSONString(result));
+	   
 	    
-	    String store = null;
-	    if(store == null || result[4] == null) {
-	    	System.out.println("999");
+	    String data = "我  也是,我们不能,忘记出新的时候";
+	    if (StringUtils.containsAny(data, ",")) {
+	    	String resultData = "," + data + ",";
+	    	System.out.println(resultData);
 	    }
+	    boolean isQuotation = false;
+        for (Character c : data.toCharArray()) {
+            if (StringUtils.equals(c.toString(), " ")) {
+                continue;
+            }
+            if (StringUtils.isWhitespace(c.toString())) {
+                isQuotation = true;
+                break;
+            }
+        }
+        System.out.println(isQuotation);
+        
+        String test = "ddd";
+        System.out.println(StringUtils.isEmpty(test));
+        if (s1 != null && !StringUtils.isEmpty(test)) {
+        	System.out.println("dddd");
+        }
 	    
 	}
 	
+	/**
+	 * 改变字符串
+	 * @param s
+	 */
 	public static void change(String s) {
 		s = "444";
 	}
 	
+	/**
+	 * 改变字符串
+	 * @param sb
+	 */
 	public static void change(StringBuffer sb) {
         sb.append("itcast");
     }

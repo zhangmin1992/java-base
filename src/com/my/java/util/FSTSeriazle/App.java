@@ -1,10 +1,6 @@
 package com.my.java.util.FSTSeriazle;
 
-import java.io.Serializable;
-
 import com.alibaba.fastjson.JSONObject;
-
-import lombok.Data;
 
 /**
  *  需要引入jar包：
@@ -19,8 +15,8 @@ import lombok.Data;
 public class App {
 
 	public static void main(String[] args) {
-		User bean = new User();  
-        bean.setUsername("xxxxx");  
+        MUser bean = new MUser();
+        bean.setUsername("xxxxx");
         bean.setPassword("123456");  
         bean.setAge(1000000);  
         System.out.println("序列化 ， 反序列化 对比测试：");  
@@ -28,8 +24,8 @@ public class App {
         long time1 = System.currentTimeMillis();  
         for (int i = 0; i < 10000; i++) {  
             byte[] serialize = FSTSerializationUtils.serialize(bean);  
-            size += serialize.length;  
-            User u = (User) FSTSerializationUtils.unserialize(serialize); 
+            size += serialize.length;
+            MUser u = (MUser) FSTSerializationUtils.unserialize(serialize);
             System.out.println(JSONObject.toJSONString(u));
         }  
         System.out.println("fst序列化方案[序列化10000次]耗时：" + (System.currentTimeMillis() - time1) + "ms size:=" + size);
@@ -38,8 +34,8 @@ public class App {
         long time2 = System.currentTimeMillis();  
         for (int i = 0; i < 10000; i++) {  
             byte[] serialize = FSTSerializationUtils.jdkserialize(bean);  
-            size += serialize.length;  
-            User u = (User) FSTSerializationUtils.jdkdeserialize(serialize); 
+            size += serialize.length;
+            MUser u = (MUser) FSTSerializationUtils.jdkdeserialize(serialize);
             System.out.println(JSONObject.toJSONString(u));
         }  
         System.out.println("jdk序列化方案[序列化10000次]耗时：" + (System.currentTimeMillis() - time2) + "ms size:=" + size);
@@ -47,13 +43,8 @@ public class App {
 	}
 
 }
-@Data 
-class User implements Serializable{  
-  
-    private String username;  
-    private int age;  
-    private String password;  
-}
+
+
 
 class myThread extends Thread {
 	

@@ -69,7 +69,7 @@ public class TestDate {
 	
 		    //退款
 //		System.out.println((new Long("21558134976"))% 256);
-		System.out.println((new Long("21620264244")/2)% 256);
+		System.out.println((new Long("21572163832")/2)% 256);
 //		System.out.println((new Long("21543815360")/2)% 256);
 //		System.out.println((new Long("21543815858")/2)% 256);
 //		System.out.println((new Long("21543815858")/2)% 256);
