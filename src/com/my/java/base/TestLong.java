@@ -3,6 +3,7 @@ package com.my.java.base;
 
 public class TestLong {
 
+
 	public static void main(String[] args) {
 		/**
 		 * 和integer一样，Long也有一个缓冲区，值在-127到128之间的数==是相等的，超过不相等
