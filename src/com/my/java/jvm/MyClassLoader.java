@@ -12,7 +12,7 @@ public class MyClassLoader extends ClassLoader {
 
 	@Override
 	protected Class<?> findClass(String name) throws ClassNotFoundException {
-		File file = new File("/Users/yp-tc-m-7129/2018/mybean.class");
+		File file = new File("/Users/zhangmin/Desktop/TestLoaderMain.class");
         try
         {
             byte[] bytes = getClassBytes(file);

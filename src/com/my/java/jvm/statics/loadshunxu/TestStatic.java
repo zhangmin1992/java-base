@@ -1,4 +1,4 @@
-package com.my.java.jvm.statics;
+package com.my.java.jvm.statics.loadshunxu;
 
 public class TestStatic {
 
