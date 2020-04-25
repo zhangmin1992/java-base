@@ -1,6 +1,5 @@
 package com.my.java.base;
 
-
 public class TestLong {
 
 
@@ -8,11 +7,10 @@ public class TestLong {
 		/**
 		 * 和integer一样，Long也有一个缓冲区，值在-127到128之间的数==是相等的，超过不相等
 		 */
-//		long aa = 1575279600000;
 		long ee = -123;
 		long eee = -ee;
 		System.out.println(eee);
-		
+
 		Long id1 = 123L;
 		Long id2 = 123L;
 		System.out.println(id1 == id2);
@@ -26,11 +24,11 @@ public class TestLong {
 		/**
 		 * 基本类型==包装类型，比较的是数值是否相等
 		 */
-		Long id3 = 200L;
 		String[] strArray = new String[200];
+		Long id3 = 200L;
 		System.out.println(id3 == strArray.length);
 		System.out.println(id1 >= id2);
-		
+
 		
 		/**
 		 * 装箱就是  自动将基本数据类型转换为包装器类型；

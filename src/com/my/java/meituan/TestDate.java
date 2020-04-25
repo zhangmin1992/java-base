@@ -1,14 +1,11 @@
 package com.my.java.meituan;
 
+import org.joda.time.DateTime;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
-
-import org.joda.time.DateTime;
-
-import com.google.common.collect.Range;
 
 public class TestDate {
 
@@ -16,21 +13,25 @@ public class TestDate {
 		//显示当天0分 Thu Aug 29 00:00:00 CST 2019
 		//System.out.println(DateTime.now().withTimeAtStartOfDay().toDate());
 		
-		DateTime start2 = DateTime.now().withYear(2019).withMonthOfYear(12).withDayOfMonth(27).withTimeAtStartOfDay();
-		System.out.println(start2);
-		DateTime end = start2.plusDays(1).withMillisOfDay(0).withMillisOfSecond(0).withSecondOfMinute(0);
-		System.out.println(end);
-		 
-		Range<Date> range = com.google.common.collect.Range.closed(start2.toDate(), end.toDate());
-        List<Range<Date>> rangeList = TimeUtils.spiltPayTime(range);
-        for (Range<Date> data : rangeList) {
-        	
-//        	System.out.println(data.lowerEndpoint().getTime() + "--" + data.upperEndpoint().getTime());
-        	System.out.println(parseDateToString(data.lowerEndpoint(),"yyyy-MM-dd HH:mm:ss") + "--" + parseDateToString(data.upperEndpoint(),"yyyy-MM-dd HH:mm:ss"));
-		  }
+//		DateTime start2 = DateTime.now().withYear(2019).withMonthOfYear(12).withDayOfMonth(27).withTimeAtStartOfDay();
+//		System.out.println(start2);
+//		DateTime end = start2.plusDays(1).withMillisOfDay(0).withMillisOfSecond(0).withSecondOfMinute(0);
+//		System.out.println(end);
+//		 
+//		Range<Date> range = com.google.common.collect.Range.closed(start2.toDate(), end.toDate());
+//        List<Range<Date>> rangeList = TimeUtils.spiltPayTime(range);
+//        for (Range<Date> data : rangeList) {
+//        	
+////        	System.out.println(data.lowerEndpoint().getTime() + "--" + data.upperEndpoint().getTime());
+//        	System.out.println(parseDateToString(data.lowerEndpoint(),"yyyy-MM-dd HH:mm:ss") + "--" + parseDateToString(data.upperEndpoint(),"yyyy-MM-dd HH:mm:ss"));
+//		  }
+        
 //        Long ccc = 1577367515000L;
 //        System.out.println(parseDateToString(new Date(ccc),"yyyy-MM-dd HH:mm:ss"));
         
+		DateTime yesterdayAgo = new DateTime().now().plusDays(-1).withMillisOfDay(0).withMillisOfSecond(0).withSecondOfMinute(0);
+		Date yesterday = new Date(yesterdayAgo.getMillis());
+		System.out.println(parseDateToString(yesterday,"yyyy-MM-dd HH:mm:ss"));
         
 		//System.out.println(DateTime.now().toString());
 //		System.out.println(DateTime.now().withFieldAdded(DurationFieldType.days(), -1)
@@ -69,7 +70,7 @@ public class TestDate {
 	
 		    //退款
 //		System.out.println((new Long("21558134976"))% 256);
-		System.out.println((new Long("21572163832")/2)% 256);
+//		System.out.println((new Long("21572163832")/2)% 256);
 //		System.out.println((new Long("21543815360")/2)% 256);
 //		System.out.println((new Long("21543815858")/2)% 256);
 //		System.out.println((new Long("21543815858")/2)% 256);
@@ -129,7 +130,14 @@ public class TestDate {
 //		    System.out.println((new Long("21518346579")/2)% 256);
 //		    System.out.println((new Long("21518432195")/2)% 256);
 //		    System.out.println((new Long("21518701303")/2)% 256);
-//		    System.out.println((new Long("21518714516")/2)% 256);
+		    System.out.println((new Long("21705844851")/2)% 256);
+//		    System.out.println((new Long("21557110717")/2)% 256);
+//		    System.out.println((new Long("21556804518")/2)% 256);
+//		    System.out.println((new Long("21556799734")/2)% 256);
+//		    System.out.println((new Long("21556709507")/2)% 256);
+		
+		
+//		System.out.println((new Long("21706123914"))% 8);
 			 
 	}
 	

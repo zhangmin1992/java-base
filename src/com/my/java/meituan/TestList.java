@@ -1,9 +1,9 @@
 package com.my.java.meituan;
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.alibaba.fastjson.JSONObject;
 
 public class TestList {
 
@@ -21,6 +21,7 @@ public class TestList {
 		tempStudent2 = tempStudent;
 		tempStudent2.setName("88");
 		users.add(tempStudent2);
+ 		System.out.println("ffffff");
 		
 		System.out.println(JSONObject.toJSONString(users));
 		
