@@ -59,6 +59,7 @@ public class TestGetMethod {
 		person.setName("jahahha");
 		person target = new person();
 		target = person;
+		//得到方法的全路径地址
 		Method m1 = person.getClass().getMethod("hello", null);
 		Method m2= person.getClass().getMethod("speak", String.class);
 		Method m3 = person.getClass().getMethod("speak", String.class,int.class);
@@ -84,8 +85,8 @@ public class TestGetMethod {
 		Object returnVal2 = mget.invoke(person);
 		System.out.println(returnVal2);
 		System.out.println(target.getName());
-		
-		Method mget2 = person.getClass().getMethod("getmychinesename", null);
+
+		Method mget2 = person.getClass().getMethod("getMyChineseName", null);
 		System.out.println(mget2);
 	}
 

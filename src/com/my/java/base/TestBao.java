@@ -1,15 +1,9 @@
 package com.my.java.base;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import com.alibaba.fastjson.JSONObject;
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 /**
  *  当变量作为类成员使用时，java才确保给定其初始值
  *  
- *   如果一边是包装类，一边是基本类型时；或者使用了<、>、<=等比较符，都会进行值比较；
+ *   如果一边是包装类，一边是基本类型时,会进行值比较；
  *   如果发现==两边都是对象，它就直接比较引用，而不是值
 	* @Description: TODO(这里用一句话描述这个类的作用) 
 	* @author zhangmin 
@@ -31,13 +25,21 @@ public class TestBao {
 		int a = 128;
 		Integer b = 128;
 		System.out.println(a==b);
-		
+
+		Integer a1 = new Integer(12);
+		Integer a2 = new Integer(12);
+		System.out.println(a1 == a2);
+
 		bao aa = new bao();
-		aa.setA(12);
+		aa.setA(13);
 		bao bb = new bao();
 		bb.setA1(12);
-		System.out.println(aa.getA() == bb.getA1());
- 
+		System.out.println(aa.getA1() == bb.getA1());
+        System.out.println(aa.getA1().equals(bb.getA1()));
+        System.out.println(aa.getA() == bb.getA1());
+		System.out.println(aa.getA1() > bb.getA1());
+
+
 	}
 	
 	static class bao {
