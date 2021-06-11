@@ -1,7 +1,5 @@
 package com.my.java.suanfa.ListNode;
 
-import com.alibaba.fastjson.JSONObject;
-
 import java.util.*;
 
 /**
@@ -11,21 +9,75 @@ import java.util.*;
  * 二叉树的非递归方式-先序 中序 后序
  * 二叉树的层次遍历
  * 二叉树的垂直遍历
+ * 二叉树的深度
  *
  */
 public class TestListNode {
     public static void main(String[] args) {
-        MyListNode head = new MyListNode(4);
-        insert(head,1);
-        insert(head,6);
-        insert(head,2);
-        insert(head,3);
-        insert(head,8);
-        insert(head,5);
+        //二叉树的插入
+//        MyListNode head = new MyListNode(4);
+//        insert(head,1);
+//        insert(head,6);
+//        insert(head,2);
+//        insert(head,3);
+//        insert(head,8);
+//        insert(head,5);
 
-        ArrayList<Integer> result = new ArrayList<>();
-        Map<Integer, List<MyListNode>> integerListMap = chuizhiTraversal(head);
-        System.out.println(JSONObject.toJSONString(result));
+        MyListNode head = new MyListNode(4);
+        head.left = new MyListNode(1);
+        head.left.right = new MyListNode(7);
+        head.right = new MyListNode(4);
+        head.left.left = new MyListNode(5);
+        head.left.left.right = new MyListNode(2);
+        head.left.left.right.left = new MyListNode(3);
+        head.right.left = new MyListNode(2);
+
+        //递归先序
+        ArrayList<Integer> result = new ArrayList();
+        preorderTraversal(head,result);
+        System.out.println(result);
+
+        //递归中序
+        result = new ArrayList();
+        inorderTraversal(head,result);
+        System.out.println(result);
+
+        //递归后序
+        result = new ArrayList();
+        postorderTraversal(head,result);
+        System.out.println(result);
+
+        //非递归先序
+        result = new ArrayList();
+        System.out.println(preorderTraversal(head));
+
+        //非递归中序
+        result = new ArrayList();
+        System.out.println(inorderTraversal(head));
+
+        //非递归后序
+        result = new ArrayList();
+        System.out.println(postorderTraversal(head));
+
+        //层次遍历
+        result = new ArrayList();
+        System.out.println(cengciTraversal(head));
+
+        //垂直遍历
+        Map<Integer,List<MyListNode>> resultMap = chuizhiTraversal(head);
+        Iterator iterator = resultMap.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<Integer,List<MyListNode>> entry =(Map.Entry<Integer,List<MyListNode>>)iterator.next();
+            System.out.println(entry.getKey()+"---");
+            for(MyListNode temp : entry.getValue()) {
+                System.out.println(temp.val);
+            }
+        }
+
+        //递归求二叉树深度
+        System.out.println(depeth(head));
+        //利用层次遍历非递归求二叉树深度
+        System.out.println(depethv2(head));
     }
 
     //二叉树的插入
@@ -195,6 +247,7 @@ public class TestListNode {
         return result;
     }
 
+    //垂直遍历二叉树，返回各个等级的列表
     public static Map<Integer,List<MyListNode>> chuizhiTraversal(MyListNode root) {
         if (root == null) {
             return null;
@@ -246,6 +299,45 @@ public class TestListNode {
             }
         }
         return result;
+    }
+
+    //递归求二叉树深度
+    public static int depeth(MyListNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = depeth(root.left);
+        int right = depeth(root.right);
+        return left>right?left+1:right+1;
+    }
+
+    //利用层次遍历非递归求二叉树深度
+    public static int depethv2(MyListNode root) {
+        if (root == null) {
+            return 0;
+        }
+        Queue<MyListNode> queue = new LinkedList<MyListNode>();
+        queue.offer(root);
+        int depth = 0;
+        int count = 0;
+        int nextCount = 1;
+        while (!queue.isEmpty()) {
+            MyListNode pop = ((LinkedList<MyListNode>) queue).pop();
+            count ++;
+            if (pop.left != null) {
+                queue.offer(pop.left);
+            }
+            if (pop.right != null) {
+                queue.offer(pop.right);
+            }
+            //已经弹出来的数量 == 下一个等级的节点数量，说明当前层次遍历完了
+            if (count == nextCount) {
+                count = 0;
+                nextCount = queue.size();
+                depth++;
+            }
+        }
+        return depth;
     }
 }
 
