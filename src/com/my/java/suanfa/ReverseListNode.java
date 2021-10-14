@@ -20,17 +20,23 @@ public class ReverseListNode {
 		Node n2 = new Node(2,n3);
 		Node n1 = new Node(1,n2);
 		showNode(n1);
-		Node newNode = ReverseList_buzu_k(n1,2);
+//		Node newNode = reverseList(n1);
+		Node newNode = ReverseList_buzu_k(n1,4);
 		showNode(newNode);
 	}
-	public static void showNode(Node head) {
-		while(head != null) {
-			System.out.print(head.val  + "->");
-			head = head.next;
-		}
-		System.out.println();
+	public static String showNode(Node node) {
+        if (node == null) {
+            return  "";
+        }
+        StringBuffer sb = new StringBuffer();
+        while (node != null) {
+            sb.append(node.val+"->");
+            node = node.next;
+        }
+        return sb.toString().substring(0,sb.length()-2);
 	}
-	
+
+	//链表全部反转
 	public static Node reverseList(Node node) {
 		  Node pre = null;
 		  Node next = null;
@@ -42,9 +48,9 @@ public class ReverseListNode {
 		  }
 		  return pre;
 	}
-	
+
+	//链表第K个位置反转，比如1->2->3->4->5->6->7 执行后结果为：1->2->3->5->4->6->7
 	public static Node ReverseList_buzu_k(Node head, int k){
-		int size = 6;
 		Node ahead = head;
 		int temp;
 		int count = 0;
@@ -69,6 +75,7 @@ public class ReverseListNode {
         return count;
     }
 }
+
 class Node {
 	int val;
 	Node next = null;
@@ -77,7 +84,7 @@ class Node {
         this.val = Data;  
     } 
 	
-	public Node(int val,Node next) {
+	public Node(int val, Node next) {
 		this.val = val;
 		this.next = next;
 	}

@@ -7,7 +7,7 @@ public class MyListNode {
     MyListNode(int val) {
         this.val = val;
     }
-    MyListNode(int val,MyListNode left,MyListNode right) {
+    MyListNode(int val, MyListNode left, MyListNode right) {
         this.val = val;
         this.left = left;
         this.right = right;

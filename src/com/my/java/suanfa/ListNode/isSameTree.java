@@ -24,7 +24,7 @@ public class isSameTree {
         System.out.println(isSame(head,head2));
     }
 
-    public static boolean isSame(MyListNode p,MyListNode q) {
+    public static boolean isSame(MyListNode p, MyListNode q) {
         if (p != null && q != null && p.val == q.val) {
             return isSame(p.left,q.left) && isSame(p.right,q.right);
         }

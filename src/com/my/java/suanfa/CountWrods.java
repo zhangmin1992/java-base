@@ -1,8 +1,8 @@
 package com.my.java.suanfa;
 
-import java.util.LinkedHashMap;
-
 import com.alibaba.fastjson.JSONObject;
+
+import java.util.LinkedHashMap;
 
 /**
  * 一句话对单词计数，句子包括，。空格等

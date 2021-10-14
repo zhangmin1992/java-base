@@ -9,28 +9,28 @@ import java.util.*;
  * 二叉树的非递归方式-先序 中序 后序
  * 二叉树的层次遍历
  * 二叉树的垂直遍历
- * 二叉树的深度
+ * 递归-非递归方式求二叉树的深度
  *
  */
 public class TestListNode {
     public static void main(String[] args) {
         //二叉树的插入
-//        MyListNode head = new MyListNode(4);
-//        insert(head,1);
-//        insert(head,6);
-//        insert(head,2);
-//        insert(head,3);
-//        insert(head,8);
-//        insert(head,5);
-
         MyListNode head = new MyListNode(4);
-        head.left = new MyListNode(1);
-        head.left.right = new MyListNode(7);
-        head.right = new MyListNode(4);
-        head.left.left = new MyListNode(5);
-        head.left.left.right = new MyListNode(2);
-        head.left.left.right.left = new MyListNode(3);
-        head.right.left = new MyListNode(2);
+        insert(head,1);
+        insert(head,6);
+        insert(head,2);
+        insert(head,3);
+        insert(head,8);
+        insert(head,5);
+
+//        MyListNode head = new MyListNode(4);
+//        head.left = new MyListNode(1);
+//        head.left.right = new MyListNode(7);
+//        head.right = new MyListNode(4);
+//        head.left.left = new MyListNode(5);
+//        head.left.left.right = new MyListNode(2);
+//        head.left.left.right.left = new MyListNode(3);
+//        head.right.left = new MyListNode(2);
 
         //递归先序
         ArrayList<Integer> result = new ArrayList();

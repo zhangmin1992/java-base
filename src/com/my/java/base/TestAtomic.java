@@ -24,7 +24,7 @@ public class TestAtomic {
 
     public static void main(String[] args) throws InterruptedException {
         int a[] = {3, 6, 8};
-        AtomicIntegerArray atomicIntegerArray = new java.util.concurrent.atomic.AtomicIntegerArray(a);
+        AtomicIntegerArray atomicIntegerArray = new AtomicIntegerArray(a);
 
         /**
          * 以原子方式将位置 i 的元素设置为给定值，并返回旧值。

@@ -1,8 +1,5 @@
 package com.my.java.suanfa;
 
-import com.alibaba.fastjson.JSONObject;
-import com.sun.xml.internal.ws.util.StringUtils;
-
 public class ReverseStringSequence {
 
 	public static String reverseStringSequence(String str) {

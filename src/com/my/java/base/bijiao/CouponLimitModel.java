@@ -43,6 +43,8 @@ public class CouponLimitModel implements Serializable {
     private Set<Integer> dealIds;
     // 供应商
     private Set<Integer> suppliers;
+    // 场次时段限制
+    private List<ShowTimeLimit> showTimeLimits;
     // 用户使用数量限制
     private int maxCountPerUser;
     // 特殊厅类型
@@ -89,6 +91,14 @@ public class CouponLimitModel implements Serializable {
      * 定价券是否可以补差价，0：不可以；1：可以
      */
     private int fixCouponCanAddAmount;
+
+    public List<ShowTimeLimit> getShowTimeLimits() {
+        return showTimeLimits;
+    }
+
+    public void setShowTimeLimits(List<ShowTimeLimit> showTimeLimits) {
+        this.showTimeLimits = showTimeLimits;
+    }
 
     public Set<Integer> getCinemaGroups() {
         return cinemaGroups;

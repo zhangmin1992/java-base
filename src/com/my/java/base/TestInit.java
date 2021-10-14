@@ -33,6 +33,7 @@ public class TestInit {
         System.out.println(obj.getChars() + 5);
     }
 }
+
 class Init {
     private char chars;
     private byte bytes;

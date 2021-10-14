@@ -25,7 +25,7 @@ public class TestStatic extends Parent {
   public String s_Field = "子类--变量";
   public static String nameString = getName();
   public String name2 = getName2();
-  public myClass myClass = new myClass();
+  public com.my.java.base.myClass myClass = new myClass();
 
   /* 静态初始化块 */
   static {

@@ -1,7 +1,5 @@
 package com.my.java.base;
 
-import sun.java2d.cmm.kcms.CMM;
-
 /**
  * 功能描述: float bfloat = 3.31F; double aDouble = 9.8; 相加会变成double 类型，这个值有尾差13.109999942779542
  * @Author: zhangmin

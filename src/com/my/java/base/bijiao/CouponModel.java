@@ -35,6 +35,8 @@ public class CouponModel implements Serializable, Comparable<CouponModel> {
      *
      **/
     private int cardType;
+
+    private int limitNum;
     // 通兑券类型
 //    private String subCardType;
     private SubCardTypeEnum subCardType;
@@ -82,6 +84,35 @@ public class CouponModel implements Serializable, Comparable<CouponModel> {
     private String name;
 
     public CouponModel() {
+    }
+
+    public int getLimitNum() {
+        int limitNum = 0;
+        if (couponLimitModel != null) {
+            if (couponLimitModel.getMemberCardSet() != null && couponLimitModel.getMemberCardSet().size() > 0) {
+                limitNum++;
+            }
+            if (couponLimitModel.getMovieSet() != null && couponLimitModel.getMovieSet().size() > 0) {
+                limitNum++;
+            }
+            if (couponLimitModel.getMovieDimTypeSet() != null && couponLimitModel.getMovieDimTypeSet().size() > 0) {
+                limitNum++;
+            }
+            if (couponLimitModel.getHallSet() != null && couponLimitModel.getHallSet().size() > 0) {
+                limitNum++;
+            }
+            if (couponLimitModel.getCityIds() != null && couponLimitModel.getCityIds().size() > 0) {
+                limitNum++;
+            }
+            if (couponLimitModel.getShowTimeLimits() != null && couponLimitModel.getShowTimeLimits().size() > 0) {
+                limitNum++;
+            }
+        }
+        return limitNum;
+    }
+
+    public void setLimitNum(int limitNum) {
+        this.limitNum = limitNum;
     }
 
     public String getCode() {
@@ -425,6 +456,10 @@ public class CouponModel implements Serializable, Comparable<CouponModel> {
             if (!endTime.equals(o.getEndTime())) {
                 return endTime.compareTo(o.getEndTime());
             }
+        }
+        //其他数量限制
+        if (this.getLimitNum() != o.getLimitNum()) {
+            return this.getLimitNum() - o.getLimitNum();
         }
         // 商家券排序靠前
         if (costType != o.getCostType()) {

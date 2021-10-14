@@ -34,7 +34,7 @@ public class TreeLuJingHe {
     }
 
     //递归找所有叶子节点，可用于求和
-    public static ArrayList<Integer> getTreeYeZiJieDian(MyListNode root,ArrayList<Integer> result) {
+    public static ArrayList<Integer> getTreeYeZiJieDian(MyListNode root, ArrayList<Integer> result) {
         if (root == null) {
             return result;
         }
@@ -88,7 +88,7 @@ public class TreeLuJingHe {
         return listAll;
     }
 
-    public static void FindPathV2(MyListNode root, int target,Stack<Integer> stack,ArrayList<ArrayList<Integer>> listAll) {
+    public static void FindPathV2(MyListNode root, int target, Stack<Integer> stack, ArrayList<ArrayList<Integer>> listAll) {
         if(root == null)
             return;
 

@@ -1,6 +1,5 @@
 package com.my.java.suanfa.ListNode;
 
-import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -18,7 +17,7 @@ public class LianXuTreeList {
         head.right.left.right.left = new MyListNode(7);
 
         //递归求二叉树的最长序列长度
-        System.out.println(longestConsecutive(head));
+//        System.out.println(longestConsecutive(head));
 
 
 //        //二叉树的最长序列长度

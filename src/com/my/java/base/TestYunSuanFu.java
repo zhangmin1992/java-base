@@ -36,6 +36,7 @@ public class TestYunSuanFu {
         }
     }
 }
+
 class yunsuanfu {
 
     private String string;
