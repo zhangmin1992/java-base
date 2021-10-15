@@ -14,23 +14,33 @@ public class Test {
 		DetailAddr detailAddr = new DetailAddr("xiangxidizhi");
 		Addr addr = new Addr("city", "dizhi",detailAddr);
 		Student student = new Student("name", 11, addr);
-		Student target = (Student) ObjectCopy.copy(student);
-		System.out.println(JSONObject.toJSONString(target));
-		
-		/**
-		 * 属性2次依赖 Student-》Addr
-		 */
-		target.getAddr().setCity("cccccc");
-		System.out.println(JSONObject.toJSONString(target));
-		System.out.println(JSONObject.toJSONString(student));
-		
-		/**
-		 * 属性3次依赖 Student-》Addr-》DetailAddr
-		 */
-		DetailAddr detailAddr2 = new DetailAddr("222222");
-		target.getAddr().setDetailAddr(detailAddr2);
-		System.out.println(JSONObject.toJSONString(target));
-		System.out.println(JSONObject.toJSONString(student));
+
+        Student target = (Student) ObjectCopy.copy(student);
+        System.out.println(JSONObject.toJSONString(target));
+
+        /**
+         * 属性2次依赖 Student-》Addr
+         */
+        target.getAddr().setCity("cccccc");
+        System.out.println(JSONObject.toJSONString(target));
+        System.out.println(JSONObject.toJSONString(student));
+
+        /**
+         * 属性3次依赖 Student-》Addr-》DetailAddr
+         */
+        DetailAddr detailAddr2 = new DetailAddr("222222");
+        target.getAddr().setDetailAddr(detailAddr2);
+        System.out.println(JSONObject.toJSONString(target));
+        System.out.println(JSONObject.toJSONString(student));
+
+        //测试数据，ArrayList的clone是浅拷贝，两个对象的值都被盖成了zaizheli
+//        ArrayList<Student> arr = new ArrayList<>();
+//        arr.add(student);
+//        arr.add(student);
+//        student.setMyChineseName("zaizheli");
+//        ArrayList<Student> arr2 = (ArrayList<Student>) arr.clone();
+//        System.out.println(JSONObject.toJSONString(arr));
+//        System.out.println(JSONObject.toJSONString(arr2));
 	}
 
 }

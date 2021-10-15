@@ -59,7 +59,8 @@ public class TestInteger {
 	     * int result = inta + intb;
 	     * 属于int和Integer 的==比较,比较的是值
 	     * 
-	     * 对于c.equals(a+b) 的解释，a+b包含了算术运算，因此触发了自动拆箱，调用各自的intValue，在做累加操作，相当于
+	     * 对于c.equals(a+b) 的解释，a+b包含了算术运算，因此触发了自动拆箱，
+         * 调用各自的intValue，在做累加操作，相当于
 	     * int inta = a.intValue();
 	     * int intb = b.intValue();
 	     * int result = inta + intb;

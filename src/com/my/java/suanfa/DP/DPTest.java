@@ -75,8 +75,15 @@ public class DPTest {
 //          int[] arr = new int[] {-2,1,-3,4,-1,2,1,-5,4};
 //          System.out.println(getMaxZiXuHe(arr));
 
-          int[] arr = new int[] {10,9,2,5,3,7,101,18};
-          System.out.println(lengthOfLIS(arr));
+//          int[] arr = new int[] {10,9,2,5,3,7,101,18};
+//          System.out.println(lengthOfLIS(arr));
+
+          int[][] arr = new int[4][4];
+          arr[0] =  new int[]{2};
+          arr[1] =  new int[]{3,4};
+          arr[2] =  new int[]{6,5,7};
+          arr[3] =  new int[]{4,1,8,3};
+          System.out.println(getMinDistance2(arr));
     }
 
     public static int calcStep(int n) {
@@ -269,5 +276,27 @@ public class DPTest {
             max = Math.max(max,dp[i]);
         }
         return max;
+    }
+
+    public static int getMinDistance2(int[][] arr) {
+        if (arr == null || arr.length == 0) {
+            return 0;
+        }
+        int[][] dp = new int[arr.length][arr.length];
+        dp[0][0] = arr[0][0];
+        for (int i = 1; i < arr.length; i++) {
+            dp[i][0] = dp[i - 1][0] + arr[i][0];
+            dp[i][i] = dp[i - 1][i - 1] + arr[i][i];
+        }
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 1; j < i; j++) {
+                dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j]) + arr[i][j];
+            }
+        }
+        int min = dp[arr.length - 1][0];
+        for (int k = 0; k < arr.length; k++) {
+            min = Math.min(dp[arr.length - 1][k], min);
+        }
+        return min;
     }
 }
