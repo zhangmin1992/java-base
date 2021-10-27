@@ -6,6 +6,16 @@ import org.apache.commons.lang3.StringUtils;
 public class TestString {
 
 	public static void main(String[] args) {
+	    //看起来str1和str指向的是同一个对象，但是实际上更改双方任意一个值都不会改变另一方的值
+        String str = "I love java";
+        //这句代码执行过之后，又创建了一个新的对象“I love java”， 而引用str1重新指向了这个新的对象，原来的对象“”还在内存中存在，并没有改变
+        String str1 = str;
+
+        //str.replace("java", "hh");
+        str = str.replace("java", "hh");
+        System.out.println("after replace str:" + str);
+        System.out.println("after replace str1:" + str1);
+
 		/**
 		 * 都知道equals比较的是值，因此相等
 		 * string和integer一样，有一个常量缓冲池，常量池存在于方法区中，先在常量池中创建”abc“，并指向s1,
