@@ -1,5 +1,14 @@
 package com.my.java.suanfa.ListNode;
 
+/**
+ * 功能描述:
+ * hasCycle 判断链表中是否有环 ----- 有关单链表中环的问题
+ * hasCycleWithFindFirstCommonNode 判断是否有环，有的话找到环的起始节点
+ * findFirstCommonNode 求两个链表相交的节点,
+ *         方法一比较繁琐，需要求每个链表的长度，让长的链表走一下固定步数，一起走，相遇的时候就是相交的节点
+ * findFirstCommonNodeV2 求两个链表相交的节点,
+ *          方法二比较简单，每个链表都开始走，当链表走完的时候交换到另一个链表的头节点开始走，最后相遇的时候就是相交的节点
+ */
 public class FirstCommonNodeList {
     static class Node {
         int data;
@@ -12,25 +21,30 @@ public class FirstCommonNodeList {
     }
 
     public static void main(String[] args) {
-        Node five = new Node(null, 5);
+        Node seven = new Node(null, 7);
+        Node six = new Node(seven, 6);
+        Node five = new Node(six, 5);
         Node four = new Node(five, 4);
         Node three = new Node(four, 3);
         Node two = new Node(three, 2);
         Node one = new Node(two, 1);
-//        five.next = two;
+
+        //加上环，判断是否有环，找出环的首个开始节点的位置的测试部分
+        /*seven.next = four;
+        System.out.println(hasCycle(one));
+        Node node = hasCycleWithFindFirstCommonNode(one);
+        System.out.println(node.data);*/
 
 
-        Node three2 = new Node(null, 5);
+        Node three2 = new Node(four, 5);
         Node two2 = new Node(three2, 4);
         Node one2 = new Node(two2, 6);
 
         Node node1 = one, node2 = one2;
         Node node = findFirstCommonNode(node1, node2);
         System.out.println(node.data);
-
-        System.out.println(getNumbers(node));
-
-//        System.out.println(hasCycle(one));
+        Node nodeV2 = findFirstCommonNodeV2(node1, node2);
+        System.out.println(nodeV2.data);
     }
 
     /*
@@ -64,6 +78,24 @@ public class FirstCommonNodeList {
             pNodeShort = pNodeShort.next;
         }
         return pNodeCommon;
+    }
+
+    private static Node findFirstCommonNodeV2(Node headA, Node headB) {
+        // p1 指向 A 链表头结点，p2 指向 B 链表头结点
+        Node p1 = headA, p2 = headB;
+        while (p1 != p2) {
+            // p1 走一步，如果走到 A 链表末尾，转到 B 链表
+            if (p1 == null)
+                p1 = headB;
+            else
+                p1 = p1.next;
+            // p2 走一步，如果走到 B 链表末尾，转到 A 链表
+            if (p2 == null)
+                p2 = headA;
+            else
+                p2 = p2.next;
+        }
+        return p1;
     }
 
     /*
@@ -102,11 +134,36 @@ public class FirstCommonNodeList {
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
-            System.out.println(slow.data + "---" + fast.data);
             if (fast == slow) {
                 return true;
             }
         }
         return false;
+    }
+
+    //求单链表是否有环，有的话返回环的开始节点，链表：1->2>3>4>5>6>7>4
+    public static Node hasCycleWithFindFirstCommonNode(Node head) {
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                break;
+            }
+        }
+
+        //fast为空指针说明没有环，否则快慢指针相遇这里有环，并且快指针行走的步数刚好是环的长度
+        if (fast == null || fast.next == null) {
+            return null;
+        }
+        //让slow指针重新指向头节点
+        slow = head;
+        //快慢指针同步前进，相交点就是环起点
+        while (slow != fast) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return fast;
     }
 }

@@ -21,7 +21,7 @@ public class KListNodeFanZhuan {
 //        System.out.println(getNumbers(fanzhuan(one)));
 
 //        System.out.println(getNumbers(KListNodeFanZhuan(one,3)));
-        System.out.println(getNumbers(KListNodeFanZhuanV2(one,3,8)));
+//        System.out.println(getNumbers(KListNodeFanZhuanV2(one,3,8)));
 
 
     }
@@ -101,13 +101,13 @@ public class KListNodeFanZhuan {
 
     public static MyNode KListNodeFanZhuanV2(MyNode node,int k,int n) {
         int count = 1;
-        //num表示可以逆转几组
+        //num表示可以逆转几组，1→2→3→4→5→6-7>8 k=3的时候，可以逆转2组，78不会逆转
         int num = n /k;
-        //标记返回的head节点，只赋值一次作为返回值，就是第一次翻转之后的返回值3
+        //标记返回的head节点，只赋值一次作为结果返回值，也就是第一次翻转之后的返回值3
         MyNode head = null;
         //表示需要翻转的一段链表的头节点，比如123的1，456的4，刚开始赋值为头节点
         MyNode temp = node;
-        //表示上一段翻转链表的尾部节点
+        //表示上一段翻转链表的尾部节点，比如翻转后的321的1，翻转后654的4
         MyNode preTemp = node;
         //翻转后的一段链表的头节点
         MyNode tempNodeList = null;
@@ -118,11 +118,11 @@ public class KListNodeFanZhuan {
                 //临时保存下一个节点4，7
                 MyNode nextNode = node.getNext();
                 System.out.println( temp.getValue() + "到" + node.getValue() + "的节点将执行翻转");
-                //截断123，设置3的下一个为null，否则翻转的时候不对
+                //截断123，设置3的下一个为null，否则翻转的时候会被全部翻转掉就不对了
                 node.setNext(null);
 
                 if (tempNodeList == null) {
-                    //翻转123变成321，tempNodeList的节点为3
+                    //翻转123变成321，tempNodeList的节点为翻转后的节点3
                     tempNodeList = fanzhuan(temp);
                     //此处只次一次赋值，表示返回值
                     head = tempNodeList;
@@ -136,9 +136,11 @@ public class KListNodeFanZhuan {
                     //逆转结束了需要把4和7->8相连接
                     temp.setNext(nextNode);
                 }
-                //preTemp存储翻转后上一段的尾节点1，设置temp的值为4,node下移，node的next有改变，这里使用临时保存的下一个节点值
+                //preTemp存储翻转后上一段的尾节点1，存储翻转后上一段的尾节点6
                 preTemp = temp;
+                //设置temp的值为4
                 temp = nextNode;
+                //这里node继续往下走，但是不能是node = node.getNext();，因为上面设置了node.setNext(null);，需要设置为临时保存的nexrnode节点
                 node = nextNode;
             } else {
                 node = node.getNext();
