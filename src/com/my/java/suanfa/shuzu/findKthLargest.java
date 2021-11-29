@@ -9,7 +9,10 @@ public class findKthLargest {
     public static void main(String args[]) {
         int[] nums = {13, 9, 5, 9, 5,8, 6, 1, 3};
 //        quickSort(nums,0,nums.length-1);
-        System.out.println(JSONObject.toJSONString(findKthLargest(nums, 4)));
+//        sort(nums);
+//        System.out.println(JSONObject.toJSONString(nums));
+        System.out.println(findKthLargestV2(nums,4));
+//        System.out.println(JSONObject.toJSONString(findKthLargest(nums, 4)));
     }
 
     /**
@@ -51,6 +54,49 @@ public class findKthLargest {
         quickSort(arr, j + 1, high);
     }
 
+    //冒泡排序算法
+    public static void sort(int[] numbers) {
+        //需进行length-1次冒泡
+        for(int i=0;i<numbers.length-1;i++)
+        {
+            for(int j=0;j<numbers.length-1-i;j++)
+            {
+                if(numbers[j]>numbers[j+1])
+                {
+                    int temp=numbers[j];
+                    numbers[j]=numbers[j+1];
+                    numbers[j+1]=temp;
+                }
+            }
+            System.out.println("----" + JSONObject.toJSONString(numbers));
+        }
+        System.out.println("从小到大排序后的结果是:");
+        for(int i=0;i<numbers.length;i++)
+            System.out.print(numbers[i]+" ");
+    }
+
+    public static int findKthLargestV2(int[] numbers,int k) {
+        //需进行length-1次冒泡
+        int result = 0;
+        for(int i=0;i<numbers.length-1;i++)
+        {
+            for(int j=0;j<numbers.length-1-i;j++)
+            {
+                if (j == k) {
+                    result = numbers[numbers.length-k];
+                    break;
+                }
+                if(numbers[j]>numbers[j+1])
+                {
+                    int temp=numbers[j];
+                    numbers[j]=numbers[j+1];
+                    numbers[j+1]=temp;
+                }
+            }
+            System.out.println("----" + JSONObject.toJSONString(numbers));
+        }
+        return result;
+    }
 
     public static void swap(int[] q, int i, int j) {
         int t = q[i];
