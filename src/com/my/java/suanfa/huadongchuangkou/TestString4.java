@@ -4,13 +4,13 @@ import java.util.HashMap;
 
 /**
  * 功能描述: 给定一个字符串，求其中不含重复字符的最长字串的长度
+ * 比如PWWAEEPCWQ 结果EPCWQ
  */
 public class TestString4 {
     public static void main(String args[]) {
         String str = "PWWAEEPCWQ";
-//        System.out.println(getNoRepeatString(str));
+        System.out.println(getNoRepeatString(str));
 //        System.out.println(getNoRepeatStringV2(str));
-        System.out.println(getNoRepeatStringV3(str));
     }
 
     public static int getNoRepeatString(String str) {
@@ -71,38 +71,5 @@ public class TestString4 {
             }
         }
         return result;
-    }
-
-    public static int getNoRepeatStringV3(String str) {
-        //左右指针
-        int left = 0;
-        int right = 0;
-        //最长子串的长度
-        int max = 0;
-        //最长子串开始的位置
-        int start = 0;
-        HashMap<Character, Integer> window = new HashMap<>();
-
-        while (right < str.length()) {
-            char rChar = str.charAt(right);
-            if (window.getOrDefault(rChar, 0) == 0) {
-                window.put(rChar, 1);
-
-                //达到不重复的最大窗口
-                if (right - left > max) {
-                    start = left;
-                    max = window.size();
-                    System.out.println(start + "--" + max + "--" + str.substring(start, start + max));
-                }
-                right++;
-            } else {
-                char lChar = str.charAt(left);
-                //开始缩小窗口
-                window.put(lChar, 0);
-                left++;
-            }
-
-        }
-        return max;
     }
 }
