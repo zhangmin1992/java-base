@@ -31,6 +31,8 @@ public class TestQueue {
             queue.put("83");
             queue.put("63");
             queue.put("0");
+            System.out.println(queue.take());
+            System.out.println(queue.take());
         }catch (Exception e) {
 
         }
@@ -39,6 +41,7 @@ public class TestQueue {
 //           System.out.println((String)iterator.next());
 //        }
 
+        //按照先进先出的顺序排序
         LinkedBlockingQueue<String> queue1 = new LinkedBlockingQueue();
         try {
             //queue1.put(null);
@@ -47,6 +50,8 @@ public class TestQueue {
             queue1.put("83");
             queue1.put("63");
             queue1.put("0");
+            System.out.println(queue1.take());
+            System.out.println(queue1.take());
         }catch (Exception e) {
             System.out.println("---" + e);
         }
@@ -55,6 +60,7 @@ public class TestQueue {
 //            System.out.println((String)iterator1.next());
 //        }
 
+        //PriorityBlockingQueue 每次取出最小值
         PriorityBlockingQueue<String> queue3 = new PriorityBlockingQueue();
         try {
             queue3.put("3");
@@ -62,6 +68,8 @@ public class TestQueue {
             queue3.put("83");
             queue3.put("63");
             queue3.put("0");
+            System.out.println("--"+queue3.take());
+            System.out.println("--"+queue3.take());
         }catch (Exception e) {
             System.out.println("---" + e);
         }
