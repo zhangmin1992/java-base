@@ -1,4 +1,4 @@
-package com.my.java.suanfa.DFS;
+package com.my.java.suanfa.treeNode;
 
 import java.util.Deque;
 import java.util.LinkedList;
