@@ -17,7 +17,7 @@ import java.util.List;
  * hasPathSumV2 非递归求二叉树的路径和是否为6
  * getMaxLongPathSum 求叶子节点到根结点的最长路径和
  * getPath 递归求二叉树的最长走的路径，不是和是路径
- *
+ * <p>
  * longestZigZag 求二叉树的最长交错路径
  * 给你一棵以 root 为根的二叉树，二叉树中的交错路径定义如下：
  * 选择二叉树中 任意 节点和一个方向（左或者右）。
@@ -42,6 +42,8 @@ public class MyTreeNode {
         }
     }
 
+    static int res = 0;
+
     public static void main(String[] args) {
 //        TreeNode four = new TreeNode(6, null, null);
 //        TreeNode five = new TreeNode(8, null, null);
@@ -65,13 +67,13 @@ public class MyTreeNode {
 //        List<Integer> list = new ArrayList<>();
 //        getPath(root, list, 0);
 
-        TreeNode eight = new TreeNode(1, null, null);
-        TreeNode seven = new TreeNode(1, null, eight);
-        TreeNode six = new TreeNode(1, null, seven);
-        TreeNode four = new TreeNode(1, null, null);
-        TreeNode five = new TreeNode(1, null, null);
-        TreeNode three = new TreeNode(1, six, five);
-        TreeNode two = new TreeNode(1, four, three);
+        TreeNode eight = new TreeNode(8, null, null);
+        TreeNode seven = new TreeNode(7, null, eight);
+        TreeNode six = new TreeNode(6, null, seven);
+        TreeNode four = new TreeNode(5, null, null);
+        TreeNode five = new TreeNode(4, null, null);
+        TreeNode three = new TreeNode(3, six, five);
+        TreeNode two = new TreeNode(2, four, three);
         TreeNode root = new TreeNode(1, null, two);
         System.out.println(longestZigZag(root));
     }
@@ -313,35 +315,35 @@ public class MyTreeNode {
         list.remove(list.size() - 1);
     }
 
-    //变量 is_right 标识当前结点是左结点还是右结点，res存储遍历过程中，可能出现的最大深度
-    static int find_depth(TreeNode root, boolean is_right, int res) {
+    //求二叉树的最长交错路径
+    public static int longestZigZag(TreeNode root) {
         if (root == null) {
-            return 0;
+            return res;
         }
-        //找出左右子树的交叉深度
-        int right_depth = find_depth(root.right, true, res);
-        int left_depth = find_depth(root.left, false, res);
-        if (is_right) {
-            //若当前结点是右结点
-            res = Math.max(res, right_depth);//保存当前结点的右子树的最大交叉深度
-            return left_depth + 1;//返回父节点的交叉深度，既需要和当前结点的左子树配合
-        } else {
-            res = Math.max(res, left_depth);
-            return right_depth + 1;
-        }
+        helper(root, true, 0);
+        helper(root, false, 0);
+        return res;
     }
 
-    static int longestZigZag(TreeNode root) {
-        //处理特殊的情形
-        if (root == null || (root.left == null && root.right == null)) {
-            return 0;
+    public static void helper(TreeNode node, boolean isRightDir, int len) {
+        res = Math.max(res, len);
+        if (isRightDir) {
+            //上一个节点向右边的，这个节点的左指针不为空，那么长度加1
+            if (node.left != null) {
+                helper(node.left, false, len + 1);
+            }
+            //上一个节点向右边的，这个节点的右指针为空，说明长度需要清1
+            if (node.right != null) {
+                helper(node.right, true, 1);
+            }
+        } else {
+            //上一个节点向左边的，这个节点的右指针不为空，那么长度加1
+            if (node.right != null) {
+                helper(node.right, true, len + 1);
+            }
+            if (node.left != null) {
+                helper(node.left, false, 1);
+            }
         }
-        //左右子树的最大深度
-        int res = 0;
-        //左右子树的交叉深度
-        int left_depth = find_depth(root.left, false, res);
-        int right_depth = find_depth(root.right, true, res);
-        //返回最大值
-        return Math.max(res, Math.max(left_depth, right_depth));
     }
 }

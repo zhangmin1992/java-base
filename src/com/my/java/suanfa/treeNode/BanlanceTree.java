@@ -8,10 +8,11 @@ import java.util.Queue;
  * isBanlanceTree 判断这棵树是不是平衡二叉树
  *          一棵高度平衡二叉树定义为：一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过1
  * <p>
- * isWanQuanTree 判断这棵树是不是平衡二叉树
+ * isWanQuanTree 判断这棵树是不是完全二叉树
  * 如果二叉树中除去最后一层节点为满二叉树，且最后一层的结点依次从左到右分布，则此二叉树被称为完全二叉树
  * 1 任何一个结点如果右孩子不为空，左孩子却是空，则一定不是完全二叉树
- * 2 当一个结点出现右孩子为空时候，判断该结点的层次遍历后继结点是否为叶子节点，如果全部都是叶子节点，则是完全二叉树，如果存在任何一个结点不是叶节点，则一定不是完全二叉树。
+ * 2 当一个结点出现右孩子为空时候，判断该结点的层次遍历后继结点是否为叶子节点，如果全部都是叶子节点，则是完全二叉树，
+ * 如果存在任何一个结点不是叶节点，则一定不是完全二叉树。
  */
 public class BanlanceTree {
     //定义树结构
@@ -31,8 +32,8 @@ public class BanlanceTree {
         TreeNode three = new TreeNode(7, null, null);
         TreeNode four = new TreeNode(7, null, null);
         TreeNode five = new TreeNode(15, null, null);
-        TreeNode two = new TreeNode(20, null, three);
-        TreeNode one = new TreeNode(9, four, five);
+        TreeNode two = new TreeNode(20, five, null);
+        TreeNode one = new TreeNode(9, four, null);
         TreeNode root = new TreeNode(3, one, two);
 
 //        System.out.println(isBanlanceTree(root));
