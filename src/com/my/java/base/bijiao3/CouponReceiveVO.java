@@ -175,6 +175,10 @@ public class CouponReceiveVO implements Serializable, Comparable<CouponReceiveVO
                 return -1;
             } else if (o2.getLabelType() == LabelTypeEnum.ASSIST_BONUS.getValue()) {
                 return 1;
+            } else if (o1.getLabelType() == LabelTypeEnum.CULTURAL.getValue()) {
+                return -1;
+            } else if (o2.getLabelType() == LabelTypeEnum.CULTURAL.getValue()) {
+                return 1;
             } else if (o1.getLabelType() == LabelTypeEnum.CLOUD_PACK.getValue()) {
                 return -1;
             } else if (o2.getLabelType() == LabelTypeEnum.CLOUD_PACK.getValue()) {
@@ -200,6 +204,26 @@ public class CouponReceiveVO implements Serializable, Comparable<CouponReceiveVO
                 } else if (o2.getLabelType() == LabelTypeEnum.MEMBER_REWARDS.getValue()) {
                     return -1;
                 }
+            }
+        }
+
+        //券领取时间
+        if (o1.getAddTime() != null || o2.getAddTime() != null) {
+            if (!o1.getAddTime().equals(o2.getAddTime())) {
+                return o2.addTime.compareTo(o1.getAddTime());
+            }
+        }
+
+        //截止时间比较
+        if (o2.getEndTime() != null || o1.endTime != null) {
+            if (null == o1.endTime) {
+                return 1;
+            }
+            if (null == o2.getEndTime()) {
+                return -1;
+            }
+            if (!o1.endTime.equals(o2.getEndTime())) {
+                return o2.endTime.compareTo(o1.getEndTime());
             }
         }
 
