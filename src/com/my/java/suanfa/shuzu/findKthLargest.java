@@ -9,7 +9,7 @@ public class findKthLargest {
     public static void main(String args[]) {
         int[] nums = {13, 9, 5, 9, 5,8, 6, 1, 3};
 //        quickSort(nums,0,nums.length-1);
-//        sort(nums);
+//        (nums);
 //        System.out.println(JSONObject.toJSONString(nums));
         System.out.println(findKthLargestV2(nums,4));
 //        System.out.println(JSONObject.toJSONString(findKthLargest(nums, 4)));

@@ -1,13 +1,10 @@
 package com.my.test;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import com.meituan.mobile.movie.common.money.Money;
 
-import sun.security.action.GetBooleanAction;
+import java.math.RoundingMode;
+import java.text.ParseException;
+import java.util.*;
 
 public class test2 {
 
@@ -20,10 +17,20 @@ public class test2 {
 //		if(date.before(getAccountCloseDate()) && date.after(date2)) {
 //			System.out.println("oooo");
 //		}
-		String aString="2019-02-09";
-		System.out.println(aString.split("-")[0]);
-		System.out.println(aString.split("-")[1]);
-		System.out.println(aString.split("-")[2]);
+//		String aString="2019-02-09";
+//		System.out.println(aString.split("-")[0]);
+//		System.out.println(aString.split("-")[1]);
+//		System.out.println(aString.split("-")[2]);
+
+        List<Integer> leftPrices = new ArrayList<>();
+        leftPrices.add(30400-166);
+        leftPrices.add(30400-167);
+        leftPrices.add(30400-167);
+        Integer needPayMoney = 90700;
+        for (int i = 0; i < leftPrices.size(); i++) {
+            System.out.println(getCardSaveMoneyPerGoods(i,leftPrices,needPayMoney,needPayMoney,needPayMoney));
+        }
+
    }
 	
 	public static Date getAccountCloseDate() {
@@ -46,5 +53,22 @@ public class test2 {
         tempStart.set(Calendar.SECOND, 0);
         return tempStart.getTime();
 	}
+
+    private static int getCardSaveMoneyPerGoods(int index, List<Integer> leftPrices, int totalLeftPrice, int leftSaveMoney, int saveMoney) {
+        int saveMoneyPerGoods = 0;
+        // 如果不是最后一个商品，按比例计算
+        if (index != leftPrices.size() - 1) {
+            //单个商品剩余待支付金额 除以 总的商品剩余金额  乘以 券面值
+            saveMoneyPerGoods = (int) (Money.toYuan(leftPrices.get(index)).divide(Money.toYuan(totalLeftPrice), 6, RoundingMode.HALF_UP).multi(Money.toYuan(saveMoney)).toFen());
+            if (leftSaveMoney < saveMoneyPerGoods) {
+                saveMoneyPerGoods = leftSaveMoney;
+            }
+        }
+        // 如果已经是最后一个商品，直接使用全部剩余金额
+        else {
+            saveMoneyPerGoods = leftSaveMoney;
+        }
+        return saveMoneyPerGoods;
+    }
 
 }
