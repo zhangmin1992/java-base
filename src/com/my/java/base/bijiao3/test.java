@@ -23,6 +23,11 @@ public class test {
         CouponReceiveVO mode6 = new CouponReceiveVO();
         mode6.setLabelType(LabelTypeEnum.ASSIST_BONUS.getValue());
         mode6.setCardType(MagicCardTypeEnum.FIXVALUE.getValue());
+        try {
+            mode6.setEndTime(DateUtil.parseStringToDate("2025-04-21","yyyy-MM-dd"));
+        } catch (Exception e) {
+
+        }
         list.add(mode6);
 
         CouponReceiveVO mode7 = new CouponReceiveVO();
