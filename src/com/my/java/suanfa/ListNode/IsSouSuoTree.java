@@ -1,5 +1,6 @@
 package com.my.java.suanfa.ListNode;
 
+
 public class IsSouSuoTree {
     public static void main(String[] args) {
         MyListNode head = new MyListNode(5);
