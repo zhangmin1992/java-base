@@ -32,7 +32,7 @@ public class test2 {
         }
 
    }
-	
+
 	public static Date getAccountCloseDate() {
 		Calendar tempStart = Calendar.getInstance();
         tempStart.setTime(new Date());
@@ -42,7 +42,7 @@ public class test2 {
         tempStart.set(Calendar.SECOND, 59);
         return tempStart.getTime();
 	}
-	
+
 	public static Date getLastMonthDate() {
 		Calendar tempStart = Calendar.getInstance();
         tempStart.setTime(new Date());
