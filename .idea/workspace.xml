@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967136dc-89ad-4f86-a0ac-dc86352e6193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/money_1_0_6_20160606_093314_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-base.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/Array/tiaoyueyouxi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/IsSouSuoTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/IsSouSuoTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/my/test/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/test/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,55 +64,74 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="21" />
-          <entry key="txt" value="2" />
+          <entry key="java" value="25" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="21" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="25" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1" />
-          <entry key="txt" value="168" />
+          <entry key="java" value="961" />
+          <entry key="txt" value="172" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1" />
-          <entry key="PLAIN_TEXT" value="168" />
+          <entry key="JAVA" value="961" />
+          <entry key="PLAIN_TEXT" value="172" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="257" column="48" selection-start-line="257" selection-start-column="48" selection-end-line="257" selection-end-column="48" />
+            <state relative-caret-position="208">
+              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+              <folding>
+                <element signature="e#161#162#0" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString2.java">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="2" selection-end-line="8" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="6" selection-start-line="6" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="88">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -133,6 +148,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>MinHeap</find>
+      <find>fanzhuan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,6 +173,8 @@
         <option value="$PROJECT_DIR$/src/com/my/test/test2.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/daoyu.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java" />
       </list>
     </option>
   </component>
@@ -245,50 +263,7 @@
               <item name="my" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="suanfa" type="462c0819:PsiDirectoryNode" />
-              <item name="Array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="my" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
-              <item name="dui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="my" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
-              <item name="erweishuzu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="my" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
-              <item name="erweishuzu" type="462c0819:PsiDirectoryNode" />
-              <item name="konglong.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="my" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
-              <item name="huadongchuangkou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="ListNode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,7 +274,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1655198626933" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1655204489881" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -320,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.tiaoyueyouxi">
+  <component name="RunManager" selected="Application.KListNodeFanZhuan2">
     <configuration name="IsSouSuoTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.ListNode.IsSouSuoTree" />
       <module name="java-base" />
@@ -334,12 +309,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyEnum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.java.base.enumstest.MyEnum" />
+    <configuration name="KListNodeFanZhuan2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.ListNode.KListNodeFanZhuan2" />
       <module name="java-base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.my.java.base.enumstest.*" />
+          <option name="PATTERN" value="com.my.java.suanfa.ListNode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -388,18 +363,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.MyEnum" />
       <item itemvalue="Application.isDuiChenTree" />
       <item itemvalue="Application.IsSouSuoTree" />
       <item itemvalue="Application.tiaoyueyouxi" />
+      <item itemvalue="Application.KListNodeFanZhuan2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KListNodeFanZhuan2" />
         <item itemvalue="Application.tiaoyueyouxi" />
         <item itemvalue="Application.IsSouSuoTree" />
         <item itemvalue="Application.isDuiChenTree" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MyEnum" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +397,7 @@
       <workItem from="1601018456252" duration="29000" />
       <workItem from="1615994424098" duration="7212000" />
       <workItem from="1616028370047" duration="1414000" />
-      <workItem from="1655197401440" duration="1218000" />
+      <workItem from="1655197401440" duration="5741000" />
     </task>
     <task id="LOCAL-00001" summary="什么东西">
       <created>1579145451830</created>
@@ -445,11 +420,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587809591191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="jy">
+      <created>1655198674118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655198674119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19499000" />
+    <option name="totallyTimeSpent" value="24022000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -464,7 +446,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2353362" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18240343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -473,15 +455,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.83190274" visible="true" weight="0.29120198" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49642345" weight="0.4324659" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8304721" visible="true" weight="0.23296158" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49499285" weight="0.3494424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928468" weight="0.10037175" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.16809729" side_tool="true" visible="true" weight="0.29120198" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1695279" side_tool="true" visible="true" weight="0.23296158" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49499285" weight="0.32465923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -503,7 +485,32 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="什么东西" />
     <MESSAGE value="enum测试包" />
-    <option name="LAST_COMMIT_MESSAGE" value="enum测试包" />
+    <MESSAGE value="jy" />
+    <option name="LAST_COMMIT_MESSAGE" value="jy" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/my/java/base/deepclone/TestGetMethod.java">
@@ -594,13 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="61" column="44" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -789,6 +789,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="257" column="48" selection-start-line="257" selection-start-column="48" selection-end-line="257" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ASuanfa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-790">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+          <folding>
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

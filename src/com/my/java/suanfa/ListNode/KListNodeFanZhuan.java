@@ -39,6 +39,7 @@ public class KListNodeFanZhuan {
         return sb.toString().substring(0,sb.length()-2);
     }
 
+
     public static MyNode KListNodeFanZhuan(MyNode node,int k) {
         int count = 1;
         //标记返回的head节点，只赋值一次，就是第一次翻转之后的返回值3
@@ -151,14 +152,19 @@ public class KListNodeFanZhuan {
     }
 
     //全翻转链表
-    public static MyNode fanzhuan(MyNode node) {
+    public static MyNode fanzhuan(MyNode head) {
+        //向下遍历的指针cur
+        MyNode cur = head;
+        //前一个指针
         MyNode pre = null;
-        MyNode next = null;
-        while (node != null) {
-            next = node.getNext();
-            node.setNext(pre);
-            pre = node;
-            node = next;
+        while (cur != null) {
+            MyNode next = cur.getNext();
+            //下面这两句话不能反了，必须先设置当前头指针的下一个
+            cur.setNext(pre);
+            //再设置下一个的pre节点为当前节点
+            pre = cur;
+            //遍历指针后移
+            cur = next;
         }
         return pre;
     }
