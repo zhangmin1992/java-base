@@ -6,19 +6,23 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * 功能描述: 求数组的全排列
+ *  给定一个不含重复数字的数组 nums，返回其所有可能的全排列 。你可以按任意顺序返回答案。
+ */
 public class getZiji {
     public static void main(String args[]) {
-        int[] nums = {1,2,3};
+        int[] nums = {1, 2, 3};
 //        System.out.println(JSONObject.toJSONString(subsets(nums)));
-//        System.out.println(JSONObject.toJSONString(permute(nums)));
-        System.out.println(JSONObject.toJSONString(permuteV2(nums)));
+        System.out.println(JSONObject.toJSONString(permute(nums)));
+//        System.out.println(JSONObject.toJSONString(permuteV2(nums)));
     }
 
     public static List<List<Integer>> permuteV2(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> perm = new ArrayList<>();
 
-        if(nums.length == 0){
+        if (nums.length == 0) {
             return res;
         }
         boolean[] used = new boolean[nums.length];
@@ -80,23 +84,26 @@ public class getZiji {
         }
     }
 
+
     /**
      * 功能描述:求数组的子集
      */
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
-        Integer l = nums.length;
-        //结果集个数
-        int n = (int) Math.pow(2, l);
+        //计算数组的子集个数，N个数字也就是2的N次方
+        //int num = (int) Math.pow(2,nums.length);
+        int num = Double.valueOf(Math.pow(2, nums.length)).intValue();
 
-        for (int i = 0; i < n; i++) {
-            //二进制字符串
-            String s = Integer.toBinaryString(i);
-            System.out.println("---"+ s);
+        for (int i = 0; i < num; i++) {
+            //str 从0到2的N次方中1的出现顺序也就是取值的顺序,1表示从{1,2,3}中取第一个
+            String str = Integer.toBinaryString(i);
+            System.out.println(str);
+
             List<Integer> temp = new ArrayList<>();
-            for (int j = s.length() - 1; j >= 0; j--) {
-                if (s.charAt(j) == '1') {
-                    temp.add(nums[s.length() - 1 - j]); //索引数组下标
+            for (int j = str.length() - 1; j >= 0; j--) {
+                //1表示从{1,2,3}中取第一个{1}，10表示取{2},11表示{1,2}
+                if (String.valueOf(str.charAt(j)).equals("1")) {
+                    temp.add(nums[str.length() - 1 - j]);
                 }
             }
             result.add(temp);
