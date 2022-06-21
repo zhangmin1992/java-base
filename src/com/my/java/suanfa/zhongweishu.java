@@ -2,6 +2,10 @@ package com.my.java.suanfa;
 
 import com.alibaba.fastjson.JSONObject;
 
+/**
+ * 功能描述:给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。
+ * 请你找出并返回这两个正序数组的 中位数 。
+ */
 public class zhongweishu {
 
 	public static double findMedianSortedArrays(int[] A, int[] B) {
@@ -41,24 +45,30 @@ public class zhongweishu {
 	
 	public static float getMedian(int[] a, int[] b) {
 		if (a == null || b == null || (a.length + b.length) == 0) return Float.MIN_VALUE;
+		//数组a的指针
 		int pa = 0;
+		//数组B的移动指针
 		int pb = 0;
+		//奇数个数的中位数
 		float median = 0;
+		//pa + pb表示从ab数组中共取的元素个数
 		while (pa + pb != (a.length + b.length + 1) / 2) {
+		    //数组移动越界之后取最大值
 			int Ai = (pa == a.length) ? Integer.MAX_VALUE : a[pa];  
 	        int Bj = (pb == b.length) ? Integer.MAX_VALUE : b[pb]; 
 	        if (Ai < Bj) {
 	        	median = a[pa];
 	        	pa++;
- 
 	        } else {
 	        	median = b[pb];
 	        	pb++;
 	        }
 		}
+		//总个数为奇数，直接返回median
 		if ((a.length + b.length) % 2 == 1) {
 			return median;	
 		} else {
+		    //总个数为偶数，获取pa 或者 pb 的下一个元素的最小值median2，这两个值的中间数为中位数
 			int Ai = (pa == a.length) ? Integer.MAX_VALUE : a[pa];  
 	        int Bj = (pb == b.length) ? Integer.MAX_VALUE : b[pb]; 
 			int median2 = (Ai < Bj) ? Ai : Bj;			
@@ -88,10 +98,11 @@ public class zhongweishu {
     }
 	
 	public static void main(String[] args) {
-		int[] b = {2,4};  
+		int[] b = {2,3,4};
         int[] a = {5,6,8}; 
         System.out.println(JSONObject.toJSONString(sort(a,b)));
 		System.out.println(getMedian(a,b));
+		System.out.println(findMedianSortedArrays(a,b));
 	}
 
 }

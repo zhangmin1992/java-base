@@ -17,12 +17,15 @@ public class AddTwoNumbers {
 	public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 	    ListNode p = l1;
 	    ListNode q = l2;
+	    //返回的头节点
 	    ListNode head = new ListNode(0);
 	    ListNode cur = head;
+	    //进位
 	    int carry = 0;
 	    while(p != null || q != null) {
 	    	//获取链表的数据x y
-	    	int x = 0;int y = 0;
+	    	int x = 0;
+	    	int y = 0;
 	    	if(p != null) {
 	    		x = p.val; 
 	    	}
@@ -60,25 +63,19 @@ public class AddTwoNumbers {
 	}
 	
 	public static void main(String[] args) {
-//		ListNode n7 = new ListNode(9);
-//		ListNode n6 = new ListNode(9,n7);
-////		ListNode n5 = new ListNode(5,n6);
-////		ListNode n4 = new ListNode(4,n5);
-////		ListNode n3 = new ListNode(3,n4);
-////		ListNode n2 = new ListNode(2,n3);
-////		ListNode n1 = new ListNode(1,n2);
-//		showNode(n6);
-//		ListNode nn7 = new ListNode(9);
-//		ListNode nn6 = new ListNode(9,nn7);
-//		showNode(nn6);
-//		ListNode node = addTwoNumbers(n6,nn6);
-//		showNode(node);
-		
-		String[] userIdsArr = "111".split(",");
-		for(String id:userIdsArr){
-			System.out.println("sss");
-		}
-		System.out.println();
+		ListNode n7 = new ListNode(9);
+		ListNode n6 = new ListNode(9,n7);
+//		ListNode n5 = new ListNode(5,n6);
+//		ListNode n4 = new ListNode(4,n5);
+//		ListNode n3 = new ListNode(3,n4);
+//		ListNode n2 = new ListNode(2,n3);
+//		ListNode n1 = new ListNode(1,n2);
+		showNode(n6);
+		ListNode nn7 = new ListNode(9);
+		ListNode nn6 = new ListNode(9,nn7);
+		showNode(nn6);
+		ListNode node = addTwoNumbers(n6,nn6);
+		showNode(node);
 	}
 
 }
