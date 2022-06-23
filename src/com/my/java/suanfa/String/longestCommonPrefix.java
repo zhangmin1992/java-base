@@ -10,7 +10,7 @@ package com.my.java.suanfa.String;
  * :
  * "fl
  */
-public class GongGong {
+public class longestCommonPrefix {
     public static void main(String args[]) {
         String[] str = new String[]{"flower","flow","flight"};
 
@@ -31,10 +31,12 @@ public class GongGong {
         if (str == null || str.length <1) {
             return "";
         }
+        //temp元素从flower开始
         StringBuffer temp = new StringBuffer(str[0]);
         int num = str[0].length();
         int i=1;
         while (i<str.length) {
+            //看后面的元素是不是包含temp，如果不包含，就把temp的大小缩小1，公共个数减去1
             if (str[i] != "" && !str[i].contains(temp)) {
                 num--;
                 temp.deleteCharAt(num);
