@@ -12,6 +12,9 @@ package com.my.java.suanfa.String;
  */
 public class longestCommonPrefix {
     public static void main(String args[]) {
+        StringBuffer temp = new StringBuffer("flower");
+        System.out.println(temp.deleteCharAt(temp.length()));
+
         String[] str = new String[]{"flower","flow","flight"};
 
         System.out.println(getGongGongQianZhui(str));

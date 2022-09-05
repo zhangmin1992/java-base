@@ -2,20 +2,82 @@ package com.my.java.suanfa.ListNode;
 
 import com.alibaba.fastjson.JSONObject;
 
+/**
+ * 功能描述:
+ * 给你单链表的头指针 head 和两个整数 left 和 right ，其中 left <= right 。
+ * 请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。
+ *
+ */
 public class KListNodeFanZhuan2 {
 
     public static void main(String[] args) {
-        Node eight = new Node(null,8);
-        Node seven = new Node(eight,7);
-        Node six = new Node(seven,6);
-        Node five = new Node(six,5);
-        Node four = new Node(five,4);
-        Node three = new Node(four,3);
-        Node two = new Node(three,2);
+//        Node eight = new Node(null,8);
+//        Node seven = new Node(eight,7);
+//        Node six = new Node(seven,6);
+//        Node five = new Node(six,5);
+//        Node four = new Node(five,4);
+//        Node three = new Node(null,3);
+        Node two = new Node(null,2);
         Node one = new Node(two,1);
 
 
-        System.out.println(JSONObject.toJSONString(Node.getNumbers(Kfanzhuan(one,3))));
+//        System.out.println(JSONObject.toJSONString(Node.getNumbers(Kfanzhuan(one,3))));
+
+        System.out.println(JSONObject.toJSONString(Node.getNumbers(one)));
+        System.out.println(JSONObject.toJSONString(Node.getNumbers(reverseBetween(one,1,2))));
+    }
+
+    public static Node reverseBetween(Node head,int left,int right) {
+        int k = right - left;
+        if (k == 0) {
+            return head;
+        }
+        int leftIndex = 1;
+        Node node = head;
+        //存储返回的头节点，left=1的时候为翻转后的节点，否则为头节点
+        Node res = head;
+        //存储123中的节点2，用于连接2 和7～3
+        Node temp = null;
+        //存储123中的节点3
+        Node fanzhuanHead =head;
+        boolean isEnd = false;
+        while (node != null && !isEnd) {
+            if (leftIndex != left){
+                temp = node;
+                node = node.getNext();
+                fanzhuanHead = node;
+                leftIndex++;
+            } else {
+                //找到了翻转的尾节点
+                if (k==0) {
+                    //记录下尾节点之后的节点
+                    Node next = node.getNext();
+                    //设置翻转的尾节点的下一个为null
+                    node.setNext(null);
+                    //翻转从3～7的节点
+                    Node newHead = fanzhuan(fanzhuanHead);
+                    if (temp != null) {
+                        //2的下一个设置为翻转后的7
+                        temp.setNext(newHead);
+                    }
+                    //如果是从头节点开始翻转的，比如1-2，left=1，right=2，那么返回的头节点为翻转之后的2
+                    if (left == 1) {
+                        res = newHead;
+                    }
+                    //使得newHead为3
+                    while (newHead.getNext()!=null) {
+                        newHead = newHead.getNext();
+                    }
+                    //设置3的下一个为之前保留的候后续节点
+                    newHead.setNext(next);
+                    isEnd = true;
+                } else {
+                    node = node.getNext();
+                    k--;
+                }
+            }
+        }
+        return res;
     }
 
     public static Node Kfanzhuan(Node head,int k) {

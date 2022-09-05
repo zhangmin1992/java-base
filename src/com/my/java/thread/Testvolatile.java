@@ -43,7 +43,8 @@ public class Testvolatile extends Thread {
 
 	volatile boolean flag = false;
     int i = 0;
-    
+
+    @Override
     public void run() {
         while (!flag) {
             i++;

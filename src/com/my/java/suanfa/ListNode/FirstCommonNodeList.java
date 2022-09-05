@@ -21,9 +21,9 @@ public class FirstCommonNodeList {
     }
 
     public static void main(String[] args) {
-        Node seven = new Node(null, 7);
-        Node six = new Node(seven, 6);
-        Node five = new Node(six, 5);
+        Node seven = new Node(null, 8);
+        Node six = new Node(seven, 7);
+        Node five = new Node(six, 6);
         Node four = new Node(five, 4);
         Node three = new Node(four, 3);
         Node two = new Node(three, 2);
@@ -36,13 +36,11 @@ public class FirstCommonNodeList {
         System.out.println(node.data);*/
 
 
-        Node three2 = new Node(four, 5);
-        Node two2 = new Node(three2, 4);
-        Node one2 = new Node(two2, 6);
+        Node one2 = new Node(four, 5);
 
         Node node1 = one, node2 = one2;
-        Node node = findFirstCommonNode(node1, node2);
-        System.out.println(node.data);
+//        Node node = findFirstCommonNode(node1, node2);
+//        System.out.println(node.data);
         Node nodeV2 = findFirstCommonNodeV2(node1, node2);
         System.out.println(nodeV2.data);
     }
@@ -94,6 +92,9 @@ public class FirstCommonNodeList {
                 p2 = headA;
             else
                 p2 = p2.next;
+            String left = p1 == null ? "" : p1.data+"";
+            String right = p2 == null ? "" : p2.data+"";
+            System.out.println(left + "---" + right);
         }
         return p1;
     }

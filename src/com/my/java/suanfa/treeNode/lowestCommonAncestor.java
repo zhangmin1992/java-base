@@ -36,10 +36,14 @@ public class lowestCommonAncestor {
         TreeNode root = new TreeNode(3, five, one);
 
         TreeNode[] nodes = new TreeNode[2];
-        nodes[0] = five;
+        nodes[0] = seven;
         nodes[1] = four;
+        HashSet<Integer> values = new HashSet<>();
+        for (TreeNode node : nodes) {
+            values.add(node.val);
+        }
         System.out.println(lowestCommonAncestor(root,nodes).val);
-        System.out.println(lowestCommonAncestor(root,five,four).val);
+//        System.out.println(lowestCommonAncestor(root,five,four).val);
     }
 
     static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -67,7 +71,7 @@ public class lowestCommonAncestor {
         return left != null ? left : right;
     }
 
-    static TreeNode lowestCommonAncestor(TreeNode root, TreeNode[] nodes) {
+    static TreeNode  lowestCommonAncestor(TreeNode root, TreeNode[] nodes) {
         // 将列表转化成哈希集合，便于判断元素是否存在
         HashSet<Integer> values = new HashSet<>();
         for (TreeNode node : nodes) {
@@ -90,11 +94,13 @@ public class lowestCommonAncestor {
         TreeNode left = find(root.left, values);
         TreeNode right = find(root.right, values);
         // 后序位置，已经知道左右子树是否存在目标值
+        if (right == null && left == null) {
+            return null;
+        }
         if (left != null && right != null) {
             // 当前节点是 LCA 节点
             return root;
         }
-
         return left != null ? left : right;
     }
 

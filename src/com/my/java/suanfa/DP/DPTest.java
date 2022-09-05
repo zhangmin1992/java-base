@@ -78,13 +78,61 @@ public class DPTest {
 //          int[] arr = new int[] {10,9,2,5,3,7,101,18};
 //          System.out.println(lengthOfLIS(arr));
 
-          int[][] arr = new int[4][4];
-          arr[0] =  new int[]{2};
-          arr[1] =  new int[]{3,4};
-          arr[2] =  new int[]{6,5,7};
-          arr[3] =  new int[]{4,1,8,3};
-          System.out.println(getMinDistance2(arr));
+//          int[][] arr = new int[4][4];
+//          arr[0] =  new int[]{2};
+//          arr[1] =  new int[]{3,4};
+//          arr[2] =  new int[]{6,5,7};
+//          arr[3] =  new int[]{4,1,8,3};
+//          System.out.println(getMinDistance2(arr));
+
+//        String s1 = "HelloWorld";
+//        String s2 = "loop";
+//        System.out.println(lcs(s1,s2));
+
+        int[] nums = {2,3};
+        System.out.println(missingTwo(nums));
     }
+
+    public static int[] missingTwo(int[] nums) {
+        int n = nums.length + 2;
+        int sum = 0;
+
+        for (int i = 0; i < nums.length; i++)//求数组中的数的和
+        {
+            sum += nums[i];
+        }
+        int sumTwo = ((1 + n) * n / 2) - sum;//缺失的两个数的和
+        int temp = sumTwo / 2;
+
+        sum = 0;
+        for( int i = 0; i < nums.length; i++){
+            if (nums[i] <= temp) {
+                sum += nums[i];
+            }
+        }
+        int firstNumber = ((1 + temp) * temp / 2) - sum;//缺失的其中一个数
+
+        return  new int[]{firstNumber, sumTwo - firstNumber};
+    }
+
+    public static int lcs(String s,String t) {
+        int m=s.length();
+        int n=t.length();
+        int[][]dp = new int[m+1][n+1];
+        for(int i=1;i<m;i++)
+        {
+            for(int j=1;j<n;j++) {
+                if(s.charAt(i) == t.charAt(j)) {
+                    dp[i][j] = dp[i][j-1]+1;
+                } else {
+                    dp[i][j] = Math.max(dp[i][j-1],dp[i-1][j]);
+                }
+            }
+        }
+        return dp[m][n];
+    }
+
+
 
     public static int calcStep(int n) {
         if(n == 1) {

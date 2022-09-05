@@ -24,7 +24,7 @@ public class mergeKLists {
         while (!pq.isEmpty()) {
             // 获取最小节点，接到结果链表中
             ListNode node = pq.poll();
-            p.next = node;
+            //p.next = node;
             if (node.next != null) {
                 pq.add(node.next);
             }

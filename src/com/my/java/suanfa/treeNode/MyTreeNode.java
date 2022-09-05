@@ -45,14 +45,14 @@ public class MyTreeNode {
     static int res = 0;
 
     public static void main(String[] args) {
-//        TreeNode four = new TreeNode(6, null, null);
-//        TreeNode five = new TreeNode(8, null, null);
-//        TreeNode two = new TreeNode(1, null, null);
-//        TreeNode three = new TreeNode(7, four, five);
-//        TreeNode root = new TreeNode(5, two, three);
+        TreeNode four = new TreeNode(6, null, null);
+        TreeNode five = new TreeNode(8, null, null);
+        TreeNode two = new TreeNode(1, null, null);
+        TreeNode three = new TreeNode(3, four, five);
+        TreeNode root = new TreeNode(5, two, three);
 
 //        System.out.println(TreeDepth(root));
-//        System.out.println(findDeep2(root));
+        System.out.println(findDeep2(root));
 
 //        System.out.println(JSONObject.toJSONString(levelOrder(root)));
 
@@ -67,15 +67,15 @@ public class MyTreeNode {
 //        List<Integer> list = new ArrayList<>();
 //        getPath(root, list, 0);
 
-        TreeNode eight = new TreeNode(8, null, null);
-        TreeNode seven = new TreeNode(7, null, eight);
-        TreeNode six = new TreeNode(6, null, seven);
-        TreeNode four = new TreeNode(5, null, null);
-        TreeNode five = new TreeNode(4, null, null);
-        TreeNode three = new TreeNode(3, six, five);
-        TreeNode two = new TreeNode(2, four, three);
-        TreeNode root = new TreeNode(1, null, two);
-        System.out.println(longestZigZag(root));
+//        TreeNode eight = new TreeNode(8, null, null);
+//        TreeNode seven = new TreeNode(7, null, eight);
+//        TreeNode six = new TreeNode(6, null, seven);
+//        TreeNode four = new TreeNode(5, null, null);
+//        TreeNode five = new TreeNode(4, null, null);
+//        TreeNode three = new TreeNode(3, six, five);
+//        TreeNode two = new TreeNode(2, four, three);
+//        TreeNode root = new TreeNode(1, null, two);
+//        System.out.println(longestZigZag(root));
     }
 
     //求二叉树的深度

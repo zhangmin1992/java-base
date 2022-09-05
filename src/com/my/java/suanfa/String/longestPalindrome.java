@@ -9,8 +9,33 @@ package com.my.java.suanfa.String;
 public class longestPalindrome {
 
     public static void main(String[] args) {
-        System.out.println(longestPalindrome("babad"));
+        System.out.println(longestPalindrome2("babad"));
     }
+
+    public static String longestPalindrome2(String s) {
+        int slen = s.length();
+        int maxlen = 0;
+        String ans = "";
+        boolean[][] p = new boolean[slen][slen];
+        for(int len=1;len<=slen;len++) {
+            for(int start = 0; start < slen;start++) {
+                int end = start + len -1;
+                if (end >= slen) {
+                    break;
+                }
+                p[start][end] = (len==1 || len==2 || p[start+1][end-1]) && (s.charAt(start) == s.charAt(end));
+                if (p[start][end] && len > maxlen) {
+                    maxlen = len;
+                    ans = s.substring(start,end+1);
+                }
+            }
+        }
+        return  ans;
+    }
+
+
+
+
     public static String longestPalindrome(String s) {
         if (s == null || s.length() == 0) {
             return "";

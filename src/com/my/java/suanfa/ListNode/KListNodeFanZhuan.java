@@ -16,11 +16,11 @@ public class KListNodeFanZhuan {
         MyNode two = new MyNode(null,three,2);
         MyNode one = new MyNode(null,two,1);
 
-        System.out.println(getNumbers(one));
+//        System.out.println(getNumbers(one));
 
 //        System.out.println(getNumbers(fanzhuan(one)));
 
-//        System.out.println(getNumbers(KListNodeFanZhuan(one,3)));
+        System.out.println(getNumbers(KListNodeFanZhuan(one,3)));
 //        System.out.println(getNumbers(KListNodeFanZhuanV2(one,3,8)));
 
 
