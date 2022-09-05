@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import java.util.HashSet;
 
 /**
- * 功能描述:计算岛屿数量
+ * 功能描述:计算岛屿数量 numIslands
  * 给你一个由 '1'（陆地）和 '0'（水）组成的的二维网格，请你计算网格中岛屿的数量。
  * <p>
  * 岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。
@@ -38,7 +38,8 @@ import java.util.HashSet;
  * 请返回封闭岛屿的数目。
  * <p>
  * <p>
- * 力扣第 694 题「不同的岛屿数量：还是输入一个二维矩阵，0表示海水，1表示陆地，求不同岛屿的数量
+ * 力扣第 694 题「不同的岛屿数量：numDistinctIslands
+ * 还是输入一个二维矩阵，0表示海水，1表示陆地，求不同岛屿的数量
  * 怎么判断是相同岛屿呢？
  * 假设它们的遍历顺序是：
  * 下，右，上，撤销上，撤销右，撤销下
@@ -49,6 +50,7 @@ import java.util.HashSet;
  * <p>
  * 在二维地图上， 0代表海洋， 1代表陆地，我们最多只能将一格 0 海洋变成 1变成陆地。
  * 进行填海之后，地图上最大的岛屿面积是多少？（上、下、左、右四个方向相连的 1 可形成岛屿）
+ * largestIsland
  * 示例 1:
  * 输入: [[1, 0], [0, 1]]
  * 输出: 3
@@ -72,18 +74,22 @@ public class daoyu {
 //        grid[3] = new int[] {0,0,0,0,0};
 //        System.out.println(numIslands(grid));
 
-        //[[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]
-        int[][] grid = new int[5][8];
-        grid[0] = new int[]{1, 1, 1, 1, 1, 1, 1, 0};
-        grid[1] = new int[]{1, 0, 0, 0, 0, 1, 1, 0};
-        grid[2] = new int[]{1, 0, 1, 0, 1, 1, 1, 0};
-        grid[3] = new int[]{1, 0, 0, 0, 0, 1, 0, 1};
-        grid[4] = new int[]{1, 1, 1, 1, 1, 1, 1, 0};
+//        int[][] grid = new int[5][8];
+//        grid[0] = new int[]{1, 1, 1, 1, 1, 1, 1, 0};
+//        grid[1] = new int[]{1, 0, 0, 0, 0, 1, 1, 0};
+//        grid[2] = new int[]{1, 0, 1, 0, 1, 1, 1, 0};
+//        grid[3] = new int[]{1, 0, 0, 0, 0, 1, 0, 1};
+//        grid[4] = new int[]{1, 1, 1, 1, 1, 1, 1, 0};
 //        System.out.println(numEnclaves(grid));
 //        System.out.println(JSONObject.toJSONString(grid));
-
 //        System.out.println(numDistinctIslands(grid));
 
+        int[][] grid = new int[4][4];
+        grid[0] = new int[]{1, 1, 1, 1};
+        grid[1] = new int[]{1, 0, 0, 0};
+        grid[2] = new int[]{1, 0, 1, 0};
+        grid[3] = new int[]{1, 0, 0, 0};
+        System.out.println("--" + JSONObject.toJSONString(grid));
         System.out.println(largestIsland(grid));
     }
 
@@ -170,8 +176,7 @@ public class daoyu {
 
     static void dfs(int[][] grid, int i, int j, StringBuilder sb, int dir) {
         int m = grid.length, n = grid[0].length;
-        if (i < 0 || j < 0 || i >= m || j >= n
-                || grid[i][j] == 0) {
+        if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] == 0) {
             return;
         }
         // 前序遍历位置：进入 (i, j)
@@ -194,11 +199,14 @@ public class daoyu {
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
+                    //对应位置的值设置为2
                     fullIsland(grid, i, j, index++);
                 }
             }
         }
         System.out.println("--" + JSONObject.toJSONString(grid));
+
+        //这里是把值放到map中去，设置map中的值2有几个，3有几个
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] > 0) {
@@ -207,7 +215,10 @@ public class daoyu {
             }
         }
         System.out.println("--" + JSONObject.toJSONString(map));
+
+
         int max = 0;
+        //遍历二维数组，解析数组中的值，获取最大的值
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 0) {
@@ -232,8 +243,10 @@ public class daoyu {
         return max;
     }
 
+    //这里是说淹没岛屿
     public static void fullIsland(int[][] grid, int i, int j, int index) {
         grid[i][j] = index;
+        //如果他的上一个位置是岛屿，就把他当前设置为index
         if (i > 0 && grid[i - 1][j] == 1) {
             fullIsland(grid, i - 1, j, index);
         }
