@@ -14,7 +14,7 @@ public class test {
     
 	public static void main(String[] args) {
 		test test = new test();
-		System.out.println(test.EXCLUSIVE_MASK);
+		System.out.println(EXCLUSIVE_MASK);
 	}
 
 }
