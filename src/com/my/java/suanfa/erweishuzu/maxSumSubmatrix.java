@@ -26,6 +26,7 @@ public class maxSumSubmatrix {
         matrix[0] = new int[] {1, 0,1};
         matrix[1] = new int[] {0,-2,3};
         int k =2;
+        //测试多个ssh
         System.out.println(maxSumSubmatrix2(matrix,k));
     }
 
