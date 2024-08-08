@@ -151,18 +151,16 @@ public class TestListNode {
             return result;
         }
         Stack<MyListNode> stack = new Stack<>();
-        MyListNode p =  root;
-        while (p != null || !stack.empty() ) {
-            while (p != null) {
-                //入栈2，入栈1
+        MyListNode p = root;
+        while (p!=null || !stack.isEmpty()) {
+            while (p !=null) {
                 stack.push(p);
                 result.add(p.val);
                 p = p.left;
             }
-            //左边的节点遍历结束了，弹出栈中的一个元素，直到弹完
             MyListNode pop = stack.pop();
-            //弹完元素之后准备遍历右边的元素
             p = pop.right;
+
         }
         return  result;
     }

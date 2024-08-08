@@ -1,11 +1,10 @@
 package com.my.java.suanfa.lru;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 
 public class LRUCache<K, V> {
-    private Hashtable<K, CacheNode> caches = new Hashtable<K, CacheNode>();
 
-    private int count;
+    private HashMap<K, CacheNode> caches = new HashMap<K, CacheNode>();
 
     //队列的容量
     private int capacity;
@@ -13,10 +12,8 @@ public class LRUCache<K, V> {
     private CacheNode first, last;
 
     public LRUCache(int capacity) {
-        this.count = 0;
         this.capacity = capacity;
     }
-
 
     public void put(K k, V v) {
         CacheNode node = caches.get(k);
@@ -48,17 +45,18 @@ public class LRUCache<K, V> {
             if (node.next != null) {
                 node.next.pre = node.pre;
             }
+            //头节点替换下一个
             if (node == first) {
                 first = node.next;
             }
             if (node.pre != null) {
                 node.pre.next = node.next;
             }
+            //尾节点替换上一个
             if (node == last) {
                 last = node.pre;
             }
         }
-
         return caches.remove(k);
     }
 
@@ -70,9 +68,11 @@ public class LRUCache<K, V> {
 
 
     private void moveToFirst(CacheNode node) {
+        //node 已经是头节点
         if (first == node) {
             return;
         }
+        //先把node节点删除
         if (node.next != null) {
             node.next.pre = node.pre;
         }
@@ -87,6 +87,7 @@ public class LRUCache<K, V> {
             return;
         }
 
+        //node 设置为当前first 节点的头节点
         node.next = first;
         first.pre = node;
         first = node;

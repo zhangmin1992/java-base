@@ -28,10 +28,12 @@ public class GetSet {
                     sb.append(str.charAt(i));
                 }
             }
+            System.out.println(sb.toString());
             set2.add(sb.toString());
         } else {
             isIns[position] = true;
             find(str, position + 1, isIns,set2);
+            System.out.println("--" + position);
             isIns[position] = false;
             find(str, position + 1, isIns,set2);
         }

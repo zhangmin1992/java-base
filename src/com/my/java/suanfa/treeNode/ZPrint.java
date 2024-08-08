@@ -30,11 +30,11 @@ public class ZPrint {
         if (root == null)
             return value;
         int index = 0;//二叉树的深度
-        int cur, last;
+        int cur, last;//当前层的大小
         Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(root);
         while (!queue.isEmpty()) {
-            List<Integer> va = new ArrayList<>();//临时 用于存储到value中
+            List<Integer> va = new ArrayList<>();//临时用于存储到value中
             //记录本层已经遍历的节点个数
             cur = 0;
             //当遍历完当前层以后，队列里元素全是下一层的元素，队列的长度是这一层的节点的个数

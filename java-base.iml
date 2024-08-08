@@ -220,5 +220,6 @@
     </orderEntry>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="library" name="money-1.0.6-20160606.093314-1" level="project" />
+    <orderEntry type="library" name="alipay-sdk-java-4.22.0.ALL" level="project" />
   </component>
 </module>

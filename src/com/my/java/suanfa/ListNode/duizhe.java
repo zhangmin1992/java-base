@@ -58,6 +58,7 @@ public class duizhe {
     //对折链表，参数K是中间的那个节点位置
     public static MyNode duizheListNode(MyNode node, int k) {
         int count = 0;
+        //记录前一个节点
         MyNode tempPre = null;
         MyNode head = node;
         while (node != null) {
@@ -97,17 +98,20 @@ public class duizhe {
 
             //设置链表的前后关系,为了适应长短不一的链表，当链表遍历完的时候这里不设置next
             if (newNode != null) {
+                //1->8 链接起来
                 node.setNext(newNode);
             }
+            System.out.println("--" + getNumbers(node));
             if (next != null) {
+                //8->2 链接起来
                 newNode.setNext(next);
             }
+            System.out.println("---" + getNumbers(node));
 
             //这里让两个链表都递增
             node = next;
             newNode = newNodeNext;
         }
-        System.out.println();
         return head;
     }
 }

@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$USER_HOME$/newWork/tarena-lbs/tarena-lbs-basic/lbs-basic-protocol/src/main/java/com/tarena/lbs/basic/protocol/bo/UserBO.java" description="private Integer userId;" line="22" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="967136dc-89ad-4f86-a0ac-dc86352e6193" name="Default Changelist" comment="数组算法：&#10;新增回文字符串&#10;数组中的TopK&#10;出现一次的数组&#10;二维数组的矩形中和最大的值">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/alipay_sdk_java_4_22_0_ALL.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/alipay-sdk-java-4.22.0.ALL.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/base/RSAUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/base/TestNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/base/file/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/NodeSplist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/isPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/repeatListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/String/dashusum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/hashmap/HashMapDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/hashmap/MyHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/hashmap/MyMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/huisu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/kuaishouthread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/nSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/moreThanHalfNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/nixu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/quchong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/reversePairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/squire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/zhengshufanzhuan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/test/SeatObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/test/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/thread/ExchangerThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/my/java/thread/TestCompletableFuture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/maxSumSubmatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/maxSumSubmatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/base/TestString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/base/TestString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/base/TestTryFianlly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/base/TestTryFianlly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/meituan/student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/meituan/student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ASuanfa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ASuanfa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/BitMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/BitMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/DFS/daoyu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/DFS/daoyu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/DP/DPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/DP/DPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/FirstCommonNodeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/FirstCommonNodeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/TestListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/TestListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/duizhe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/duizhe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/erfen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/erfen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/findFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/findFromEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/mergeKLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/mergeKLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/MergeArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/ReverseListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/ReverseListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/String/longestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/String/longestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/PlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/PlusOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/findCelebrity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/findCelebrity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/he.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/he.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/lru/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/lru/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/queue/minMeetingRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/queue/minMeetingRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/GetSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/GetSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/combinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/combinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/containsNearbyDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/containsNearbyDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/findKthLargest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/findKthLargest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getZiji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getZiji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/isPalindromeInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/isPalindromeInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/jiayou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/jiayou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/maxArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/maxArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/subarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/subarraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/topKFrequent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/topKFrequent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/MyTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/MyTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/ZPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/ZPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/suanfa/zhongweishu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/suanfa/zhongweishu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/thread/TestCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/thread/TestCyclicBarrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/thread/TestForkJoinPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/thread/TestForkJoinPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/thread/TestSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/thread/TestSemaphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/test/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/test/test2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -131,47 +205,142 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="2030898856">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="9" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="6" />
+          <entry key="java" value="307" />
+          <entry key="txt" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="6" />
+          <entry key="JAVA" value="307" />
+          <entry key="PLAIN_TEXT" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="11886" />
+          <entry key="txt" value="246" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="11886" />
+          <entry key="PLAIN_TEXT" value="246" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/topKFrequent.java">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ASuanfa.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/countRangeSum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="275">
+              <caret line="163" column="39" selection-start-line="163" selection-start-column="32" selection-end-line="163" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/maxSumSubmatrix.java">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/maxArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="205">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/longestConsecutive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21956">
-              <caret line="1054" column="36" selection-start-line="1054" selection-start-column="33" selection-end-line="1054" selection-end-column="36" />
+            <state relative-caret-position="198">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/hebingqujian.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getZiji.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getMiddle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/findKthLargest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+              <folding>
+                <element signature="e#4511#4512#0" expanded="true" />
+                <element signature="e#4582#4583#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/topKFrequent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/isPalindromeInArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -182,34 +351,50 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Singleton" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MinHeap</find>
-      <find>fanzhuan</find>
-      <find>祖先</find>
-      <find>hasCycleWithFindFirstCommonNode</find>
-      <find>addTwoNumbers</find>
-      <find>findMedianSortedArrays</find>
-      <find>longestPalindrome</find>
-      <find>numEnclaves</find>
-      <find>largestIsland</find>
-      <find>numIslands</find>
-      <find>岛屿</find>
-      <find>numDistinctIslands</find>
-      <find>Collections.sort</find>
-      <find>1.8</find>
-      <find>ter</find>
+      <find>lowestCommonAncestor</find>
+      <find>100</find>
+      <find>生产者</find>
+      <find>反转</find>
+      <find>后序</find>
+      <find>滑动窗口</find>
+      <find>你只可以看到数组内的K个数字</find>
+      <find>滑动</find>
       <find>回文</find>
+      <find>线程</find>
+      <find>打印</find>
+      <find>元</find>
+      <find>finnal</find>
+      <find>hasCycleWithFindFirstCommonNode</find>
+      <find>findFirstCommonNodeV2</find>
+      <find>mergeKLists</find>
+      <find>删除链表中所有</find>
+      <find>findFromEnd</find>
+      <find>middleNode</find>
+      <find>getZiji</find>
+      <find>isPalindromeInArray</find>
+      <find>中位数</find>
+      <find>BitMap</find>
+      <find>进制</find>
+      <find>candidates</find>
+      <find>二分查找</find>
+      <find>删除</find>
+      <find>findKthLargest</find>
+      <find>getMiddle</find>
+      <find>数组</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/com/my/java</dir>
+      <dir>$PROJECT_DIR$/src/com/my</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -220,49 +405,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/my/java/util/FSTSeriazle/App.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/util/FSTSeriazle/MUser.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/base/TestLong.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/base/test.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/base/enumstest/BaseEnums.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/base/enumstest/MyEnum.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/base/enumstest/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyListNode.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/isDuiChenTree.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/IsSouSuoTree.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/Array/array.info.txt" />
-        <option value="$PROJECT_DIR$/src/com/my/test/test2.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/lowestCommonAncestor.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/other/amountTransfer.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getZiji.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/DP/findDerangement.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/moreThanHalfNum.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/DP/DPTest.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/subarraySum.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/AddTwoNumbers.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/zhongweishu.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/findCelebrity.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/isPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/MyTreeNode.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getZiji.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/reversePairs.java" />
+        <option value="$PROJECT_DIR$/src/com/my/test/test2.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/TestListNode.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/findKthLargest.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/kuohao.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MergeTwoLists.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/kuaishouthread.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/thread/TestCompletableFuture.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/findFromEnd.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/String/dashusum.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/lru/LRUCache.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/lru/test.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/lowestCommonAncestor.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/base/TestString.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/base/TestStatic.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/ZPrint.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/MyMap.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/MyHashMap.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/hashmap/MyHashMap.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/hashmap/HashMapDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/huisu.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/String/longestPalindrome.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/String/reverseInteger.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/thread/Testvolatile.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/thread/tongxin/test.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/thread/TestCondition.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify2.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify3.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/thread/reentreadwritelock/test.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/base/BankIdentifier.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/base/lamada.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shizhan/meituan.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shizhan/testList.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/test.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/daoyuzice.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/daoyu.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/base/TestNull.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString3.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/base/TestTryFianlly.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/squire.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/FirstCommonNodeList.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/repeatListNode.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ASuanfa.txt" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/combinationSum.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/containsNearbyDuplicate.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/GetSet.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/isPalindromeInArray.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/singleNumber.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/mediaInArray.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/BitMap.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/nixu.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/erfen.java" />
         <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/topKFrequent.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/countRangeSum.java" />
-        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/maxSumSubmatrix.java" />
+        <option value="$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/maxArea.java" />
       </list>
     </option>
   </component>
@@ -289,7 +482,7 @@
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="790" />
+    <option name="height" value="786" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -305,8 +498,52 @@
         <subPane>
           <expand>
             <path>
-              <item name="myworkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myworkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="java-base2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-base2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-base2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-base2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-base2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-base2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-base2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
+              <item name="shuzu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-base2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
+              <item name="treeNode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,25 +568,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/min.zhang/myworkspace/src/com/my/java/suanfa/shuzu/countRangeSum.java&#10;string&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java&#10;ThreadP&#9;PSI&#9;JAVA://com.my.java.guanxi.MyThreadPoolExecutor&#10;daoyu&#9;FILE&#9;file:///Users/min.zhang/myworkspace/src/com/my/java/suanfa/erweishuzu/daoyu.java&#10;Nbao&#9;PSI&#9;JAVA://com.my.java.suanfa.NBaoshu" />
+    <property name="SearchEverywhereHistoryKey" value="maxArea&#9;PSI&#9;JAVA://com.my.java.suanfa.shuzu.maxArea&#10;longestConsecutive&#9;PSI&#9;JAVA://com.my.java.suanfa.shuzu.longestConsecutive&#10;isPalindromeInArray&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/shuzu/isPalindromeInArray.java&#10;hebingqujian&#9;PSI&#9;JAVA://com.my.java.suanfa.shuzu.hebingqujian&#10;getZiji&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/shuzu/getZiji.java&#10;findKthLargest&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/shuzu/findKthLargest.java&#10;FIndCharOfString&#9;PSI&#9;JAVA://com.my.java.suanfa.String.FIndCharOfString&#10;BitSet&#9;PSI&#9;JAVA://java.util.BitSet&#10;KZiFuChuan&#9;PSI&#9;JAVA://com.my.java.suanfa.String.KZiFuChuan&#10;mediaInArray&#9;PSI&#9;JAVA://com.my.java.suanfa.shuzu.mediaInArray&#10;GetSet&#9;PSI&#9;JAVA://com.my.java.suanfa.shuzu.GetSet&#10;containsNearbyDuplicate&#9;PSI&#9;JAVA://com.my.java.suanfa.shuzu.containsNearbyDuplicate&#10;combinationSum&#9;PSI&#9;JAVA://com.my.java.suanfa.shuzu.combinationSum&#10;mergeKLists&#9;PSI&#9;JAVA://com.my.java.suanfa.ListNode.mergeKLists&#10;MergeTwoLists&#9;PSI&#9;JAVA://com.my.java.suanfa.ListNode.MergeTwoLists&#10;KListNodeFanZhuan&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java&#10;FirstCommonNodeList&#9;PSI&#9;JAVA://com.my.java.suanfa.ListNode.FirstCommonNodeList&#10;findDeep2&#9;PSI&#9;JAVA://com.my.java.suanfa.treeNode.MyTreeNode#findDeep2&#10;ZPrint&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/treeNode/ZPrint.java&#10;isPalindrome&#9;PSI&#9;JAVA://com.my.java.suanfa.ListNode.isPalindrome&#10;Executors&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/java/util/concurrent/Executors.class&#10;hashtable&#9;PSI&#9;JAVA://java.util.Hashtable&#10;tests&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/base/TestStringBuilder.java&#10;synchronize&#9;PSI&#9;JAVA://com.my.java.thread.TestSynchronized&#10;stringbu&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java&#10;top&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/shuzu/topKFrequent.java&#10;longestSubstring&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/String/longestSubstring.java&#10;topk&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/shuzu/topKFrequent.java&#10;half&#9;FILE&#9;file:///Users/min.zhang/newworkspace/java-base2/src/com/my/java/suanfa/shuzu/moreThanHalfNum.java&#10;ExecutorService&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/java/util/concurrent/ExecutorService.class&#10;threadpool&#9;PSI&#9;JAVA://com.my.java.guanxi.MyThreadPoolExecutor&#10;Integer&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/java/lang/Integer.class&#10;LinkedList&#9;PSI&#9;JAVA://java.util.LinkedList&#10;copyon&#9;PSI&#9;JAVA://java.util.concurrent.CopyOnWriteArrayList&#10;string&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java&#10;ThreadP&#9;PSI&#9;JAVA://com.my.java.guanxi.MyThreadPoolExecutor&#10;daoyu&#9;FILE&#9;file:///Users/min.zhang/myworkspace/src/com/my/java/suanfa/erweishuzu/daoyu.java&#10;Nbao&#9;PSI&#9;JAVA://com.my.java.suanfa.NBaoshu" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1666144597010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1723109853585" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.my.java.base.file" />
       <recent name="com.my.java.suanfa.shuzu" />
       <recent name="com.my.java.suanfa.shizhan" />
       <recent name="com.my.java.thread.tongxin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/my/java/suanfa/hashmap" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/com/my/java/thread/tongxin" />
       <recent name="$PROJECT_DIR$/src/com/my/java" />
     </key>
@@ -366,9 +606,48 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.maxSumSubmatrix">
-    <configuration name="containsNearbyDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.shuzu.containsNearbyDuplicate" />
+  <component name="RunManager" selected="Application.longestConsecutive">
+    <configuration name="BitMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.BitMap" />
+      <module name="java-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.java.suanfa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FIndCharOfString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.String.FIndCharOfString" />
+      <module name="java-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.java.suanfa.String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="erfen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.ListNode.erfen" />
+      <module name="java-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.java.suanfa.ListNode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="longestConsecutive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.shuzu.longestConsecutive" />
       <module name="java-base" />
       <extension name="coverage">
         <pattern>
@@ -380,47 +659,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="countRangeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.shuzu.countRangeSum" />
-      <module name="java-base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.my.java.suanfa.shuzu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="isPalindromeInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.shuzu.isPalindromeInArray" />
-      <module name="java-base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.my.java.suanfa.shuzu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="maxSumSubmatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.erweishuzu.maxSumSubmatrix" />
-      <module name="java-base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.my.java.suanfa.erweishuzu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="topKFrequent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.shuzu.topKFrequent" />
+    <configuration name="mediaInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.java.suanfa.shuzu.mediaInArray" />
       <module name="java-base" />
       <extension name="coverage">
         <pattern>
@@ -433,19 +673,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.containsNearbyDuplicate" />
-      <item itemvalue="Application.isPalindromeInArray" />
-      <item itemvalue="Application.countRangeSum" />
-      <item itemvalue="Application.topKFrequent" />
-      <item itemvalue="Application.maxSumSubmatrix" />
+      <item itemvalue="Application.mediaInArray" />
+      <item itemvalue="Application.BitMap" />
+      <item itemvalue="Application.FIndCharOfString" />
+      <item itemvalue="Application.erfen" />
+      <item itemvalue="Application.longestConsecutive" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.maxSumSubmatrix" />
-        <item itemvalue="Application.countRangeSum" />
-        <item itemvalue="Application.topKFrequent" />
-        <item itemvalue="Application.isPalindromeInArray" />
-        <item itemvalue="Application.containsNearbyDuplicate" />
+        <item itemvalue="Application.longestConsecutive" />
+        <item itemvalue="Application.erfen" />
+        <item itemvalue="Application.FIndCharOfString" />
+        <item itemvalue="Application.BitMap" />
+        <item itemvalue="Application.mediaInArray" />
       </list>
     </recent_temporary>
   </component>
@@ -477,6 +717,30 @@
       <workItem from="1665713687177" duration="26115000" />
       <workItem from="1666144945867" duration="1503000" />
       <workItem from="1666255510674" duration="842000" />
+      <workItem from="1696924301299" duration="195000" />
+      <workItem from="1698824040599" duration="7000" />
+      <workItem from="1699607375785" duration="25163000" />
+      <workItem from="1700795011015" duration="477000" />
+      <workItem from="1701138156634" duration="2194000" />
+      <workItem from="1702028906492" duration="11161000" />
+      <workItem from="1702524882002" duration="2392000" />
+      <workItem from="1703064161058" duration="3083000" />
+      <workItem from="1703142871386" duration="2594000" />
+      <workItem from="1703147413203" duration="125000" />
+      <workItem from="1703227429978" duration="4848000" />
+      <workItem from="1703642617217" duration="1141000" />
+      <workItem from="1703647987389" duration="10775000" />
+      <workItem from="1703829934286" duration="6676000" />
+      <workItem from="1709708777857" duration="652000" />
+      <workItem from="1710406627064" duration="27340000" />
+      <workItem from="1711953119901" duration="5000" />
+      <workItem from="1712107165746" duration="38737000" />
+      <workItem from="1712719574442" duration="41131000" />
+      <workItem from="1715323093556" duration="4100000" />
+      <workItem from="1721099019896" duration="1707000" />
+      <workItem from="1721790563669" duration="522000" />
+      <workItem from="1722821301172" duration="3206000" />
+      <workItem from="1722996258512" duration="16093000" />
     </task>
     <task id="LOCAL-00001" summary="什么东西">
       <created>1579145451830</created>
@@ -562,11 +826,18 @@
       <option name="project" value="LOCAL" />
       <updated>1666168333218</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="数组算法：&#10;新增回文字符串&#10;数组中的TopK&#10;出现一次的数组&#10;二维数组的矩形中和最大的值">
+      <created>1696924325832</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696924325832</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83627000" />
+    <option name="totallyTimeSpent" value="287951000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -581,7 +852,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23319027" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19027181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -589,17 +860,18 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49928468" weight="0.32961586" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7253219" visible="true" weight="0.3370508" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5751073" weight="0.38537794" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49785408" weight="0.15797317" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.68955654" visible="true" weight="0.15365551" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.77682406" weight="0.21437423" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49642345" weight="0.17967781" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4914163" weight="0.04918033" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.8054363" visible="true" weight="0.1598513" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.19456366" side_tool="true" visible="true" weight="0.1598513" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49356222" weight="0.32465923" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.8032904" weight="0.1598513" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3104435" side_tool="true" visible="true" weight="0.15365551" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.490701" weight="0.3233979" />
+      <window_info anchor="bottom" id="Statistic" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24964234" />
@@ -614,6 +886,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -651,370 +933,368 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/Grap/MyGraph.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/TestListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="4070">
+          <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/ZPrint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" selection-start-line="6" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="2068">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString2.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/isPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="2" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="257" column="48" selection-start-line="257" selection-start-column="48" selection-end-line="257" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ASuanfa.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-790">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MyListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/MyTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="77" column="48" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="77" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/lowestCommonAncestor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/FirstCommonNodeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/subarraySum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/AddTwoNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/zhongweishu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/String/longestPalindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getZiji.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12892">
-          <caret line="642" column="25" selection-start-line="642" selection-start-column="25" selection-end-line="642" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/other/amountTransfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/String/reverseInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/DP/DPTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/NBaoshu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/Testvolatile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/guanxi/MyThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/tongxin/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-625">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1439">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/AbstractExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="130" column="24" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/reentreadwritelock/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/DP/numDistinct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/base/lamada.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/base/BankIdentifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shizhan/meituan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shizhan/testList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/daoyuzice.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/daoyu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="437" column="28" selection-start-line="437" selection-start-column="28" selection-end-line="437" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13024#13025#0" expanded="true" />
-            <element signature="e#13050#13051#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="2157" column="52" lean-forward="true" selection-start-line="2157" selection-start-column="52" selection-end-line="2157" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/base/TestString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2367">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/base/TestIntern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/containsNearbyDuplicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#226#235#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1144">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/String/isPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="836">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/isPalindromeInArray.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/treeNode/MyTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="2200">
+          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/TestCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/TestSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/other/amountTransfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/base/TestTryFianlly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="96" column="9" selection-start-line="92" selection-start-column="17" selection-end-line="96" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/base/TestInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/thread/tongxin/waitandnotify3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/squire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infto.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/he.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/AddTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/singleNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/FirstCommonNodeList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="431">
+          <caret line="93" column="27" lean-forward="true" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/MergeTwoLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/mergeKLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/KListNodeFanZhuan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="163" column="18" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/repeatListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/findFromEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/middleNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/containsNearbyDuplicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/GetSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="5" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/mediaInArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/String/KZiFuChuan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/zhongweishu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="132" column="26" lean-forward="true" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/BitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/BitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="226" column="32" lean-forward="true" selection-start-line="226" selection-start-column="32" selection-end-line="226" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="301" column="25" selection-start-line="301" selection-start-column="25" selection-end-line="301" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#154#172#0" expanded="true" />
+            <element signature="e#10902#10903#0" expanded="true" />
+            <element signature="e#10948#10949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/base/TestJiSuan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="69" column="18" lean-forward="true" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/String/FIndCharOfString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/daoyu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="192" column="9" lean-forward="true" selection-start-line="192" selection-start-column="9" selection-end-line="192" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/huadongchuangkou/TestString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/combinationSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/nixu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="733" column="16" selection-start-line="733" selection-start-column="16" selection-end-line="733" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ListNode/erfen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/a.suanfa.info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/findKthLargest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="e#4511#4512#0" expanded="true" />
+            <element signature="e#4582#4583#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/topKFrequent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="175">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/countRangeSum.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getMiddle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/getZiji.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/hebingqujian.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/isPalindromeInArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21956">
-          <caret line="1054" column="36" selection-start-line="1054" selection-start-column="33" selection-end-line="1054" selection-end-column="36" />
+        <state relative-caret-position="229">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/erweishuzu/maxSumSubmatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/longestConsecutive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="198">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/ASuanfa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="163" column="39" selection-start-line="163" selection-start-column="32" selection-end-line="163" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/my/java/suanfa/shuzu/maxArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1095,7 +1375,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>money-1.0.6-20160606.093314-1</last-edited>
+          <last-edited>alipay-sdk-java-4.22.0.ALL</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -8,10 +8,17 @@ import com.alibaba.fastjson.JSONObject;
 public class findKthLargest {
     public static void main(String args[]) {
         int[] nums = {13, 9, 5, 9, 5,8, 6, 1, 3};
+        quick(nums,0,nums.length-1);
+        System.out.println(JSONObject.toJSONString(nums));
+
+        //[1,3,5,5,6,8,9,9,13]
+//        int tt = findKthLargest(nums,8);
+//        System.out.println(tt);
+
 //        quickSort(nums,0,nums.length-1);
 //        (nums);
 //        System.out.println(JSONObject.toJSONString(nums));
-        System.out.println(findKthLargestV2(nums,4));
+       // System.out.println(findKthLargestV2(nums,4));
 //        System.out.println(JSONObject.toJSONString(findKthLargest(nums, 4)));
     }
 
@@ -20,6 +27,7 @@ public class findKthLargest {
      */
     public static void quickSort(int[] arr, int low, int high) {
         int i, j, temp, t;
+        //这一段必须有
         if (low > high) {
             return;
         }
@@ -98,45 +106,62 @@ public class findKthLargest {
         return result;
     }
 
-    public static void swap(int[] q, int i, int j) {
-        int t = q[i];
-        q[i] = q[j];
-        q[j] = t;
+    static int pation(int[] arr,int low,int high) {
+        int temp = arr[low];
+        while (low < high) {
+            while (low<high && arr[high] >= temp) {
+                high--;
+            }
+            arr[low] =arr[high];//高位的元素放到低位
+            while (low<high && arr[low] < temp) {
+                low++;
+            }
+            arr[high] =arr[low];//低位的元素放到高位
+        }
+        arr[low] = temp;//基准位置的元素放到low上
+        return low;
     }
 
-    static int quick_sort(int[] nums, int l, int r, int k) {
-        if (l >= r)
-            return nums[l];
-        int i = l;
-        int j = r;
-        int mid = l + r >> 1;
-        //l+r>>1表示左指针和右指针的中间那个数
-        int x = nums[mid];
-        System.out.println(i + "--" + j + "--" + mid);
-        while (i < j) {
-            //先看右边，依次往左递减
-            while (x >= nums[j] && i < j) {
+    static void quick(int[] arr,int low,int high) {
+        //这句话必须有，否则会报错
+        if (low < high) {
+            int pation = pation(arr, low, high);
+            quick(arr, low, pation - 1);
+            quick(arr, pation + 1, high);
+        }
+    }
+
+    static int quick(int[] arr,int low,int high,int k) {
+        int i = low;
+        int j = high;
+        int temp = arr[low];
+        while(i<j) {
+            while (i<j && arr[j] >= temp) {
                 j--;
             }
-            //再看左边，依次往右递增
-            while (x <= nums[i] && i < j) {
+            while (i<j && arr[i] <= temp) {
                 i++;
             }
-            //如果满足条件则交换
-            if (i < j) {
-                swap(nums, i, j);
-            }
+            int t = arr[i];
+            arr[i] = arr[j];
+            arr[j] = t;
         }
-        if (k <= j)
-            return quick_sort(nums, l, j-1, k);
-        else
-            return quick_sort(nums, j + 1, r, k);
+        //最后将基准为与i和j相等位置的数字交换
+        arr[low] = arr[i];
+        arr[i] = temp;
+        if (i == k) {
+            return arr[i];
+        } else if (i > k) {
+            return quick(arr, low, i - 1, k);
+        } else {
+            return quick(arr, i + 1, high, k);
+        }
     }
 
     /**
      * 功能描述: 找到数据中第K大的数，因为从0开始排序，所以第K大实际上是K-1大的数字
      */
     public static int findKthLargest(int[] nums, int k) {
-        return quick_sort(nums, 0, nums.length - 1, k - 1);
+        return quick(nums, 0, nums.length - 1, nums.length - k);
     }
 }

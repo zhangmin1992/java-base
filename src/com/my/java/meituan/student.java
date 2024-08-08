@@ -33,30 +33,30 @@ public class student {
 		this.taskId = taskId;
 		this.name = name;
 	}
-	@Override
-    public boolean equals(Object obj) {
-        if(this == obj){
-            return true;//地址相等
-        }
-
-        if(obj == null){
-            return false;//非空性：对于任意非空引用x，x.equals(null)应该返回false。
-        }
-
-        if(obj instanceof student){
-        	student other = (student) obj;
-            //需要比较的字段相等，则这两个对象相等
-            return ((student) obj).getName().equals(other.getName());
-        }
-        return false;
-    }
-	
-	@Override
-    public int hashCode() {
-        int result = 17;
-        result = 31 * result + (name == null ? 0 : name.hashCode());
-        return result;
-    }
+//	@Override
+//    public boolean equals(Object obj) {
+//        if(this == obj){
+//            return true;//地址相等
+//        }
+//
+//        if(obj == null){
+//            return false;//非空性：对于任意非空引用x，x.equals(null)应该返回false。
+//        }
+//
+//        if(obj instanceof student){
+//        	student other = (student) obj;
+//            //需要比较的字段相等，则这两个对象相等
+//            return ((student) obj).getName().equals(other.getName());
+//        }
+//        return false;
+//    }
+//
+//	@Override
+//    public int hashCode() {
+//        int result = 17;
+//        result = 31 * result + (name == null ? 0 : name.hashCode());
+//        return result;
+//    }
 	
 	public static List<student> getList() {
 		List<student> list = new ArrayList<student>();
@@ -68,4 +68,11 @@ public class student {
 		list.add(new student(18,3,"yy"));
 		return list;
 	}
+
+	public static void main(String[] args) {
+
+	}
 }
+
+
+

@@ -21,8 +21,9 @@ package com.my.java.suanfa.shuzu;
 public class maxArea {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1,8,6,2,5,4,8,3,7};
+        int[] nums = new int[]{4,2,0,3,2,5};
         System.out.println(maxArea(nums));
+
     }
 
     public static int maxArea(int[] height) {

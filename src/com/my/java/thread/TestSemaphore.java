@@ -10,9 +10,11 @@ import java.util.concurrent.Semaphore;
  */
 public class TestSemaphore {
 
+
 	private static Semaphore aSemaphore = new Semaphore(1);
 	private static Semaphore bSemaphore = new Semaphore(0);
 	private static Semaphore cSemaphore = new Semaphore(0);
+
 	public static void main(String[] args) {
 		new ThreadA().start();
 		new ThreadB().start();

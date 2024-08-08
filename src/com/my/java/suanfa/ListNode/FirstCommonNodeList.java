@@ -2,12 +2,14 @@ package com.my.java.suanfa.ListNode;
 
 /**
  * 功能描述:
- * hasCycle 判断链表中是否有环 ----- 有关单链表中环的问题
+ * hasCycle 判断链表中是否有环 ----- 有关单链表中环的问题，快慢指针，快指针2步慢指针1步，相遇就是有环
  * hasCycleWithFindFirstCommonNode 判断是否有环，有的话找到环的起始节点
+ *
  * findFirstCommonNode 求两个链表相交的节点,
  *         方法一比较繁琐，需要求每个链表的长度，让长的链表走一下固定步数，一起走，相遇的时候就是相交的节点
  * findFirstCommonNodeV2 求两个链表相交的节点,
- *          方法二比较简单，每个链表都开始走，当链表走完的时候交换到另一个链表的头节点开始走，最后相遇的时候就是相交的节点
+ *          方法二比较简单，
+ *          每个链表都开始走，当链表走完的时候交换到另一个链表的头节点开始走，最后相遇的时候就是相交的节点
  */
 public class FirstCommonNodeList {
     static class Node {

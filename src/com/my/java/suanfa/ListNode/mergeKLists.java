@@ -8,7 +8,9 @@ import java.util.PriorityQueue;
  */
 public class mergeKLists {
     public static ListNode mergeKLists(ListNode[] lists) {
-        if (lists.length == 0) return null;
+        if (lists == null || lists.length == 0) {
+            return null;
+        }
         // 虚拟头结点
         ListNode dummy = new ListNode(-1);
         ListNode p = dummy;
@@ -17,14 +19,16 @@ public class mergeKLists {
                 lists.length, (a, b)->(a.val - b.val));
         // 将 k 个链表的头结点加入最小堆
         for (ListNode head : lists) {
-            if (head != null)
+            if (head != null) {
                 pq.add(head);
+            }
         }
 
         while (!pq.isEmpty()) {
             // 获取最小节点，接到结果链表中
             ListNode node = pq.poll();
-            //p.next = node;
+            p.next = node;
+            //把最小节点的下一个节点加入最小堆中
             if (node.next != null) {
                 pq.add(node.next);
             }

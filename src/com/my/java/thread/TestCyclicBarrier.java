@@ -1,7 +1,7 @@
 package com.my.java.thread;
 
-import java.util.Random;
-import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
 
 /**
  *  有5个线程，全部先打印出hello，再打印出bye
@@ -12,33 +12,14 @@ import java.util.concurrent.CountDownLatch;
 public class TestCyclicBarrier {
 
 	public static void main(String[] args) {
-//        CyclicBarrier cyclicBarrier = new CyclicBarrier(5);
-//        for (int i = 0; i < 5; i++) {
-//            new Thread(new Runnable() {
-//                public void run() {
-//                    System.out.println("hello");
-//                    try {
-//                        cyclicBarrier.await();
-//                    } catch (InterruptedException | BrokenBarrierException e) {
-//                        // TODO Auto-generated catch block
-//                        e.printStackTrace();
-//                    }
-//                    System.out.println("bye");
-//                }
-//            }).start();
-//        }
-//     System.out.println("000");
-
-        new Thread().start();
-        CountDownLatch countDownLatch = new CountDownLatch(5);
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(5);
         for (int i = 0; i < 5; i++) {
             new Thread(new Runnable() {
                 public void run() {
                     System.out.println("hello");
                     try {
-                        Thread.sleep(new Random().nextInt(3) * 1000 );
-                        countDownLatch.await();
-                    } catch (Exception e) {
+                        cyclicBarrier.await();
+                    } catch (InterruptedException | BrokenBarrierException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
@@ -46,7 +27,26 @@ public class TestCyclicBarrier {
                 }
             }).start();
         }
-        System.out.println("000");
+     System.out.println("000");
+
+//        new Thread().start();
+//        CountDownLatch countDownLatch = new CountDownLatch(5);
+//        for (int i = 0; i < 5; i++) {
+//            new Thread(new Runnable() {
+//                public void run() {
+//                    System.out.println("hello");
+//                    try {
+//                        Thread.sleep(new Random().nextInt(3) * 1000 );
+//                        countDownLatch.await();
+//                    } catch (Exception e) {
+//                        // TODO Auto-generated catch block
+//                        e.printStackTrace();
+//                    }
+//                    System.out.println("bye");
+//                }
+//            }).start();
+//        }
+//        System.out.println("000");
 	}
 
 }

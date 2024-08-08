@@ -32,6 +32,7 @@ public class TestString3 {
             }
             // 不断添加
             list.addLast(nums[right]);
+            System.out.println("--" + JSONObject.toJSONString(list));
             right++;
             // 构造窗口完成，这时候需要根据条件做一些操作
             if (right >= k) {

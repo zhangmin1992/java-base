@@ -7,6 +7,7 @@ import java.util.concurrent.RecursiveTask;
 
 /**
  * 利用forkjoin计算1到100的和
+ * 内部采用分治算法实现，主要原理就是一个大任务拆解成若干个小任务分发给若干个线程去处理的，最后将若干个线程处理好后的结果进行汇总
 	* @Description: TODO(这里用一句话描述这个类的作用) 
 	* @author zhangmin 
 	* @date Jun 6, 2019 2:00:56 PM
@@ -40,8 +41,8 @@ public class TestForkJoinPool {
                 }
                 return totalValue;
             }
-            // 否则再进行任务拆分，拆分成两个任务
             else {
+                // 否则再进行任务拆分，拆分成两个任务
             	System.out.println("拆分成两个任务:startValue= "+startValue+" endValue= "+endValue + " -- "+ (startValue + endValue) / 2);
                 MyForkJoinTask subTask1 = new MyForkJoinTask(startValue, (startValue + endValue) / 2);
                 subTask1.fork();

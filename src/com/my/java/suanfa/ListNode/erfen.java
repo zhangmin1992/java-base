@@ -3,10 +3,10 @@ package com.my.java.suanfa.ListNode;
 public class erfen {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 1, 2, 3, 4};
-        System.out.println(search(nums, 2));
+        int[] nums = new int[] {1, 1, 2, 2, 2, 2,9};
+//        System.out.println(search(nums, 2));
 //        System.out.println(binarySearch1(nums, 0,nums.length-1,4));
-//        System.out.println(binarySearch(nums,4));
+        System.out.println(binarySearch(nums, 2));
 
     }
 
@@ -21,7 +21,8 @@ public class erfen {
                 left = mid + 1;
             else if (midVal > value)
                 right = mid - 1;
-            else return mid;
+            else
+                return mid;
         }
         return -1;
     }
@@ -42,31 +43,27 @@ public class erfen {
         }
     }
 
-    //二分查找的变形，返回数数组中最后一次出现target的位置
+    //二分查找的变形，返回有序递增不减数组中最后一次出现target的位置
     public static int search(int[] nums, int target) {
         //加了一些边界，target比有序数组目标值的第一个还小，或者比最后一个还大的时候返回-1
-        if (nums == null || nums.length == 0
-                || target < nums[0] || target > nums[nums.length - 1]) {
+        if (nums == null || nums.length == 0 || target < nums[0] || target > nums[nums.length - 1]) {
             return -1;
         }
 
         int left = 0;
         int right = nums.length - 1;
-        int min = Integer.MAX_VALUE;
 
         while (left <= right) {
-            int mid = (left + right + 1) / 2;
+            int mid = (left + right) >> 1;
             if (target == nums[mid]) {
-                if (mid < min) {
-                    min = mid;
-                }
-                right = mid - 1;
+                left = mid + 1;
             } else if (target > nums[mid]) {
                 left = mid + 1;
             } else {
                 right = mid - 1;
             }
         }
-        return min == Integer.MAX_VALUE ? -1 : min;
+        System.out.println(left + "---" + right);
+        return nums[right] == target ? right : -1;
     }
 }

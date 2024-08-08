@@ -37,6 +37,10 @@ com.my.java.suanfa.ListNode.duizhe
 com.my.java.suanfa.ListNode.KListNodeFanZhuan
 K链表翻转。给出一个链表和一个数k， 比如链表1→2→3→4→5→6，k=2，翻转后2→1→4→3→6→5
 
+删除链表的重复元素
+存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。
+com.my.java.suanfa.ListNode.repeatListNode
+
 -----------------------------------------滑动窗口系列：---------------------------------------------
 com.my.java.suanfa.huadongchuangkou
 1、给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串（可包含其他字符）。
@@ -57,6 +61,313 @@ com.my.java.suanfa.huadongchuangkou
  * 输出：6
  * 解释：
  * 这里有 6 个满足题意的子串，分别是：'havef','avefu','vefun','efuno','etcod','tcode'。
+
+
+-----------------------------------------数组系列：------------------------------------
+com.my.java.suanfa.shuzu
+
+com.my.java.suanfa.shuzu.combinationSum
+/**
+ * 功能描述: 给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
+ candidates 中的数字可以无限制重复被选取。
+ *
+ * 比如：
+ *
+ * 输入：[2,3,6,7]；输出：[[7], [2, 2, 3]]
+ *
+ * 输入：[3,4,5,6,7,8,9]；输出：[[8], [4, 4], [3, 5]]
+ */
+
+ com.my.java.suanfa.shuzu.containsNearbyDuplicate
+ /**
+  * 功能描述:
+  * 给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，
+  * 使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。
+  *
+  * 示例 1:
+  *
+  * 输入: nums = [1,2,3,1], k = 3
+  * 输出: true
+  *
+  */
+
+ /**
+   * 功能描述: 找到数据中第K大的数，因为从0开始排序，所以第K大实际上是K-1大的数字
+ */
+ com.my.java.suanfa.shuzu.findKthLargest
+
+ /**
+  * 功能描述: 一个包含正数、负数的数组,如何找第一个缺失的正数
+  * 比如
+  * {0,9,8,6,4,1,-6,2,3,-5,7};
+  * 这里缺失了正数5
+  */
+  com.my.java.suanfa.shuzu.firstMisPosition
+
+  找数组的中位数
+  com.my.java.suanfa.shuzu.getMiddle
+
+  /**
+   * 功能描述: 给定一个数组{1, 2, 2, 3}，求他的所有子数组
+   *          给定一个字符串1234，求他的所有子集
+   */
+   com.my.java.suanfa.shuzu.GetSet
+
+   /**
+    * 功能描述: 求数组的全排列
+    *  给定一个不含重复数字的数组 nums，返回其所有可能的全排列 。你可以按任意顺序返回答案。
+    */
+    com.my.java.suanfa.shuzu.getZiji
+
+   合并多个数组区间
+   com.my.java.suanfa.shuzu.hebingqujian
+
+   /**
+    * 功能描述: 给定一组 互不相同 的单词， 找出所有 不同 的索引对 (i, j)， 使得列表中的两个单词， words[i] + words[j] ，可拼接成回文串。
+    *
+    *
+    * 示例 1： 输入：words = ["abcd","dcba","lls","s","sssll"] 输出：[[0,1],[1,0],[3,2],[2,4]] 解释：可拼接成的回文串为
+    * ["dcbaabcd","abcddcba","slls","llssssll"]
+    */
+    com.my.java.suanfa.shuzu.isPalindromeInArray
+
+    /**
+     * 功能描述: 加油站有i个，每个加油站到下一个加油站需要消耗cost[i]的油
+     * 请问用户从哪个加油站开始出发，可以转一圈之后恰好用完油。
+     */
+     com.my.java.suanfa.shuzu.jiayou
+
+     /**
+      * 功能描述: 无序数组中找到最长连续子序列的长度
+      */
+      com.my.java.suanfa.shuzu.longestConsecutive
+
+
+      /**
+       * 11. 盛最多水的容器
+       * 功能描述: 给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。
+       *
+       * 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+       *
+       * 返回容器可以储存的最大水量。
+       *
+       * 说明：你不能倾斜容器。
+       *
+       * 输入：[1,8,6,2,5,4,8,3,7]
+       * 输出：49
+       * 解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。
+       * 在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。
+       *
+       * 这个提注意是直线，不要被柱状图误导了{1,7}的最大面积是1不是7
+       *
+       */
+       com.my.java.suanfa.shuzu.maxArea
+
+
+       /**
+        * 功能描述: 给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。 请你找出并返回这两个正序数组的 中位数 。
+        *
+        * 算法的时间复杂度应该为 O(log (m+n)) 。
+        */
+        com.my.java.suanfa.shuzu.mediaInArray
+
+        /**
+         * 功能描述: 数组中有一个数字出现次数超过数组长度的一半，请找出这个数字。
+         *
+         * 边界条件或异常：
+         *
+         * 数组为空或只有一个元素，或数组中没有数字超过数组长度的一半。
+         *
+         * 方法一：对数组排序，排序后如果数组存在这个数字，那么中位数必定是出现次数超过一半的数字。
+         * 接下来去统计数组中跟arr[mid]值一样的元素，相等count++;如果count的值大于mid，则说明存在输出，否则返回0；
+         */
+         com.my.java.suanfa.shuzu.moreThanHalfNum
+
+
+        /**
+         * 功能描述: 给定一个整数数组和一个整数 k ，请找到该数组中和为 k 的连续子数组的个数
+         */
+         /**
+          * 功能描述: 两数之和 II - 输入有序数组
+          * 给你一个下标从 1 开始的整数数组 numbers ，该数组已按 非递减顺序排列
+          * 请你从数组中找出满足相加之和等于目标数 target 的两个数。如果设这两个数分别是 numbers[index1] 和 numbers[index2] ，则 1 <= index1 < index2 <= numbers.length 。
+          *
+          * 以长度为 2 的整数数组 [index1, index2] 的形式返回这两个整数的下标 index1 和 index2。
+          *
+          * 你可以假设每个输入 只对应唯一的答案 ，而且你 不可以 重复使用相同的元素。
+          * 输入：numbers = [2,3,4], target = 6
+          * 输出：[1,3]
+          * 解释：2 与 4 之和等于目标数 6 。因此 index1 = 1, index2 = 3 。返回 [1, 3] 。
+          *
+          */
+          com.my.java.suanfa.shuzu.subarraySum
+
+          /**
+           * 功能描述: 给你一个整数数组 nums 和一个整数 k ，请你返回其中出现频率前 k 高的元素。 你可以按 任意顺序 返回答案。
+           *   1 <= nums.length <= 105 k 的取值范围是 [1, 数组中不相同的元素的个数]
+           * 题目数据保证答案唯一，换句话说，数组中前 k 个高频元素的集合是唯一的
+           *
+           * 示例 1: 输入: nums = [1,1,1,2,2,3], k = 2 输出: [1,2]
+           */
+           com.my.java.suanfa.shuzu.topKFrequent
+
+           /**
+            * 功能描述:
+            * 给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度。
+            *
+            * 请你设计并实现时间复杂度为 O(n) 的算法解决此问题。
+            * 输入：nums = [100,4,200,1,3,2]
+            * 输出：4
+            * 解释：最长数字连续序列是 [1, 2, 3, 4]。它的长度为 4。
+            */
+            com.my.java.suanfa.shuzu.xulie
+
+
+-----------------------------------------字符串系列：-------------------------------------
+/**
+ * 功能描述: 给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回-1
+ */
+com.my.java.suanfa.String.FIndCharOfString
+
+/**
+ * 功能描述: 给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。
+ *
+ * 回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+ *
+ * 例如，121 是回文，而 123 不是。
+ *  
+ */
+ com.my.java.suanfa.String.isPalindrome
+
+
+ /**
+  * 功能描述: 给定一个字符串，求包含K个不同字符的最长字串的长度
+  * 比如 字符串"qeceba"
+  * K =3
+  * 那么最长子串"qece" 长度为4
+  *
+  * 比如 字符串"cvbnteeeeqeee" K=3 ,最长子串长度为"teeee"
+  *
+  * 这种类似滑动窗口，利用map做一个删除和增加
+  */
+ com.my.java.suanfa.String.KZiFuChuan
+
+ /**
+  * 功能描述: 给你一个字符串 s，找到 s 中最长的回文子串。
+  * 输入：s = "babad" 输出："bab" 解释："aba" 同样是符合题意的答案。
+  */
+  com.my.java.suanfa.String.longestSubstring
+
+  /**
+   * 功能描述: 给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。
+   * 示例 1：
+   *
+   * 输入：x = 123
+   * 输出：321
+    /
+com.my.java.suanfa.String.reverseInteger
+
+/**
+ * 功能描述: 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。
+ *
+ * 字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。（
+ * 例如，"ace"是"abcde"的一个子序列，而"aec"不是）。
+ */
+ com.my.java.suanfa.String.zixulie
+
+
+ --------------------------------------------------树系列：------------------------------------
+ /**
+  * 功能描述: <br>
+  * isBanlanceTree 判断这棵树是不是平衡二叉树
+  *          一棵高度平衡二叉树定义为：一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过1
+  * <p>
+  * isWanQuanTree 判断这棵树是不是完全二叉树
+  * 如果二叉树中除去最后一层节点为满二叉树，且最后一层的结点依次从左到右分布，则此二叉树被称为完全二叉树
+  * 1 任何一个结点如果右孩子不为空，左孩子却是空，则一定不是完全二叉树
+  * 2 当一个结点出现右孩子为空时候，判断该结点的层次遍历后继结点是否为叶子节点，如果全部都是叶子节点，则是完全二叉树，
+  * 如果存在任何一个结点不是叶节点，则一定不是完全二叉树。
+  */
+  com.my.java.suanfa.treeNode.BanlanceTree
+
+  /**
+   * 功能描述:
+   * lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
+   * 力扣第 236 题「二叉树的最近公共祖先」：
+   * 给你输入一棵不含重复值的二叉树，以及存在于树中的两个节点p和q，请你计算p和q的最近公共祖先节点。
+   *
+   * TreeNode lowestCommonAncestor(TreeNode root, TreeNode[] nodes)
+   * 力扣第 1676 题「二叉树的最近公共祖先 IV」：
+   * 依然给你输入一棵不含重复值的二叉树，但这次不是给你输入p和q两个节点了，
+   * 而是给你输入一个包含若干节点的列表nodes（这些节点都存在于二叉树中），让你算这些节点的最近公共祖先
+   *
+   * 力扣第 1644 题「二叉树的最近公共祖先 II」：
+   * 给你输入一棵不含重复值的二叉树的，以及两个节点p和q，
+   * 如果p或q不存在于树中，则返回空指针，否则的话返回p和q的最近公共祖先节点。
+   *
+   * 力扣第 235 题「二叉搜索树的最近公共祖先」：
+   * 给你输入一棵不含重复值的二叉搜索树，以及存在于树中的两个节点p和q，请你计算p和q的最近公共祖先节点。
+   * 把之前的解法代码复制过来肯定也可以解决这道题，但没有用到 BST「左小右大」的性质，显然效率不是最高的。
+   * 在标准的最近公共祖先问题中，我们要在后序位置通过左右子树的搜索结果来判断当前节点是不是LCA
+   */
+   com.my.java.suanfa.treeNode.lowestCommonAncestor、
+
+
+   /**
+    * 功能描述:    求二叉树的根结点到叶子节点的最小距离
+    */
+    com.my.java.suanfa.treeNode.TreeNodeMinDistance
+
+
+    /**
+        * 功能描述: Z字打印二叉树
+        */
+    com.my.java.suanfa.treeNode.ZPrint
+
+    /**
+     * 功能描述: <br>
+     * <p>
+     * TreeDepth 求二叉树的深度
+     * findDeep2 非递归求二叉树的深度
+     * levelOrder 层次遍历二叉树
+     * isErChaShu 判断是否是二叉搜索树
+     * findValInErChaShu 判断二叉树中是否存在值为6的节点
+     * hasPathSum 递归求二叉树的路径和是否为6
+     * hasPathSumV2 非递归求二叉树的路径和是否为6
+     * getMaxLongPathSum 求叶子节点到根结点的最长路径和
+     * getPath 递归求二叉树的最长走的路径，不是和是路径
+     * <p>
+     * longestZigZag 求二叉树的最长交错路径
+     * 给你一棵以 root 为根的二叉树，二叉树中的交错路径定义如下：
+     * 选择二叉树中 任意 节点和一个方向（左或者右）。
+     * 如果前进方向为右，那么移动到当前节点的的右子节点，否则移动到它的左子节点。
+     * 改变前进方向：左变右或者右变左。
+     * 重复第二步和第三步，直到你在树中无法继续移动。
+     * 交错路径的长度定义为：访问过的节点数目 - 1（单个节点的路径长度为 0 ）。
+     * 请你返回给定树中最长 交错路径 的长度。
+     */
+     com.my.java.suanfa.treeNode.MyTreeNode
+
+
+
+
+     反转字符串
+     com.my.java.suanfa.ReverseStringSequence
+     连标反转
+     com.my.java.suanfa.ReverseListNode
+     /**
+      * 功能描述:
+      * 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 *a，b，c ，*使得 a + b + c = 0 ？
+      * 请你找出所有和为 0 且不重复的三元组。
+      *
+      * **注意：**答案中不可以包含重复的三元组。
+      */
+      com.my.java.suanfa.threeSum
+      中位数
+      com.my.java.suanfa.zhongweishu
+      正数反转
+      com.my.java.suanfa.zhengshufanzhuan
+
 
 
 

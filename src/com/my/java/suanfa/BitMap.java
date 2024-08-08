@@ -23,7 +23,7 @@ public class BitMap {
     
     public void add(int num){
         // num/8得到byte[]的index
-        int arrayIndex = num >> 3; 
+        int arrayIndex = num >> 3;
         
         // num%8得到在byte[index]的位置
         int position = num & 0x07; 

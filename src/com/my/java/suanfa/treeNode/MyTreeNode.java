@@ -146,7 +146,6 @@ public class MyTreeNode {
                     queue.offer(current.right);
                 }
             }
-            System.out.println(Integer.valueOf(temp.toString()));
             data.add(temp.toString());
             result.add(data);
         }
@@ -296,6 +295,7 @@ public class MyTreeNode {
         }
         return sum;
     }
+
 
     //getPath 递归求二叉树的最长走的路径，不是和是路径
     public static void getPath(TreeNode root, List<Integer> list, int num) {

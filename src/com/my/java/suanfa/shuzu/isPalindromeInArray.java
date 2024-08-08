@@ -14,6 +14,8 @@ import java.util.List;
 public class isPalindromeInArray {
 
     public static void main(String[] args) {
+        System.out.println(isPalindrome("dcbaabcd"));
+
         String[] words = new String[] {"abcd", "dcba", "lls", "s", "sssll"};
         System.out.println(JSONObject.toJSONString(palindromePairs(words)));
     }
@@ -44,12 +46,13 @@ public class isPalindromeInArray {
 
     public static boolean isPalindrome(String temp) {
         int left = 0;
-        int len = temp.length();
-        for (int right = len - 1; right > left; right--) {
-            if (temp.charAt(right) != temp.charAt(left)) {
+        int right = temp.length() -1;
+        while (left < right) {
+            if (temp.charAt(left) != temp.charAt(right)) {
                 return false;
             }
-            left++;
+            left ++;
+            right --;
         }
         return true;
     }

@@ -7,7 +7,8 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
- * 功能描述: 给你一个整数数组 nums 和一个整数 k ，请你返回其中出现频率前 k 高的元素。 你可以按 任意顺序 返回答案。   1 <= nums.length <= 105 k 的取值范围是 [1, 数组中不相同的元素的个数]
+ * 功能描述: 给你一个整数数组 nums 和一个整数 k ，请你返回其中出现频率前 k 高的元素。 你可以按 任意顺序 返回答案。
+ *   1 <= nums.length <= 105 k 的取值范围是 [1, 数组中不相同的元素的个数]
  * 题目数据保证答案唯一，换句话说，数组中前 k 个高频元素的集合是唯一的
  *
  * 示例 1: 输入: nums = [1,1,1,2,2,3], k = 2 输出: [1,2]
@@ -18,6 +19,14 @@ public class topKFrequent {
         /**
          * 功能描述: 首先测试最小堆的功能
          */
+        PriorityQueue<Integer> qu = new PriorityQueue<>();
+        qu.add(3);
+        qu.add(7);
+        qu.add(5);
+        System.out.println(qu.poll());
+        System.out.println(qu.poll());
+        System.out.println(qu.peek());
+
         PriorityQueue<int[]> queue = new PriorityQueue<int[]>(new Comparator<int[]>() {
             @Override
             public int compare(int[] m, int[] n) {
@@ -25,13 +34,28 @@ public class topKFrequent {
             }
         });
         queue.offer(new int[] {1, 13});
-        queue.offer(new int[] {2, 5});
+        queue.offer(new int[] {12, 5});
         queue.offer(new int[] {3, 6});
         System.out.println(JSONObject.toJSONString(queue.peek()));
 
-        int[] nums = new int[] {1, 1, 1, 2, 2, 3};
-        int k = 2;
-        System.out.println(JSONObject.toJSONString(topKFrequent(nums, k)));
+//        int[] nums = new int[] {1, 1, 1, 2, 2, 3};
+//        int k = 2;
+//        System.out.println(JSONObject.toJSONString(topKFrequent(nums, k)));
+    }
+
+
+    //优先级队列好简单
+    public int findKthLargest(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int num : nums) {
+            if (pq.size() < k) {
+                pq.offer(num);
+            } else if (num > pq.peek()) {
+                pq.poll();
+                pq.offer(num);
+            }
+        }
+        return pq.peek();
     }
 
     public static int[] topKFrequent(int[] nums, int k) {

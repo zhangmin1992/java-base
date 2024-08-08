@@ -1,12 +1,22 @@
 package com.my.java.suanfa.ListNode;
 
 public class MyNode {
+
     private MyNode next;
 
     private int value;
 
-    public MyNode(MyNode pre, MyNode next, int value) {
+    public MyNode(MyNode pre,MyNode next, int value) {
         this.next = next;
+        this.value = value;
+    }
+
+    public MyNode(MyNode next, int value) {
+        this.next = next;
+        this.value = value;
+    }
+
+    public MyNode(int value) {
         this.value = value;
     }
 

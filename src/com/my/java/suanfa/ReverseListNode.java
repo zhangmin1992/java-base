@@ -24,6 +24,7 @@ public class ReverseListNode {
 		Node newNode = ReverseList_buzu_k(n1,4);
 		showNode(newNode);
 	}
+
 	public static String showNode(Node node) {
         if (node == null) {
             return  "";
@@ -33,15 +34,15 @@ public class ReverseListNode {
             sb.append(node.val+"->");
             node = node.next;
         }
+        System.out.println(sb.toString().substring(0,sb.length()-2));
         return sb.toString().substring(0,sb.length()-2);
 	}
 
 	//链表全部反转
 	public static Node reverseList(Node node) {
 		  Node pre = null;
-		  Node next = null;
 		  while (node != null) {
-		      next = node.next;
+			  Node next = node.next;
 		      node.next = pre;
 		      pre = node;
 		      node = next;
@@ -65,6 +66,7 @@ public class ReverseListNode {
 		}
 		return head;
 	}
+
     public static int getLength(Node head){
     	Node node = head;
         int count = 0;

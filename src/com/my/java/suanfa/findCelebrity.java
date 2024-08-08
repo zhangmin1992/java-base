@@ -5,12 +5,14 @@ package com.my.java.suanfa;
  * 有就返回 没有就返回-1
  */
 public class findCelebrity {
+
     public static boolean knows(int celebrity, int i) {
         if (celebrity == 9) {
             return false;
         }
         return true;
     }
+
     public static int findCelebrity(int n) {
         int celebrity = 0;  // 先假定 0 就是名人
         for (int i = 1; i < n; i++) {

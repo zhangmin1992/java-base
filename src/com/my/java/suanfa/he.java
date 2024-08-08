@@ -8,7 +8,8 @@ public class he {
      * 功能描述: 我们用两个数small和big分别表示序列的最小值和最大值。
      * 首先把small初始化为 1，big初始化为 2。
      * 如果从small到big的序列的和大于n的话，我们向右移动small，相当于从序列中去掉较小的数字。
-     * 如果从small到big的序列的和小于n的话，我们向右移动big，相当于向序列中添加big的下一个数字。一直到small等于(1+n)/2，因为序列至少要有两个数字。
+     * 如果从small到big的序列的和小于n的话，我们向右移动big，相当于向序列中添加big的下一个数字。
+     * 一直到small等于(1+n)/2，因为序列至少要有两个数字。
      */
     static void findSubquence(int n) {
         int small = 1;

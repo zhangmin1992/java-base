@@ -104,8 +104,9 @@ public class TestString {
 	 * 改变字符串
 	 * @param s
 	 */
-	public static void change(String s) {
+	public static String change(String s) {
 		s = "444";
+		return s;
 	}
 	
 	/**

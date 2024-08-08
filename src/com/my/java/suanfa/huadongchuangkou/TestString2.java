@@ -15,7 +15,7 @@ public class TestString2 {
         System.out.println(minWindow(s, t, cost));
     }
 
-    // 滑动窗口
+    // 窗口
     public static String minWindow(String s, String t, int cost) {
         int left = 0;
         int right = 0;

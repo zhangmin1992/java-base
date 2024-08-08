@@ -13,18 +13,18 @@ import java.util.PriorityQueue;
  */
 public class minMeetingRooms {
     public static void main(String args[]) {
-//        int[][] intervals = new int[3][];
-//        intervals[0] = new int[]{10,30};
-//        intervals[1] = new int[]{50,60};
-//        intervals[2] = new int[]{20,35};
-//        System.out.println(minMeetingRooms(intervals));
+        int[][] intervals = new int[3][];
+        intervals[0] = new int[]{10,30};
+        intervals[1] = new int[]{50,60};
+        intervals[2] = new int[]{20,35};
+        System.out.println(minMeetingRooms(intervals));
 
-        PriorityQueue<Integer> queue = new PriorityQueue<>();
-        queue.add(30);
-        queue.add(50);
-        queue.add(20);
-        queue.add(70);
-        System.out.println(queue.peek());
+//        PriorityQueue<Integer> queue = new PriorityQueue<>();
+//        queue.add(30);
+//        queue.add(50);
+//        queue.add(20);
+//        queue.add(70);
+//        System.out.println(queue.peek());
     }
 
     public static int minMeetingRooms(int[][] intervals) {

@@ -42,6 +42,7 @@ class accurateSignal {
     Condition c1 = lock.newCondition();
     int num = 1;
 
+
     void printA() {
         lock.lock();
         try {

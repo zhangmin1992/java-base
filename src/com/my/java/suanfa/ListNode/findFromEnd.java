@@ -20,6 +20,27 @@ public class findFromEnd {
         // p2 现在指向第 n - k 个节点
         return p2;
     }
+
+    // 返回链表的倒数第 k 个节点
+    public  static  ListNode deleteFromEnd(ListNode head, int k) {
+        ListNode fake = new ListNode(-1);
+        fake.next = head;
+        ListNode p1 = fake;
+        // p1 先走 k 步
+        for (int i = 0; i < k; i++) {
+            p1 = p1.next;
+        }
+        ListNode p2 = fake;
+        // p1 和 p2 同时走 n - k 步
+        while (p1 != null) {
+            p2 = p2.next;
+            p1 = p1.next;
+        }
+        // p2 现在指向第 n - k 个节点
+        p2.next = p2.next.next;
+        return fake.next;
+    }
+
     public static void main(String args[]) {
         ListNode n7 = new ListNode(9);
         ListNode n6 = new ListNode(6,n7);
@@ -30,6 +51,7 @@ public class findFromEnd {
         ListNode n1 = new ListNode(1,n2);
 
         ListNode node = findFromEnd(n1,6);
+        ListNode node2 = deleteFromEnd(n1,6);
         System.out.println(node.val);
     }
 }

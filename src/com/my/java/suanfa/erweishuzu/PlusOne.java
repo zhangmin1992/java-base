@@ -18,10 +18,10 @@ public class PlusOne {
         int[] result = new int[arr.length + 1];
         int addNum = 1;
         int jinWei = 0;
-        for (int index = 0; index < arr.length; index++) {
-            jinWei = (arr[index] + addNum) / 10;
+        for (int index = arr.length-1; index>=0; index--) {
+            jinWei = (arr[index] + addNum ) /10;
             int num = (arr[index] + addNum) % 10;
-            result[arr.length - index] = num;
+            result[arr.length -1 - index] = num;
             addNum = jinWei;
         }
         if (jinWei > 0) {

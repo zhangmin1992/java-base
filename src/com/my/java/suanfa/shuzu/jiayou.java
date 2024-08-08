@@ -22,7 +22,7 @@ public class jiayou {
         HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
         for(int i = 0; i < gas.length; i++){
             map.put(cost[i],map.getOrDefault(cost[i],0)+1);
-            //需要找零钱的情况
+            //需要的情况
             if (cost[i] > gas[i]) {
                 //没有零钱可以找他
                 int remain = cost[i] - gas[i];

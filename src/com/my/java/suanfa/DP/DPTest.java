@@ -119,8 +119,7 @@ public class DPTest {
         int m=s.length();
         int n=t.length();
         int[][]dp = new int[m+1][n+1];
-        for(int i=1;i<m;i++)
-        {
+        for(int i=1;i<m;i++) {
             for(int j=1;j<n;j++) {
                 if(s.charAt(i) == t.charAt(j)) {
                     dp[i][j] = dp[i][j-1]+1;
@@ -310,6 +309,7 @@ public class DPTest {
             //将所有数字初试状态置为1
             dp[i] = 1;
         }
+        int max = 1;
         for (int i = 1; i < dp.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (nums[i] > nums[j]){
@@ -319,7 +319,6 @@ public class DPTest {
 
             }
         }
-        int max = 1;
         for (int i = 0; i < dp.length; i++) {
             max = Math.max(max,dp[i]);
         }

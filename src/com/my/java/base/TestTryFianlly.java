@@ -19,9 +19,9 @@ public class TestTryFianlly {
 //		System.out.println(TestTryFinally1());
 //		System.out.println(TestTryFinally2());
 //		System.out.println(TestTryFinally4());
-//		System.out.println(TestTryFinally3());
-//		System.out.println(JSONObject.toJSONString(TestTryFinally5()));
-		System.out.println(JSONObject.toJSONString(TestTryFinally6()));
+		System.out.println(TestTryFinally3());
+		System.out.println(JSONObject.toJSONString(TestTryFinally5()));
+//		System.out.println(JSONObject.toJSONString(TestTryFinally6()));
 	}
 	
 	public static int TestTryFinally() {

@@ -1,7 +1,5 @@
 package com.my.java.suanfa.shuzu;
 
-import com.alibaba.fastjson.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,11 +22,11 @@ import java.util.Map;
  */
 public class subarraySum {
     public static void main(String[] args) {
-//        int[] nums = {1,2,3,5};
-//        System.out.println(subarraySum(nums,5));
+        int[] nums = {1,2,3,5};
+        System.out.println(subarraySum(nums,5));
 
-        int[] nums = {1,2,2,3};
-        System.out.println(JSONObject.toJSONString(twoSum(nums,5)));
+//        int[] nums = {1,2,2,3};
+//        System.out.println(JSONObject.toJSONString(twoSum(nums,5)));
     }
 
     public static int[] twoSum(int[] numbers, int target) {

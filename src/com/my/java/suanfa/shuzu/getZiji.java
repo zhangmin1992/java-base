@@ -70,6 +70,7 @@ public class getZiji {
     public static void backtrace(int len, List<Integer> perm, List<List<Integer>> res, int first){
         // 判断结束条件
         if(first == len){
+            //new ArrayList<Integer> 这个必须加，要不然json是引用
             res.add(new ArrayList<Integer>(perm));
             return;
         }
